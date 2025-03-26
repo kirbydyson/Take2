@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+# Take2
+>>>>>>> 0cca882b9a3f0c0ec6fd4c250cd650018e5cbe51
 # CSI3335 Project Virtual Environment
 
 This repository provides a virtual environment setup with specified dependencies for student projects in the CSI3335 course. **Please use Python 3.10 and above**
