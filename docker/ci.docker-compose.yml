@@ -1,0 +1,51 @@
+services:
+  frontend:
+    image: take2-frontend
+    build:
+      context: ../client
+      dockerfile: Dockerfile
+    container_name: take2-frontend
+    restart: always
+    ports:
+      - '3000:3000'
+    networks:
+      - take2-net
+
+  backend:
+    image: take2-backend
+    build:
+      context: ../server
+      dockerfile: Dockerfile
+    container_name: take2-backend
+    restart: always
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mariadb
+    environment:
+      - FLASK_ENV=development
+    networks:
+      - take2-net
+
+  mariadb:
+    image: mariadb:10.11
+    container_name: take2-mariadb
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: password
+      MARIADB_DATABASE: take2
+      MARIADB_USER: root
+      MARIADB_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    networks:
+      - take2-net
+
+volumes:
+  mariadb_data:
+
+networks:
+  take2-net:
+    driver: bridge
