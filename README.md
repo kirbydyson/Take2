@@ -1,56 +1,60 @@
-<<<<<<< HEAD
-=======
-# Take2
->>>>>>> 0cca882b9a3f0c0ec6fd4c250cd650018e5cbe51
-# CSI3335 Project Virtual Environment
+# Take 2: MLB No-Hitter & Trivia Web App
 
-This repository provides a virtual environment setup with specified dependencies for student projects in the CSI3335 course. **Please use Python 3.10 and above**
+## Tech Stack
 
-## Description
+- **Frontend**: React with Next.js
+- **Backend**: Flask (Python 3.10+)
+- **Database**: MariaDB
+- **CICD/Containerization**: Docker & Docker Compose
 
-This virtual environment contains essential Python libraries and frameworks required for the project. The `requirements.txt` file lists all the dependencies.
+---
 
-## Instructions
+## Running Locally (with Docker)
 
+### Requirements
+- Docker + Docker Compose
 
-1. **Clone the Repository**:
+### Setup Instructions
 
 ```bash
-git clone https://github.com/sanjelarun/csi3335-project-venv.git
-cd csi3335-project-venv
+# 1. Clone the repository
+git clone https://github.com/kirbydyson/Take2.git
+cd take2/docker
+
+# 2. Build and run all services
+docker compose -f local.docker-compose.yml up
 ```
 
-2. **Create a Virtual Environment**
+- **Frontend**: `{{CLIENT_URL}}:3000`
+- **Backend API**: `{{API_URL}}:8080`
+- **DB Connection**: `{{DB_URL}}:3306`  
+  - Username: `root`  
+  - Password: `password`
+    
+## Running Locally
 
-**For Windows**
-```bash
-python -m venv project_env
-```
-**For Linux/MacOs**
-```bash
-python3 -m venv project_env
+### Requirements
+- Node 20+
+- Flask (Python 3.10+)
+- MariaDB
 
-```
-3. **Activate the Virtual Environment**
+### Setup Instructions
 
-**For Windows**
 ```bash
-.\project_env\Scripts\activate
-```
-**For Linux/MacOs**
-```bash
-source project_env/bin/activate
-```
+# 1. Clone the repository
+git clone https://github.com/kirbydyson/Take2.git
+cd take2
 
-4. **Install the dependencies**
-```bash
+# 2. Install dependencies for the client
+yarn install
+
+# 3. Start the client
+yarn dev
+
+# 4. Start the server
+python -m venv venv
+. venv/bin/activate
+pip install --upgrade pip
 pip install -r requirements.txt
-```
-
-## Usage
-
-Once the virtual environment is activated and dependencies are installed, you can start working on your project within this environment. Remember to deactivate the virtual environment once you're done:
-
-```bash
-deactivate
+python app.py
 ```
