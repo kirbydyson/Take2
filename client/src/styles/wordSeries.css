@@ -1,51 +1,50 @@
-/* client/src/styles/Connections.css */
-.connections-container {
+.wordseries-container {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
 }
 
-.connections-header {
+.wordseries-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.connections-header h1 {
+.wordseries-header h1 {
   margin: 0;
   color: #333;
 }
 
-.connections-help-button {
+.wordseries-help-button {
   color: #666;
 }
 
-.connections-message-area {
+.wordseries-message-area {
   margin-bottom: 20px;
   min-height: 50px;
 }
 
-.connections-message {
+.wordseries-message {
   font-weight: bold;
   color: #007bff;
   margin-bottom: 5px;
 }
 
-.connections-attempts {
+.wordseries-attempts {
   font-size: 14px;
   color: #666;
 }
 
-.connections-grid {
+.wordseries-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   margin-bottom: 20px;
 }
 
-.connections-player-cell {
+.wordseries-player-cell {
   height: 80px;
   border-radius: 8px;
   background-color: #f8f8f8;
@@ -62,121 +61,121 @@
   word-break: break-word;
 }
 
-.connections-player-cell:hover:not(:disabled) {
+.wordseries-player-cell:hover:not(:disabled) {
   transform: scale(1.02);
   border-color: #007bff;
 }
 
-.connections-player-cell.connections-selected {
+.wordseries-player-cell.wordseries-selected {
   background-color: #0066cc;
   color: white;
   border-color: #0044aa;
 }
 
-.connections-player-cell:disabled {
+.wordseries-player-cell:disabled {
   cursor: default;
   opacity: 1; /* Keep opacity at 1 to show solved groups */
 }
 
 /* Group colors */
-.connections-yellow, .connections-group-item.connections-yellow,
-.connections-missed-group.connections-yellow, .connections-found-group.connections-yellow {
+.wordseries-yellow, .wordseries-group-item.wordseries-yellow,
+.wordseries-missed-group.wordseries-yellow, .wordseries-found-group.wordseries-yellow {
   background-color: #f1c40f;
   color: #000;
   border-color: #f39c12;
 }
 
-.connections-green, .connections-group-item.connections-green,
-.connections-missed-group.connections-green, .connections-found-group.connections-green {
+.wordseries-green, .wordseries-group-item.wordseries-green,
+.wordseries-missed-group.wordseries-green, .wordseries-found-group.wordseries-green {
   background-color: #2ecc71;
   color: #000;
   border-color: #27ae60;
 }
 
-.connections-blue, .connections-group-item.connections-blue,
-.connections-missed-group.connections-blue, .connections-found-group.connections-blue {
+.wordseries-blue, .wordseries-group-item.wordseries-blue,
+.wordseries-missed-group.wordseries-blue, .wordseries-found-group.wordseries-blue {
   background-color: #3498db;
   color: #fff;
   border-color: #2980b9;
 }
 
-.connections-purple, .connections-group-item.connections-purple,
-.connections-missed-group.connections-purple, .connections-found-group.connections-purple {
+.wordseries-purple, .wordseries-group-item.wordseries-purple,
+.wordseries-missed-group.wordseries-purple, .wordseries-found-group.wordseries-purple {
   background-color: #9b59b6;
   color: #fff;
   border-color: #8e44ad;
 }
 
-.connections-button-area {
+.wordseries-button-area {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
   gap: 10px;
 }
 
-.connections-shuffle-button,
-.connections-submit-button,
-.connections-deselect-button {
+.wordseries-shuffle-button,
+.wordseries-submit-button,
+.wordseries-deselect-button {
   flex: 1;
 }
 
-.connections-discovered-groups {
+.wordseries-discovered-groups {
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-bottom: 20px;
 }
 
-.connections-group-item {
+.wordseries-group-item {
   padding: 10px;
   border-radius: 5px;
   text-align: left;
 }
 
-.connections-group-name {
+.wordseries-group-name {
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 5px;
 }
 
-.connections-group-players {
+.wordseries-group-players {
   font-size: 14px;
 }
 
-.connections-missed-group,
-.connections-found-group {
+.wordseries-missed-group,
+.wordseries-found-group {
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
-.connections-summary {
+.wordseries-summary {
   margin-top: 20px;
 }
 
-.connections-loading,
-.connections-error {
+.wordseries-loading,
+.wordseries-error {
   text-align: center;
   margin-top: 40px;
   font-size: 18px;
 }
 
-.connections-modal-message {
+.wordseries-modal-message {
   font-size: 16px;
   margin-bottom: 15px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
-  .connections-grid {
+  .wordseries-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .connections-button-area {
+  .wordseries-button-area {
     flex-direction: column;
   }
 
-  .connections-player-cell {
+  .wordseries-player-cell {
     height: 70px;
     font-size: 12px;
   }
