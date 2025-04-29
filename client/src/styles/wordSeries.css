@@ -1,0 +1,183 @@
+/* client/src/styles/Connections.css */
+.connections-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.connections-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.connections-header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.connections-help-button {
+  color: #666;
+}
+
+.connections-message-area {
+  margin-bottom: 20px;
+  min-height: 50px;
+}
+
+.connections-message {
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+.connections-attempts {
+  font-size: 14px;
+  color: #666;
+}
+
+.connections-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.connections-player-cell {
+  height: 80px;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 10px;
+  word-break: break-word;
+}
+
+.connections-player-cell:hover:not(:disabled) {
+  transform: scale(1.02);
+  border-color: #007bff;
+}
+
+.connections-player-cell.connections-selected {
+  background-color: #0066cc;
+  color: white;
+  border-color: #0044aa;
+}
+
+.connections-player-cell:disabled {
+  cursor: default;
+  opacity: 1; /* Keep opacity at 1 to show solved groups */
+}
+
+/* Group colors */
+.connections-yellow, .connections-group-item.connections-yellow,
+.connections-missed-group.connections-yellow, .connections-found-group.connections-yellow {
+  background-color: #f1c40f;
+  color: #000;
+  border-color: #f39c12;
+}
+
+.connections-green, .connections-group-item.connections-green,
+.connections-missed-group.connections-green, .connections-found-group.connections-green {
+  background-color: #2ecc71;
+  color: #000;
+  border-color: #27ae60;
+}
+
+.connections-blue, .connections-group-item.connections-blue,
+.connections-missed-group.connections-blue, .connections-found-group.connections-blue {
+  background-color: #3498db;
+  color: #fff;
+  border-color: #2980b9;
+}
+
+.connections-purple, .connections-group-item.connections-purple,
+.connections-missed-group.connections-purple, .connections-found-group.connections-purple {
+  background-color: #9b59b6;
+  color: #fff;
+  border-color: #8e44ad;
+}
+
+.connections-button-area {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.connections-shuffle-button,
+.connections-submit-button,
+.connections-deselect-button {
+  flex: 1;
+}
+
+.connections-discovered-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.connections-group-item {
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.connections-group-name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.connections-group-players {
+  font-size: 14px;
+}
+
+.connections-missed-group,
+.connections-found-group {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.connections-summary {
+  margin-top: 20px;
+}
+
+.connections-loading,
+.connections-error {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.connections-modal-message {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .connections-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .connections-button-area {
+    flex-direction: column;
+  }
+
+  .connections-player-cell {
+    height: 70px;
+    font-size: 12px;
+  }
+}
