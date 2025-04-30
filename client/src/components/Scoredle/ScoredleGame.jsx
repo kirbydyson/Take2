@@ -24,6 +24,7 @@ export default function ScoredleGame() {
     const [shake, setShake] = useState(false);
     const [strikeoutOpen, setStrikeoutOpen] = useState(false);
     const [homerunOpen, setHomerunOpen] = useState(false);
+    const [showAnswer, setShowAnswer] = useState(false);
     const maxGuesses = 6;
     const router = useRouter();
 
@@ -72,7 +73,7 @@ export default function ScoredleGame() {
 
     useEffect(() => {
         fetchNewWord();
-    }, user);
+    }, []);
 
     useEffect(() => {
         if (gameOver && user) {
