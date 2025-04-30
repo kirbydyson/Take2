@@ -6,3 +6,13 @@ CREATE TABLE IF NOT EXISTS users (
     password VARCHAR(255) NOT NULL,
     role ENUM('user', 'admin') DEFAULT 'user'
 );
+
+CREATE TABLE IF NOT EXISTS scoredle_games (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    userId INT NOT NULL,
+    correctWord VARCHAR(255) NOT NULL,
+    attemptCount INT NOT NULL,
+    guessedWord BOOLEAN NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (userId) REFERENCES users(id) ON DELETE CASCADE
+);

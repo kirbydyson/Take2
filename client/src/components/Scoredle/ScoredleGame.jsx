@@ -1,8 +1,9 @@
-import React, { useState, useEffect, Router } from 'react';
+import React, { useState, useEffect } from 'react';
 import Grid from './Grid';
 import Keyboard from './Keyboard';
 import InstructionsModal from './InstructionsModal';
 import { validateGuess } from './utils';
+import { useRouter } from 'next/router';
 import IconButton from '@mui/material/IconButton';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import Button from '@mui/material/Button';
@@ -17,17 +18,24 @@ export default function ScoredleGame() {
     const [showModal, setShowModal] = useState(false);
     const [user, setUser] = useState(null);
     const maxGuesses = 6;
+    const router = useRouter();
 
     const validateSession = async () => {
         try {
             const res = await fetch('http://localhost:8080/auth/session')
             const data = await res.json();
             if (res.ok) {
-                console.log('Session is valid:', data);
-                setUser(data.user);
+                if (!data.email) {
+                    console.error('Session is invalid:', data);
+                    setUser(null);
+                    router.push('/login');
+                    return;
+                } else {
+                    setUser(data.user);
+                }
             } else {
-                console.log("No session found, redirecting to login.");
-                Router.push('/login');
+                console.error('Session is invalid:', data);
+                setUser(null);
             }
         } catch (err) {
             console.error('Error validating session:', err);
@@ -36,10 +44,10 @@ export default function ScoredleGame() {
 
     const fetchNewWord = async () => {
         try {
-            const res = await fetch('/api/scoredle/word');
+            const res = await fetch('http://localhost:8080/api/scoredle/random-name');
             const data = await res.json();
             if (res.ok) {
-                setTargetWord(data.word.toLowerCase());
+                setTargetWord(data.randomName.toLowerCase());
                 setGuesses([]);
                 setCurrentGuess('');
                 setGameOver(false);
@@ -58,6 +66,41 @@ export default function ScoredleGame() {
     useEffect(() => {
         fetchNewWord();
     }, user);
+
+    useEffect(() => {
+        if (gameOver && user) {
+            const saveGame = async () => {
+                try {
+                    const res = await fetch('/api/scoredle/save-game', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        credentials: 'include',
+                        body: JSON.stringify({
+                            correctWord: targetWord,
+                            attemptCount: guesses.length,
+                            userId: user.id,
+                        }),
+                    });
+
+                    const data = await res.json();
+                    if (!res.ok) {
+                        console.error(
+                            'Failed to save game:',
+                            data.error || data,
+                        );
+                    } else {
+                        console.log('Game saved:', data);
+                    }
+                } catch (err) {
+                    console.error('Error saving game:', err);
+                }
+            };
+
+            saveGame();
+        }
+    }, [gameOver, user]);
 
     const handleKeyPress = async (key) => {
         if (gameOver || targetWord.length === 0) return;
