@@ -71,18 +71,22 @@ export default function ScoredleGame() {
         if (gameOver && user) {
             const saveGame = async () => {
                 try {
-                    const res = await fetch('/api/scoredle/save-game', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
+                    const res = await fetch(
+                        'http://localhost:8080/api/scoredle/save-game',
+                        {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            credentials: 'include',
+                            body: JSON.stringify({
+                                correctWord: targetWord,
+                                attemptCount: guesses.length,
+                                userId: user.id,
+                                guessedWord: guesses.length < 6
+                            }),
                         },
-                        credentials: 'include',
-                        body: JSON.stringify({
-                            correctWord: targetWord,
-                            attemptCount: guesses.length,
-                            userId: user.id,
-                        }),
-                    });
+                    );
 
                     const data = await res.json();
                     if (!res.ok) {
@@ -111,8 +115,12 @@ export default function ScoredleGame() {
                 return;
             }
 
-            const isValid = await validateGuess(currentGuess);
-            if (!isValid) {
+            const isWordValid =
+                typeof currentGuess === 'string' &&
+                currentGuess.length === 5 &&
+                /^[a-zA-Z]{5}$/.test(currentGuess);
+
+            if (!isWordValid) {
                 alert('Invalid word. Try again!');
                 setCurrentGuess('');
                 return;
