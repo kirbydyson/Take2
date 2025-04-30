@@ -44,6 +44,7 @@ def login():
         return jsonify({"error": "Invalid email or password"}), 401
 
     session['email'] = user['email']
+    session['role'] = user['role']
     return jsonify({"message": "Login successful", "email": user['email']})
 
 @account_bp.route('/api/logout', methods=['POST'])
@@ -54,5 +55,5 @@ def logout():
 @account_bp.route('/api/session', methods=['GET'])
 def get_session():
     if 'email' in session:
-        return jsonify({"loggedIn": True, "email": session['email']})
+        return jsonify({"loggedIn": True, "email": session['email'], "role": session['role']})
     return jsonify({"loggedIn": False})
