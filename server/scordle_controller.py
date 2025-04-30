@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, session
+from flask import Blueprint, jsonify, session, request
 from db import get_connection
 import random
 
@@ -21,3 +21,36 @@ def get_random_5char_lastname():
 
     selected_name = random.choice(names)
     return jsonify({"randomName": selected_name})
+
+@scoredle_bp.route('/api/scoredle/save-game', methods=['POST'])
+def save_scoredle_game():
+    if session.get('email') is None:
+        return jsonify({"error": "Unauthorized"}), 401
+
+    data = request.get_json()
+    correctWord = data.get('correctWord')
+    attemptCount = data.get('attemptCount')
+
+    if not correctWord or attemptCount is None:
+        return jsonify({"error": "Missing correctWord or attemptCount"}), 400
+
+    conn = get_connection()
+    cursor = conn.cursor(dictionary=True)
+
+    # Get user ID from email
+    cursor.execute("SELECT id FROM users WHERE email = %s", (session['email'],))
+    user = cursor.fetchone()
+    if not user:
+        conn.close()
+        return jsonify({"error": "User not found"}), 404
+
+    userId = user['id']
+
+    cursor.execute(
+        "INSERT INTO scoredle_games (userId, correctWord, attemptCount) VALUES (%s, %s, %s)",
+        (userId, correctWord, attemptCount)
+    )
+    conn.commit()
+    cursor.close()
+    conn.close()
+    return jsonify({"message": "Game saved successfully"})
