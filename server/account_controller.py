@@ -28,7 +28,7 @@ def register():
     conn.close()
     return jsonify({"message": "User registered successfully"}), 201
 
-@account_bp.route('/api/login', methods=['POST'])
+@account_bp.route('/auth/login', methods=['POST'])
 def login():
     data = request.get_json()
     email = data.get('email')
@@ -47,12 +47,12 @@ def login():
     session['role'] = user['role']
     return jsonify({"message": "Login successful", "email": user['email']})
 
-@account_bp.route('/api/logout', methods=['POST'])
+@account_bp.route('/auth/logout', methods=['POST'])
 def logout():
     session.pop('email', None)
     return jsonify({"message": "Logged out successfully"})
 
-@account_bp.route('/api/session', methods=['GET'])
+@account_bp.route('/auth/session', methods=['GET'])
 def get_session():
     if 'email' in session:
         return jsonify({"loggedIn": True, "email": session['email'], "role": session['role']})
