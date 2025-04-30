@@ -1,8 +1,9 @@
-import React, { useState, useEffect, Router } from 'react';
+import React, { useState, useEffect } from 'react';
 import Grid from './Grid';
 import Keyboard from './Keyboard';
 import InstructionsModal from './InstructionsModal';
 import { validateGuess } from './utils';
+import { useRouter } from 'next/router';
 import IconButton from '@mui/material/IconButton';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import Button from '@mui/material/Button';
@@ -17,17 +18,24 @@ export default function ScoredleGame() {
     const [showModal, setShowModal] = useState(false);
     const [user, setUser] = useState(null);
     const maxGuesses = 6;
+    const router = useRouter();
 
     const validateSession = async () => {
         try {
             const res = await fetch('http://localhost:8080/auth/session')
             const data = await res.json();
             if (res.ok) {
-                console.log('Session is valid:', data);
-                setUser(data.user);
+                if (!data.email) {
+                    console.error('Session is invalid:', data);
+                    setUser(null);
+                    router.push('/login');
+                    return;
+                } else {
+                    setUser(data.user);
+                }
             } else {
-                console.log("No session found, redirecting to login.");
-                Router.push('/login');
+                console.error('Session is invalid:', data);
+                setUser(null);
             }
         } catch (err) {
             console.error('Error validating session:', err);
