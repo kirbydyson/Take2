@@ -10,6 +10,7 @@ def register():
     data = request.get_json()
     email = data.get('email')
     password = data.get('password')
+    role = data.get('role', 'user') 
 
     if not email or not password:
         return jsonify({"error": "Email and password are required"}), 400
@@ -22,7 +23,7 @@ def register():
         return jsonify({"error": "Email already exists"}), 400
 
     hashed_password = generate_password_hash(password)
-    cursor.execute("INSERT INTO users (email, password) VALUES (%s, %s)", (email, hashed_password))
+    cursor.execute("INSERT INTO users (email, password, role) VALUES (%s, %s, %s)", (email, hashed_password, role))
     conn.commit()
     conn.close()
     return jsonify({"message": "User registered successfully"}), 201
