@@ -12,6 +12,7 @@ CREATE TABLE IF NOT EXISTS scoredle_games (
     userId INT NOT NULL,
     correctWord VARCHAR(255) NOT NULL,
     attemptCount INT NOT NULL,
+    guessedWord BOOLEAN NOT NULL,
     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (userId) REFERENCES users(id) ON DELETE CASCADE
 );

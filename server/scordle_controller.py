@@ -30,9 +30,10 @@ def save_scoredle_game():
     data = request.get_json()
     correctWord = data.get('correctWord')
     attemptCount = data.get('attemptCount')
+    guessedWord = data.get('guessedWord')
 
-    if not correctWord or attemptCount is None:
-        return jsonify({"error": "Missing correctWord or attemptCount"}), 400
+    if not correctWord or attemptCount is None or guessedWord is None:
+        return jsonify({"error": "Missing correctWord or attemptCount or guessedWord"}), 400
 
     conn = get_connection()
     cursor = conn.cursor(dictionary=True)
@@ -47,8 +48,8 @@ def save_scoredle_game():
     userId = user['id']
 
     cursor.execute(
-        "INSERT INTO scoredle_games (userId, correctWord, attemptCount) VALUES (%s, %s, %s)",
-        (userId, correctWord, attemptCount)
+        "INSERT INTO scoredle_games (userId, correctWord, attemptCount, guessedWord) VALUES (%s, %s, %s, %s)",
+        (userId, correctWord, attemptCount, guessedWord)
     )
     conn.commit()
     cursor.close()

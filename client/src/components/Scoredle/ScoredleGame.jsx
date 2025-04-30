@@ -59,6 +59,41 @@ export default function ScoredleGame() {
         fetchNewWord();
     }, user);
 
+    useEffect(() => {
+        if (gameOver && user) {
+            const saveGame = async () => {
+                try {
+                    const res = await fetch('/api/scoredle/save-game', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        credentials: 'include',
+                        body: JSON.stringify({
+                            correctWord: targetWord,
+                            attemptCount: guesses.length,
+                            userId: user.id,
+                        }),
+                    });
+
+                    const data = await res.json();
+                    if (!res.ok) {
+                        console.error(
+                            'Failed to save game:',
+                            data.error || data,
+                        );
+                    } else {
+                        console.log('Game saved:', data);
+                    }
+                } catch (err) {
+                    console.error('Error saving game:', err);
+                }
+            };
+
+            saveGame();
+        }
+    }, [gameOver, user]);
+
     const handleKeyPress = async (key) => {
         if (gameOver || targetWord.length === 0) return;
 
