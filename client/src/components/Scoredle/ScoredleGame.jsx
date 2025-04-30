@@ -36,10 +36,10 @@ export default function ScoredleGame() {
 
     const fetchNewWord = async () => {
         try {
-            const res = await fetch('/api/scoredle/word');
+            const res = await fetch('http://localhost:8080/api/scoredle/random-name');
             const data = await res.json();
             if (res.ok) {
-                setTargetWord(data.word.toLowerCase());
+                setTargetWord(data.randomName.toLowerCase());
                 setGuesses([]);
                 setCurrentGuess('');
                 setGameOver(false);
