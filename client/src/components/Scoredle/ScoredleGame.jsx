@@ -73,7 +73,7 @@ export default function ScoredleGame() {
 
     useEffect(() => {
         fetchNewWord();
-    }, []);
+    }, user);
 
     useEffect(() => {
         if (gameOver && user) {
