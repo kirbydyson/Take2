@@ -3,6 +3,7 @@ import '../../styles/wordSeries.css';
 import IconButton from "@mui/material/IconButton";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 
+// TODO: finish the webpage for the game
 export default function WordSeriesGame() {
     const [players, setPlayers] = useState([]);
 
