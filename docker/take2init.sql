@@ -4,8 +4,11 @@ CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(255) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
+    nameFirst VARCHAR(100),
+    nameLast VARCHAR(100),
     role ENUM('user', 'admin') DEFAULT 'user'
 );
+
 
 CREATE TABLE IF NOT EXISTS scoredle_games (
     id INT AUTO_INCREMENT PRIMARY KEY,

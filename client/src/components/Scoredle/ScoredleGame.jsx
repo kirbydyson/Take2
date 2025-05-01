@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Grid from './Grid';
 import Keyboard from './Keyboard';
 import InstructionsModal from './InstructionsModal';
-import { validateGuess } from './utils';
 import { useRouter } from 'next/router';
 import IconButton from '@mui/material/IconButton';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
@@ -30,7 +29,9 @@ export default function ScoredleGame() {
 
     const validateSession = async () => {
         try {
-            const res = await fetch('http://localhost:8080/auth/session')
+            const res = await fetch('http://localhost:8080/auth/session', {
+                credentials: 'include',
+            });
             const data = await res.json();
             if (res.ok) {
                 if (!data.email) {
@@ -39,7 +40,7 @@ export default function ScoredleGame() {
                     router.push('/login');
                     return;
                 } else {
-                    setUser(data.user);
+                    setUser(data.email);
                 }
             } else {
                 console.error('Session is invalid:', data);
@@ -52,7 +53,10 @@ export default function ScoredleGame() {
 
     const fetchNewWord = async () => {
         try {
-            const res = await fetch('http://localhost:8080/api/scoredle/random-name');
+            const res = await fetch(
+                'http://localhost:8080/api/scoredle/random-name',
+                { credentials: 'include' },
+            );
             const data = await res.json();
             if (res.ok) {
                 setTargetWord(data.randomName.toLowerCase());
@@ -72,7 +76,9 @@ export default function ScoredleGame() {
     }, []);
 
     useEffect(() => {
-        fetchNewWord();
+        if (!targetWord) {
+            fetchNewWord();
+        }
     }, user);
 
     useEffect(() => {
@@ -91,7 +97,7 @@ export default function ScoredleGame() {
                                 correctWord: targetWord,
                                 attemptCount: guesses.length,
                                 userId: user.id,
-                                guessedWord: guesses.length < 6
+                                guessedWord: guesses.length < 6,
                             }),
                         },
                     );
@@ -115,11 +121,14 @@ export default function ScoredleGame() {
     }, [gameOver, user]);
 
     const handleKeyPress = async (key) => {
+        console.log('targetWord:', targetWord);
         if (gameOver || targetWord.length === 0) return;
 
         if (key === 'Enter') {
             if (currentGuess.length !== targetWord.length) {
-                setSnackbarMessage(`Guess must be ${targetWord.length} letters.`);
+                setSnackbarMessage(
+                    `Guess must be ${targetWord.length} letters.`,
+                );
                 setSnackbarOpen(true);
                 setShake(true);
                 setTimeout(() => setShake(false), 400);
@@ -262,60 +271,64 @@ export default function ScoredleGame() {
                 anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
             >
                 <MuiAlert
-                  onClose={() => setSnackbarOpen(false)}
-                  severity="error"
-                  variant="filled"
-                  elevation={6}
-                  sx={{ width: '100%', backgroundColor: '#000', color: '#fff' }}
+                    onClose={() => setSnackbarOpen(false)}
+                    severity='error'
+                    variant='filled'
+                    elevation={6}
+                    sx={{
+                        width: '100%',
+                        backgroundColor: '#000',
+                        color: '#fff',
+                    }}
                 >
-                  {snackbarMessage}
+                    {snackbarMessage}
                 </MuiAlert>
             </Snackbar>
             <Snackbar
-              open={strikeoutOpen}
-              autoHideDuration={3000}
-              onClose={() => setStrikeoutOpen(false)}
-              anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-            >
-              <MuiAlert
+                open={strikeoutOpen}
+                autoHideDuration={3000}
                 onClose={() => setStrikeoutOpen(false)}
-                variant="filled"
-                elevation={6}
-                icon={false}
-                sx={{
-                  width: '100%',
-                  backgroundColor: '#000',
-                  color: '#f44336',
-                  fontWeight: 'bold',
-                  fontSize: '1.2rem',
-                  justifyContent: 'center',
-                }}
-              >
-                STRIKEOUT
-              </MuiAlert>
+                anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+            >
+                <MuiAlert
+                    onClose={() => setStrikeoutOpen(false)}
+                    variant='filled'
+                    elevation={6}
+                    icon={false}
+                    sx={{
+                        width: '100%',
+                        backgroundColor: '#000',
+                        color: '#f44336',
+                        fontWeight: 'bold',
+                        fontSize: '1.2rem',
+                        justifyContent: 'center',
+                    }}
+                >
+                    STRIKEOUT
+                </MuiAlert>
             </Snackbar>
             <Snackbar
-              open={homerunOpen}
-              autoHideDuration={3000}
-              onClose={() => setHomerunOpen(false)}
-              anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-            >
-              <MuiAlert
+                open={homerunOpen}
+                autoHideDuration={3000}
                 onClose={() => setHomerunOpen(false)}
-                variant="filled"
-                elevation={6}
-                icon={false}
-                sx={{
-                  width: '100%',
-                  backgroundColor: '#388e3c',
-                  color: '#fff',
-                  fontWeight: 'bold',
-                  fontSize: '1.2rem',
-                  justifyContent: 'center',
-                }}
-              >
-                HOMERUN
-              </MuiAlert>
+                anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+            >
+                <MuiAlert
+                    onClose={() => setHomerunOpen(false)}
+                    variant='filled'
+                    elevation={6}
+                    icon={false}
+                    sx={{
+                        width: '100%',
+                        backgroundColor: '#388e3c',
+                        color: '#fff',
+                        fontWeight: 'bold',
+                        fontSize: '1.2rem',
+                        justifyContent: 'center',
+                    }}
+                >
+                    HOMERUN
+                </MuiAlert>
             </Snackbar>
         </div>
     );

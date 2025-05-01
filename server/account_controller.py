@@ -8,6 +8,8 @@ account_bp = Blueprint('account', __name__)
 @account_bp.route('/api/register', methods=['POST'])
 def register():
     data = request.get_json()
+    firstName = data.get('firstName')
+    lastName = data.get('lastName')
     email = data.get('email')
     password = data.get('password')
     role = data.get('role', 'user') 
@@ -23,7 +25,7 @@ def register():
         return jsonify({"error": "Email already exists"}), 400
 
     hashed_password = generate_password_hash(password)
-    cursor.execute("INSERT INTO users (email, password, role) VALUES (%s, %s, %s)", (email, hashed_password, role))
+    cursor.execute("INSERT INTO users (email, password, role, nameFirst, nameLast) VALUES (%s, %s, %s, %s, %s)", (email, hashed_password, role, firstName, lastName))
     conn.commit()
     conn.close()
     return jsonify({"message": "User registered successfully"}), 201
