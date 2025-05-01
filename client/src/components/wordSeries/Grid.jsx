@@ -40,7 +40,7 @@ export default function Grid({
                     <button
                         key={player.id}
                         className={cellClass}
-                        onClick{() => onPlayerClick(player)}
+                        onClick={() => onPlayerClick(player)}
                         disabled={isInDiscoveredGroup}
                     >
                         {player.name}
