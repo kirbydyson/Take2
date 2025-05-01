@@ -3,6 +3,9 @@ import React from 'react';
 export default function Grid({ guesses, currentGuess, targetWord }) {
     const totalRows = 6;
     const wordLength = targetWord.length;
+export default function Grid({ guesses, currentGuess, targetWord, shake, gameOver, didWin }) {
+  const totalRows = 6;
+  const wordLength = targetWord.length;
 
     const buildRow = (letters, evaluated = false) => {
         return (
@@ -10,6 +13,12 @@ export default function Grid({ guesses, currentGuess, targetWord }) {
                 {Array.from({ length: wordLength }).map((_, i) => {
                     let value = letters[i] || '';
                     let classNames = 'grid-cell';
+  const buildRow = (letters, evaluated = false, isCurrent = false, shouldShake = false) => {
+    return (
+      <div className={`grid-row ${isCurrent && shake ? 'shake' : ''}`}>
+        {Array.from({ length: wordLength }).map((_, i) => {
+          let value = letters[i] || '';
+          let classNames = 'grid-cell';
 
                     if (evaluated && value) {
                         if (
@@ -42,10 +51,22 @@ export default function Grid({ guesses, currentGuess, targetWord }) {
     guesses.forEach((guess) => {
         rows.push(buildRow(guess.split(''), true));
     });
+  let displayGuesses = [...guesses];
+
+  if (gameOver && !didWin && guesses.length === totalRows) {
+    displayGuesses[totalRows - 1] = targetWord;
+  }
+
+  displayGuesses.forEach((guess) => {
+    rows.push(buildRow(guess.split(''), true));
+  });
 
     if (currentGuess && guesses.length < totalRows) {
         rows.push(buildRow(currentGuess.split(''), false));
     }
+  if (currentGuess && guesses.length < totalRows) {
+    rows.push(buildRow(currentGuess.split(''), false, true, shake));
+  }
 
     while (rows.length < totalRows) {
         rows.push(buildRow([], false));
