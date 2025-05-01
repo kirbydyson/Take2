@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Grid from './Grid';
 import Keyboard from './Keyboard';
 import InstructionsModal from './InstructionsModal';
-import { validateGuess } from './utils';
 import { useRouter } from 'next/router';
 import IconButton from '@mui/material/IconButton';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
@@ -22,7 +21,7 @@ export default function ScoredleGame() {
 
     const validateSession = async () => {
         try {
-            const res = await fetch('http://localhost:8080/auth/session')
+            const res = await fetch('http://localhost:8080/auth/session', {credentials: 'include'})
             const data = await res.json();
             if (res.ok) {
                 if (!data.email) {
@@ -31,7 +30,7 @@ export default function ScoredleGame() {
                     router.push('/login');
                     return;
                 } else {
-                    setUser(data.user);
+                    setUser(data.email);
                 }
             } else {
                 console.error('Session is invalid:', data);
@@ -44,7 +43,7 @@ export default function ScoredleGame() {
 
     const fetchNewWord = async () => {
         try {
-            const res = await fetch('http://localhost:8080/api/scoredle/random-name');
+            const res = await fetch('http://localhost:8080/api/scoredle/random-name', {credentials: 'include'});
             const data = await res.json();
             if (res.ok) {
                 setTargetWord(data.randomName.toLowerCase());
@@ -64,7 +63,9 @@ export default function ScoredleGame() {
     }, []);
 
     useEffect(() => {
-        fetchNewWord();
+        if (!targetWord) {
+            fetchNewWord();
+        }
     }, user);
 
     useEffect(() => {
@@ -107,6 +108,7 @@ export default function ScoredleGame() {
     }, [gameOver, user]);
 
     const handleKeyPress = async (key) => {
+        console.log('targetWord:', targetWord);
         if (gameOver || targetWord.length === 0) return;
 
         if (key === 'Enter') {

@@ -9,7 +9,11 @@ import os
 app = Flask(__name__)
 load_dotenv()
 app.secret_key = os.environ.get('FLASK_SECRET_KEY')
-CORS(app)
+CORS(app, supports_credentials=True, origins=["http://localhost:3000"])
+app.config.update({
+    'SESSION_COOKIE_SAMESITE': 'Lax',
+    'SESSION_COOKIE_SECURE': False
+})
 
 # Register blueprint
 app.register_blueprint(account_bp)
