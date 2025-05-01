@@ -8,6 +8,8 @@ import IconButton from '@mui/material/IconButton';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import Button from '@mui/material/Button';
 import ReplayIcon from '@mui/icons-material/Replay';
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
 import '../../styles/Scoredle.css';
 
 export default function ScoredleGame() {
@@ -17,6 +19,12 @@ export default function ScoredleGame() {
     const [gameOver, setGameOver] = useState(false);
     const [showModal, setShowModal] = useState(false);
     const [user, setUser] = useState(null);
+    const [snackbarOpen, setSnackbarOpen] = useState(false);
+    const [snackbarMessage, setSnackbarMessage] = useState('');
+    const [shake, setShake] = useState(false);
+    const [strikeoutOpen, setStrikeoutOpen] = useState(false);
+    const [homerunOpen, setHomerunOpen] = useState(false);
+    const [showAnswer, setShowAnswer] = useState(false);
     const maxGuesses = 6;
     const router = useRouter();
 
@@ -111,7 +119,10 @@ export default function ScoredleGame() {
 
         if (key === 'Enter') {
             if (currentGuess.length !== targetWord.length) {
-                alert(`Guess must be ${targetWord.length} letters.`);
+                setSnackbarMessage(`Guess must be ${targetWord.length} letters.`);
+                setSnackbarOpen(true);
+                setShake(true);
+                setTimeout(() => setShake(false), 400);
                 return;
             }
 
@@ -121,7 +132,8 @@ export default function ScoredleGame() {
                 /^[a-zA-Z]{5}$/.test(currentGuess);
 
             if (!isWordValid) {
-                alert('Invalid word. Try again!');
+                setSnackbarMessage('Invalid word. Try again!');
+                setSnackbarOpen(true);
                 setCurrentGuess('');
                 return;
             }
@@ -131,11 +143,12 @@ export default function ScoredleGame() {
             setCurrentGuess('');
 
             if (currentGuess.toLowerCase() === targetWord.toLowerCase()) {
-                alert('You Win!');
                 setGameOver(true);
+                setHomerunOpen(true);
             } else if (newGuesses.length >= maxGuesses) {
-                alert(`Game Over! The word was "${targetWord.toUpperCase()}"`);
+                setStrikeoutOpen(true);
                 setGameOver(true);
+                setShowAnswer(true);
             }
         } else if (key === 'Backspace') {
             setCurrentGuess(currentGuess.slice(0, -1));
@@ -202,6 +215,9 @@ export default function ScoredleGame() {
                 guesses={guesses}
                 currentGuess={currentGuess}
                 targetWord={targetWord}
+                shake={shake}
+                gameOver={gameOver}
+                didWin={homerunOpen}
             />
 
             <Keyboard onKeyPress={handleKeyPress} keyStatuses={keyStatuses} />
@@ -238,6 +254,69 @@ export default function ScoredleGame() {
                 open={showModal}
                 onClose={() => setShowModal(false)}
             />
+
+            <Snackbar
+                open={snackbarOpen}
+                autoHideDuration={3000}
+                onClose={() => setSnackbarOpen(false)}
+                anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+            >
+                <MuiAlert
+                  onClose={() => setSnackbarOpen(false)}
+                  severity="error"
+                  variant="filled"
+                  elevation={6}
+                  sx={{ width: '100%', backgroundColor: '#000', color: '#fff' }}
+                >
+                  {snackbarMessage}
+                </MuiAlert>
+            </Snackbar>
+            <Snackbar
+              open={strikeoutOpen}
+              autoHideDuration={3000}
+              onClose={() => setStrikeoutOpen(false)}
+              anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+            >
+              <MuiAlert
+                onClose={() => setStrikeoutOpen(false)}
+                variant="filled"
+                elevation={6}
+                icon={false}
+                sx={{
+                  width: '100%',
+                  backgroundColor: '#000',
+                  color: '#f44336',
+                  fontWeight: 'bold',
+                  fontSize: '1.2rem',
+                  justifyContent: 'center',
+                }}
+              >
+                STRIKEOUT
+              </MuiAlert>
+            </Snackbar>
+            <Snackbar
+              open={homerunOpen}
+              autoHideDuration={3000}
+              onClose={() => setHomerunOpen(false)}
+              anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+            >
+              <MuiAlert
+                onClose={() => setHomerunOpen(false)}
+                variant="filled"
+                elevation={6}
+                icon={false}
+                sx={{
+                  width: '100%',
+                  backgroundColor: '#388e3c',
+                  color: '#fff',
+                  fontWeight: 'bold',
+                  fontSize: '1.2rem',
+                  justifyContent: 'center',
+                }}
+              >
+                HOMERUN
+              </MuiAlert>
+            </Snackbar>
         </div>
     );
 }
