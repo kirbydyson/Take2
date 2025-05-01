@@ -73,7 +73,7 @@ export default function ScoredleGame() {
 
     useEffect(() => {
         validateSession();
-    }, []);
+    }, user);
 
     useEffect(() => {
         if (!targetWord) {
