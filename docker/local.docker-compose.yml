@@ -13,6 +13,7 @@ services:
     volumes:
       - mariadb_data:/var/lib/mysql
       - ./baseball.sql:/docker-entrypoint-initdb.d/init.sql:ro
+      - ./take2init.sql:/docker-entrypoint-initdb.d/take2init.sql:ro
     networks:
       - take2-net
 
