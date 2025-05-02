@@ -2,9 +2,48 @@
 
 import styles from '@/app/page.module.css';
 import Button from '@mui/material/Button';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 
 export default function VideoBackground() {
+    const [user, setUser] = useState(null);
+    const router = useRouter();
+
+    const validateSession = async () => {
+        try {
+            const res = await fetch('http://localhost:8080/auth/session', {
+                credentials: 'include',
+            });
+            const data = await res.json();
+            if (res.ok) {
+                if (!data.email) {
+                    setUser(null);
+                    return;
+                } else {
+                    console.log('Session data:', data);
+                    setUser(data.email);
+                }
+            } else {
+                setUser(null);
+            }
+        } catch (err) {
+            console.log('Error validating session:', err);
+        }
+    };
+
+    useEffect(() => {
+        validateSession();
+    }, []);
+
+    const handlePlayBallClick = () => {
+        if (user) {
+            router.push('/catalogue');
+        } else {
+            router.push('/login');
+        }
+    };
+
     return (
         <div className={styles.videoContainer}>
             <video
@@ -25,10 +64,10 @@ export default function VideoBackground() {
                 </p>
 
                 <Button
-                    variant="contained"
-                    color="primary"
-                    size="large"
-                    href="/catalogue"
+                    variant='contained'
+                    color='primary'
+                    size='large' 
+                    onClick={handlePlayBallClick}
                     sx={{
                         backgroundColor: '#cd0001',
                         color: 'white',

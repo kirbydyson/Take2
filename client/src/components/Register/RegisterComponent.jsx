@@ -86,7 +86,7 @@ export default function RegisterComponent() {
                 throw new Error(errorMessage);
             }
 
-            router.push(`/register-successful?email=${encodeURIComponent(email)}`);
+            router.push(`/register-success?email=${encodeURIComponent(email)}`);
         } catch (error) {
             console.error('Registration failed:', error.message);
             setErrorMessage(error.message);
