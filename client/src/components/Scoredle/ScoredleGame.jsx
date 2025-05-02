@@ -54,7 +54,7 @@ export default function ScoredleGame() {
     const fetchNewWord = async () => {
         try {
             const res = await fetch(
-                'http://localhost:8080/api/scoredle/random-name',
+                'http://localhost:8080/api/scoredle/get-word',
                 { credentials: 'include' },
             );
             const data = await res.json();

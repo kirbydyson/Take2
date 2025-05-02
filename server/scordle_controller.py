@@ -4,23 +4,44 @@ import random
 
 scoredle_bp = Blueprint('scoredle', __name__)
 
-@scoredle_bp.route('/api/scoredle/random-name', methods=['GET'])
-def get_random_5char_lastname():
+@scoredle_bp.route('/api/scoredle/get-word', methods=['GET'])
+def get_random_5char_name():
     if session.get('email') is None:
         return jsonify({"error": "Unauthorized"}), 401
+
     conn = get_connection()
-    cursor = conn.cursor()
-    cursor.execute("SELECT DISTINCT nameLast FROM people WHERE CHAR_LENGTH(nameLast) = 5")
-    results = cursor.fetchall()
+    cursor = conn.cursor(dictionary=True)
+
+    # Fetch queries
+    query_names = [
+        'DistinctFirstNames5CharLimit',
+        'DistinctLastNames5CharLimit',
+        'DistinctBaseballTerms5CharLimit'
+    ]
+
+    word_pool = []
+
+    for query_name in query_names:
+        cursor.execute("SELECT query FROM queries WHERE name = %s", (query_name,))
+        row = cursor.fetchone()
+        if row:
+            try:
+                cursor.execute(row['query'])
+                results = cursor.fetchall()
+                for r in results:
+                    word_pool.extend(r.values())
+            except Exception as e:
+                print(f"Error executing query {query_name}: {e}")
+
+    cursor.close()
     conn.close()
 
-    names = [row[0] for row in results]
-    
-    if not names:
-        return jsonify({"error": "No 5-character last names found"}), 404
+    if not word_pool:
+        return jsonify({"error": "No words found from queries"}), 404
 
-    selected_name = random.choice(names)
+    selected_name = random.choice(word_pool)
     return jsonify({"randomName": selected_name})
+
 
 @scoredle_bp.route('/api/scoredle/save-game', methods=['POST'])
 def save_scoredle_game():
