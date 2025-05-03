@@ -13,8 +13,11 @@
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^7.0.2",
     "@mui/material": "^7.0.2",
+    "@mui/x-charts": "^8.2.0",
+    "install": "^0.13.0",
     "mysql2": "^3.14.1",
     "next": "15.2.4",
+    "npm": "^11.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-password-strength-bar": "^0.4.1"

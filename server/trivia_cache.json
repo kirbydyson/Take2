@@ -7875,5 +7875,22 @@
         "nameLast": "Rose"
       }
     ]
+  },
+  "Who won the World Series in 2019?": {
+    "question": "Who won the World Series in 2019?",
+    "result": [
+      {
+        "team_name": "Washington Nationals"
+      }
+    ]
+  },
+  "Who was the first player to pitch a perfect game in Major League Baseball history?": {
+    "question": "Who was the first player to pitch a perfect game in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Bobby",
+        "nameLast": "Mathews"
+      }
+    ]
   }
 }
