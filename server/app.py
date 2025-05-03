@@ -4,6 +4,7 @@ from flask_cors import CORS
 from account_controller import account_bp
 from scordle_controller import scoredle_bp
 from trivia_controller import trivia_bp
+from wordseries_controller import wordseries_bp
 from dotenv import load_dotenv
 import os
 
@@ -20,6 +21,7 @@ app.config.update({
 app.register_blueprint(account_bp)
 app.register_blueprint(scoredle_bp)
 app.register_blueprint(trivia_bp)
+app.register_blueprint(wordseries_bp)
 
 @app.route('/health-check', methods=['GET'])
 def test():
