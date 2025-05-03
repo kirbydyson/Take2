@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 import TriviaLoader from './TriviaLoader';
 import { useRouter } from 'next/navigation';
 
-const USE_MOCK_DATA = true;
+const USE_MOCK_DATA = false;
 
 const mockQuestions = [
     {
@@ -39,6 +39,9 @@ export default function TriviaGame() {
     const [selected, setSelected] = useState(null);
     const [correctAnswer, setCorrectAnswer] = useState(null);
     const [user, setUser] = useState(null);
+    const [timer, setTimer] = useState(10);
+    const [correctCount, setCorrectCount] = useState(0);
+    const [gameOver, setGameOver] = useState(false);
     const router = useRouter();
 
     const current =
@@ -126,22 +129,69 @@ export default function TriviaGame() {
             setLoading(true);
             await buildChoices(questions[currentIndex]);
             setSelected(null);
+            setTimer(10);
             setLoading(false);
         };
         if (questions.length > 0) loadChoices();
     }, [questions, currentIndex]);
 
-    const handleChoice = (choice) => setSelected(choice);
-    const nextQuestion = () => setCurrentIndex((prev) => prev + 1);
+    useEffect(() => {
+        if (selected !== null) return;
+
+        const interval = setInterval(() => {
+            setTimer((prev) => {
+                if (prev === 1) {
+                    clearInterval(interval);
+                    setSelected('');
+                    return 0;
+                }
+                return prev - 1;
+            });
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, [currentIndex, selected]);
 
     useEffect(() => {
         if (selected !== null) {
+            if (selected === correctAnswer) {
+                setCorrectCount((prev) => prev + 1);
+            }
+
             const timer = setTimeout(() => {
-                nextQuestion();
+                setCurrentIndex((prev) => prev + 1);
             }, 2500);
             return () => clearTimeout(timer);
         }
     }, [selected]);
+
+    useEffect(() => {
+        console.log('Current index:', currentIndex);
+        console.log('Questions length:', questions.length);
+        console.log('Game over:', gameOver);
+        if (
+            !gameOver &&
+            currentIndex >= questions.length &&
+            questions.length > 0
+        ) {
+            setGameOver(true);
+
+            if (!USE_MOCK_DATA && user) {
+                fetch('http://localhost:8080/api/trivia/save-game', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    credentials: 'include',
+                    body: JSON.stringify({ number_correct: correctCount }),
+                })
+                    .then((res) => {
+                        if (!res.ok) throw new Error('Failed to save game');
+                    })
+                    .catch((err) => console.error('Save failed:', err));
+            }
+        }
+    }, [currentIndex, questions.length, user, correctCount, gameOver]);
+
+    const handleChoice = (choice) => setSelected(choice);
 
     const getRandomMissMessage = () => {
         const messages = [
@@ -164,11 +214,52 @@ export default function TriviaGame() {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
+                    flexDirection: 'column',
                 }}
             >
                 <Typography variant='h4' color='white' textAlign='center'>
-                    Game over! Refresh to play again.
+                    Game over! You got {correctCount} out of 5 correct.
                 </Typography>
+                <Button
+                    variant='contained'
+                    color='primary'
+                    onClick={() => {
+                        setCurrentIndex(0);
+                        setCorrectCount(0);
+                        setGameOver(false);
+                        setLoading(true);
+                        setQuestions([]);
+                        setChoices([]);
+                        setSelected(null);
+                        setCorrectAnswer(null);
+                        setTimer(10);
+
+                        // Re-fetch questions
+                        if (USE_MOCK_DATA) {
+                            setQuestions(mockQuestions);
+                            setLoading(false);
+                        } else {
+                            fetch(
+                                'http://localhost:8080/api/trivia/get-questions',
+                                {
+                                    credentials: 'include',
+                                },
+                            )
+                                .then((res) => res.json())
+                                .then((data) => {
+                                    setQuestions(data.questions);
+                                    setLoading(false);
+                                })
+                                .catch((err) => {
+                                    console.error(err);
+                                    router.push('/login');
+                                });
+                        }
+                    }}
+                    sx={{ mt: 2 }}
+                >
+                    Play Again?
+                </Button>
             </Box>
         );
     }
@@ -196,6 +287,13 @@ export default function TriviaGame() {
                     textAlign: 'center',
                 }}
             >
+                <Typography
+                    variant='subtitle1'
+                    sx={{ mb: 2, color: timer <= 3 ? 'red' : 'gray' }}
+                >
+                    ⏱️ Time left: {timer} seconds
+                </Typography>
+
                 <Typography variant='h5' sx={{ mb: 3, fontWeight: 'bold' }}>
                     {current.question}
                 </Typography>
@@ -256,7 +354,7 @@ export default function TriviaGame() {
 
                 {selected && (
                     <Button
-                        onClick={nextQuestion}
+                        onClick={() => setCurrentIndex((prev) => prev + 1)}
                         variant='contained'
                         color='primary'
                         sx={{ mt: 2 }}

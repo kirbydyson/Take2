@@ -2330,5 +2330,5550 @@
         "nameLast": "Rose"
       }
     ]
+  },
+  "What is the name of the player who holds the record for most career home runs in Major League Baseball?": {
+    "question": "What is the name of the player who holds the record for most career home runs in Major League Baseball?",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      }
+    ]
+  },
+  "Who was the first player to be inducted into the Baseball Hall of Fame?": {
+    "question": "Who was the first player to be inducted into the Baseball Hall of Fame?",
+    "result": [
+      {
+        "nameFirst": "Ty",
+        "nameLast": "Cobb"
+      }
+    ]
+  },
+  "Who is the youngest player to ever be inducted into the Baseball Hall of Fame?": {
+    "question": "Who is the youngest player to ever be inducted into the Baseball Hall of Fame?",
+    "result": [
+      {
+        "nameFirst": "Alex",
+        "nameLast": "Pompez"
+      }
+    ]
+  },
+  "What team won the World Series in 2009?": {
+    "question": "What team won the World Series in 2009?",
+    "result": [
+      {
+        "team_name": "New York Yankees"
+      }
+    ]
+  },
+  "Who was the first player to hit 70 home runs in a single season?": {
+    "question": "Who was the first player to hit 70 home runs in a single season?",
+    "result": [
+      {
+        "nameFirst": "Mark",
+        "nameLast": "McGwire"
+      }
+    ]
+  },
+  "Who was the first player to win the Triple Crown in Major League Baseball history?": {
+    "question": "Who was the first player to win the Triple Crown in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Paul",
+        "nameLast": "Hines"
+      }
+    ]
+  },
+  "Which player holds the career record for most home runs in Major League Baseball history?": {
+    "question": "Which player holds the career record for most home runs in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      }
+    ]
+  },
+  "Who was the first player to hit 60 home runs in a season in Major League Baseball history?": {
+    "question": "Who was the first player to hit 60 home runs in a season in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Babe",
+        "nameLast": "Ruth"
+      }
+    ]
+  },
+  "Who is the all-time career leader in home runs in Major League Baseball history?": {
+    "question": "Who is the all-time career leader in home runs in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      }
+    ]
+  },
+  "Who was the first player to win the Cy Young Award in MLB history?": {
+    "question": "Who was the first player to win the Cy Young Award in MLB history?",
+    "result": [
+      {
+        "nameFirst": "Don",
+        "nameLast": "Newcombe"
+      }
+    ]
+  },
+  "What team won the World Series in 2004?": {
+    "question": "What team won the World Series in 2004?",
+    "result": [
+      {
+        "team_name": "Boston Red Sox"
+      }
+    ]
+  },
+  "What team won the 2021 World Series?": {
+    "question": "What team won the 2021 World Series?",
+    "result": [
+      {
+        "team_name": "Atlanta Braves"
+      }
+    ]
+  },
+  "What player hit the most home runs in a single season in MLB history?": {
+    "question": "What player hit the most home runs in a single season in MLB history?",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      }
+    ]
+  },
+  "Which team won the first World Series in Major League Baseball history in 1903?": {
+    "question": "Which team won the first World Series in Major League Baseball history in 1903?",
+    "result": [
+      {
+        "team_name": "Boston Americans"
+      }
+    ]
+  },
+  "Which pitcher holds the record for most career strikeouts in Major League Baseball history?": {
+    "question": "Which pitcher holds the record for most career strikeouts in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Nolan",
+        "nameLast": "Ryan"
+      }
+    ]
+  },
+  "Which player has hit the most career home runs in Major League Baseball history?": {
+    "question": "Which player has hit the most career home runs in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      }
+    ]
+  },
+  "Which team won the 2021 World Series?": {
+    "question": "Which team won the 2021 World Series?",
+    "result": [
+      {
+        "team_name": "Atlanta Braves"
+      }
+    ]
+  },
+  "Who was the first player to win the MLB Triple Crown?": {
+    "question": "Who was the first player to win the MLB Triple Crown?",
+    "result": [
+      {
+        "nameFirst": "Garret",
+        "nameLast": "Anderson"
+      },
+      {
+        "nameFirst": "Larry",
+        "nameLast": "Barnes"
+      },
+      {
+        "nameFirst": "Toby",
+        "nameLast": "Borland"
+      },
+      {
+        "nameFirst": "Jamie",
+        "nameLast": "Burke"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Cooper"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "DaVanon"
+      },
+      {
+        "nameFirst": "David",
+        "nameLast": "Eckstein"
+      },
+      {
+        "nameFirst": "Darin",
+        "nameLast": "Erstad"
+      },
+      {
+        "nameFirst": "Jorge",
+        "nameLast": "Fabregas"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Fernandez"
+      },
+      {
+        "nameFirst": "Benji",
+        "nameLast": "Gil"
+      },
+      {
+        "nameFirst": "Troy",
+        "nameLast": "Glaus"
+      },
+      {
+        "nameFirst": "Steve",
+        "nameLast": "Green"
+      },
+      {
+        "nameFirst": "Shigetoshi",
+        "nameLast": "Hasegawa"
+      },
+      {
+        "nameFirst": "Glenallen",
+        "nameLast": "Hill"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Holtz"
+      },
+      {
+        "nameFirst": "Wally",
+        "nameLast": "Joyner"
+      },
+      {
+        "nameFirst": "Adam",
+        "nameLast": "Kennedy"
+      },
+      {
+        "nameFirst": "Al",
+        "nameLast": "Levine"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Lukasiewicz"
+      },
+      {
+        "nameFirst": "Bart",
+        "nameLast": "Miadich"
+      },
+      {
+        "nameFirst": "Bengie",
+        "nameLast": "Molina"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Molina"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Nieves"
+      },
+      {
+        "nameFirst": "Ramon",
+        "nameLast": "Ortiz"
+      },
+      {
+        "nameFirst": "Orlando",
+        "nameLast": "Palmeiro"
+      },
+      {
+        "nameFirst": "Troy",
+        "nameLast": "Percival"
+      },
+      {
+        "nameFirst": "Lou",
+        "nameLast": "Pote"
+      },
+      {
+        "nameFirst": "Pat",
+        "nameLast": "Rapp"
+      },
+      {
+        "nameFirst": "Tim",
+        "nameLast": "Salmon"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Schoeneweis"
+      },
+      {
+        "nameFirst": "Scot",
+        "nameLast": "Shields"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Spiezio"
+      },
+      {
+        "nameFirst": "Ismael",
+        "nameLast": "Valdez"
+      },
+      {
+        "nameFirst": "Jarrod",
+        "nameLast": "Washburn"
+      },
+      {
+        "nameFirst": "Ben",
+        "nameLast": "Weber"
+      },
+      {
+        "nameFirst": "Matt",
+        "nameLast": "Wise"
+      },
+      {
+        "nameFirst": "Shawn",
+        "nameLast": "Wooten"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Anderson"
+      },
+      {
+        "nameFirst": "Rod",
+        "nameLast": "Barajas"
+      },
+      {
+        "nameFirst": "Miguel",
+        "nameLast": "Batista"
+      },
+      {
+        "nameFirst": "Danny",
+        "nameLast": "Bautista"
+      },
+      {
+        "nameFirst": "Jay",
+        "nameLast": "Bell"
+      },
+      {
+        "nameFirst": "Nick",
+        "nameLast": "Bierbrodt"
+      },
+      {
+        "nameFirst": "Troy",
+        "nameLast": "Brohawn"
+      },
+      {
+        "nameFirst": "Ryan",
+        "nameLast": "Christenson"
+      },
+      {
+        "nameFirst": "Alex",
+        "nameLast": "Cintron"
+      },
+      {
+        "nameFirst": "Greg",
+        "nameLast": "Colbrunn"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Conti"
+      },
+      {
+        "nameFirst": "Craig",
+        "nameLast": "Counsell"
+      },
+      {
+        "nameFirst": "Midre",
+        "nameLast": "Cummings"
+      },
+      {
+        "nameFirst": "Jack",
+        "nameLast": "Cust"
+      },
+      {
+        "nameFirst": "David",
+        "nameLast": "Dellucci"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Difelice"
+      },
+      {
+        "nameFirst": "Erubiel",
+        "nameLast": "Durazo"
+      },
+      {
+        "nameFirst": "Robert",
+        "nameLast": "Ellis"
+      },
+      {
+        "nameFirst": "Steve",
+        "nameLast": "Finley"
+      },
+      {
+        "nameFirst": "Luis",
+        "nameLast": "Gonzalez"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Grace"
+      },
+      {
+        "nameFirst": "Geraldo",
+        "nameLast": "Guzman"
+      },
+      {
+        "nameFirst": "Ken",
+        "nameLast": "Huckaby"
+      },
+      {
+        "nameFirst": "Randy",
+        "nameLast": "Johnson"
+      },
+      {
+        "nameFirst": "Byung-Hyun",
+        "nameLast": "Kim"
+      },
+      {
+        "nameFirst": "Eric",
+        "nameLast": "Knott"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Koplove"
+      },
+      {
+        "nameFirst": "Albie",
+        "nameLast": "Lopez"
+      },
+      {
+        "nameFirst": "Matt",
+        "nameLast": "Mantei"
+      },
+      {
+        "nameFirst": "Damian",
+        "nameLast": "Miller"
+      },
+      {
+        "nameFirst": "Chad",
+        "nameLast": "Moeller"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Mohler"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Morgan"
+      },
+      {
+        "nameFirst": "Lyle",
+        "nameLast": "Overbay"
+      },
+      {
+        "nameFirst": "Bret",
+        "nameLast": "Prinz"
+      },
+      {
+        "nameFirst": "Armando",
+        "nameLast": "Reynoso"
+      },
+      {
+        "nameFirst": "Rob",
+        "nameLast": "Ryan"
+      },
+      {
+        "nameFirst": "Erik",
+        "nameLast": "Sabel"
+      },
+      {
+        "nameFirst": "Reggie",
+        "nameLast": "Sanders"
+      },
+      {
+        "nameFirst": "Curt",
+        "nameLast": "Schilling"
+      },
+      {
+        "nameFirst": "Juan",
+        "nameLast": "Sosa"
+      },
+      {
+        "nameFirst": "Junior",
+        "nameLast": "Spivey"
+      },
+      {
+        "nameFirst": "Russ",
+        "nameLast": "Springer"
+      },
+      {
+        "nameFirst": "Greg",
+        "nameLast": "Swindell"
+      },
+      {
+        "nameFirst": "Matt",
+        "nameLast": "Williams"
+      },
+      {
+        "nameFirst": "Bobby",
+        "nameLast": "Witt"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Womack"
+      },
+      {
+        "nameFirst": "Kurt",
+        "nameLast": "Abbott"
+      },
+      {
+        "nameFirst": "Cory",
+        "nameLast": "Aldridge"
+      },
+      {
+        "nameFirst": "Paul",
+        "nameLast": "Bako"
+      },
+      {
+        "nameFirst": "Wilson",
+        "nameLast": "Betemit"
+      },
+      {
+        "nameFirst": "Rico",
+        "nameLast": "Brogna"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Burkett"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Cabrera"
+      },
+      {
+        "nameFirst": "Ken",
+        "nameLast": "Caminiti"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "DeRosa"
+      },
+      {
+        "nameFirst": "Julio",
+        "nameLast": "Franco"
+      },
+      {
+        "nameFirst": "Rafael",
+        "nameLast": "Furcal"
+      },
+      {
+        "nameFirst": "Jesse",
+        "nameLast": "Garcia"
+      },
+      {
+        "nameFirst": "Marcus",
+        "nameLast": "Giles"
+      },
+      {
+        "nameFirst": "Bernard",
+        "nameLast": "Gilkey"
+      },
+      {
+        "nameFirst": "Tom",
+        "nameLast": "Glavine"
+      },
+      {
+        "nameFirst": "Wes",
+        "nameLast": "Helms"
+      },
+      {
+        "nameFirst": "Andruw",
+        "nameLast": "Jones"
+      },
+      {
+        "nameFirst": "Chipper",
+        "nameLast": "Jones"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Jordan"
+      },
+      {
+        "nameFirst": "Steve",
+        "nameLast": "Karsay"
+      },
+      {
+        "nameFirst": "Kerry",
+        "nameLast": "Ligtenberg"
+      },
+      {
+        "nameFirst": "Keith",
+        "nameLast": "Lockhart"
+      },
+      {
+        "nameFirst": "Javy",
+        "nameLast": "Lopez"
+      },
+      {
+        "nameFirst": "Greg",
+        "nameLast": "Maddux"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Marquis"
+      },
+      {
+        "nameFirst": "Dave",
+        "nameLast": "Martinez"
+      },
+      {
+        "nameFirst": "Kevin",
+        "nameLast": "Millwood"
+      },
+      {
+        "nameFirst": "Trey",
+        "nameLast": "Moore"
+      },
+      {
+        "nameFirst": "Damian",
+        "nameLast": "Moss"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Nelson"
+      },
+      {
+        "nameFirst": "Eddie",
+        "nameLast": "Perez"
+      },
+      {
+        "nameFirst": "Odalis",
+        "nameLast": "Perez"
+      },
+      {
+        "nameFirst": "Steve",
+        "nameLast": "Reed"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Remlinger"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Rocker"
+      },
+      {
+        "nameFirst": "Rey",
+        "nameLast": "Sanchez"
+      },
+      {
+        "nameFirst": "Rudy",
+        "nameLast": "Seanez"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Seelbach"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Slusarski"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Smoltz"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Sobkowiak"
+      },
+      {
+        "nameFirst": "Tim",
+        "nameLast": "Spooneybarger"
+      },
+      {
+        "nameFirst": "B. J.",
+        "nameLast": "Surhoff"
+      },
+      {
+        "nameFirst": "Steve",
+        "nameLast": "Torrealba"
+      },
+      {
+        "nameFirst": "Marc",
+        "nameLast": "Valdes"
+      },
+      {
+        "nameFirst": "Quilvio",
+        "nameLast": "Veras"
+      },
+      {
+        "nameFirst": "Matt",
+        "nameLast": "Whiteside"
+      },
+      {
+        "nameFirst": "Brady",
+        "nameLast": "Anderson"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Bale"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Batista"
+      },
+      {
+        "nameFirst": "Rick",
+        "nameLast": "Bauer"
+      },
+      {
+        "nameFirst": "Larry",
+        "nameLast": "Bigbie"
+      },
+      {
+        "nameFirst": "Casey",
+        "nameLast": "Blake"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Bordick"
+      },
+      {
+        "nameFirst": "Leslie",
+        "nameLast": "Brea"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Conine"
+      },
+      {
+        "nameFirst": "Delino",
+        "nameLast": "DeShields"
+      },
+      {
+        "nameFirst": "Sean",
+        "nameLast": "Douglass"
+      },
+      {
+        "nameFirst": "Brook",
+        "nameLast": "Fordyce"
+      },
+      {
+        "nameFirst": "Kris",
+        "nameLast": "Foster"
+      },
+      {
+        "nameFirst": "Jay",
+        "nameLast": "Gibbons"
+      },
+      {
+        "nameFirst": "Geronimo",
+        "nameLast": "Gil"
+      },
+      {
+        "nameFirst": "Buddy",
+        "nameLast": "Groom"
+      },
+      {
+        "nameFirst": "Jerry",
+        "nameLast": "Hairston"
+      },
+      {
+        "nameFirst": "Willie",
+        "nameLast": "Harris"
+      },
+      {
+        "nameFirst": "Pat",
+        "nameLast": "Hentgen"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Johnson"
+      },
+      {
+        "nameFirst": "Jorge",
+        "nameLast": "Julio"
+      },
+      {
+        "nameFirst": "Gene",
+        "nameLast": "Kingsale"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Kinkade"
+      },
+      {
+        "nameFirst": "Ryan",
+        "nameLast": "Kohlmeier"
+      },
+      {
+        "nameFirst": "Fernando",
+        "nameLast": "Lunar"
+      },
+      {
+        "nameFirst": "Calvin",
+        "nameLast": "Maduro"
+      },
+      {
+        "nameFirst": "Luis",
+        "nameLast": "Matos"
+      },
+      {
+        "nameFirst": "Chuck",
+        "nameLast": "McElroy"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Mercedes"
+      },
+      {
+        "nameFirst": "Alan",
+        "nameLast": "Mills"
+      },
+      {
+        "nameFirst": "Melvin",
+        "nameLast": "Mora"
+      },
+      {
+        "nameFirst": "Greg",
+        "nameLast": "Myers"
+      },
+      {
+        "nameFirst": "Chad",
+        "nameLast": "Paronto"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Parrish"
+      },
+      {
+        "nameFirst": "Sidney",
+        "nameLast": "Ponson"
+      },
+      {
+        "nameFirst": "Tim",
+        "nameLast": "Raines"
+      },
+      {
+        "nameFirst": "Tim",
+        "nameLast": "Raines"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Richard"
+      },
+      {
+        "nameFirst": "Cal",
+        "nameLast": "Ripken"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Roberts"
+      },
+      {
+        "nameFirst": "Willis",
+        "nameLast": "Roberts"
+      },
+      {
+        "nameFirst": "B. J.",
+        "nameLast": "Ryan"
+      },
+      {
+        "nameFirst": "David",
+        "nameLast": "Segui"
+      },
+      {
+        "nameFirst": "Josh",
+        "nameLast": "Towers"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Trombley"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Wasdin"
+      },
+      {
+        "nameFirst": "Israel",
+        "nameLast": "Alcantara"
+      },
+      {
+        "nameFirst": "Rolando",
+        "nameLast": "Arrojo"
+      },
+      {
+        "nameFirst": "Willie",
+        "nameLast": "Banks"
+      },
+      {
+        "nameFirst": "Rod",
+        "nameLast": "Beck"
+      },
+      {
+        "nameFirst": "Dante",
+        "nameLast": "Bichette"
+      },
+      {
+        "nameFirst": "Morgan",
+        "nameLast": "Burkhart"
+      },
+      {
+        "nameFirst": "Carlos",
+        "nameLast": "Castillo"
+      },
+      {
+        "nameFirst": "Frank",
+        "nameLast": "Castillo"
+      },
+      {
+        "nameFirst": "David",
+        "nameLast": "Cone"
+      },
+      {
+        "nameFirst": "Paxton",
+        "nameLast": "Crawford"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Daubach"
+      },
+      {
+        "nameFirst": "Todd",
+        "nameLast": "Erdos"
+      },
+      {
+        "nameFirst": "Carl",
+        "nameLast": "Everett"
+      },
+      {
+        "nameFirst": "Bryce",
+        "nameLast": "Florie"
+      },
+      {
+        "nameFirst": "Casey",
+        "nameLast": "Fossum"
+      },
+      {
+        "nameFirst": "Rich",
+        "nameLast": "Garces"
+      },
+      {
+        "nameFirst": "Nomar",
+        "nameLast": "Garciaparra"
+      },
+      {
+        "nameFirst": "Craig",
+        "nameLast": "Grebeck"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Hatteberg"
+      },
+      {
+        "nameFirst": "Shea",
+        "nameLast": "Hillenbrand"
+      },
+      {
+        "nameFirst": "Marcus",
+        "nameLast": "Jensen"
+      },
+      {
+        "nameFirst": "Sun-Woo",
+        "nameLast": "Kim"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Lansing"
+      },
+      {
+        "nameFirst": "Darren",
+        "nameLast": "Lewis"
+      },
+      {
+        "nameFirst": "James",
+        "nameLast": "Lofton"
+      },
+      {
+        "nameFirst": "Derek",
+        "nameLast": "Lowe"
+      },
+      {
+        "nameFirst": "Pedro",
+        "nameLast": "Martinez"
+      },
+      {
+        "nameFirst": "Allen",
+        "nameLast": "McDill"
+      },
+      {
+        "nameFirst": "Lou",
+        "nameLast": "Merloni"
+      },
+      {
+        "nameFirst": "Doug",
+        "nameLast": "Mirabelli"
+      },
+      {
+        "nameFirst": "Trot",
+        "nameLast": "Nixon"
+      },
+      {
+        "nameFirst": "Hideo",
+        "nameLast": "Nomo"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Offerman"
+      },
+      {
+        "nameFirst": "Tomo",
+        "nameLast": "Ohka"
+      },
+      {
+        "nameFirst": "Troy",
+        "nameLast": "O'Leary"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Oliver"
+      },
+      {
+        "nameFirst": "Hipolito",
+        "nameLast": "Pichardo"
+      },
+      {
+        "nameFirst": "Calvin",
+        "nameLast": "Pickering"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "Pulsipher"
+      },
+      {
+        "nameFirst": "Manny",
+        "nameLast": "Ramirez"
+      },
+      {
+        "nameFirst": "Bret",
+        "nameLast": "Saberhagen"
+      },
+      {
+        "nameFirst": "Angel",
+        "nameLast": "Santos"
+      },
+      {
+        "nameFirst": "Pete",
+        "nameLast": "Schourek"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Stynes"
+      },
+      {
+        "nameFirst": "Ugueth",
+        "nameLast": "Urbina"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Valentin"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Varitek"
+      },
+      {
+        "nameFirst": "Tim",
+        "nameLast": "Wakefield"
+      },
+      {
+        "nameFirst": "Sandy",
+        "nameLast": "Alomar"
+      },
+      {
+        "nameFirst": "Harold",
+        "nameLast": "Baines"
+      },
+      {
+        "nameFirst": "James",
+        "nameLast": "Baldwin"
+      },
+      {
+        "nameFirst": "Lorenzo",
+        "nameLast": "Barcelo"
+      },
+      {
+        "nameFirst": "Rocky",
+        "nameLast": "Biddle"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Buehrle"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Canseco"
+      },
+      {
+        "nameFirst": "McKay",
+        "nameLast": "Christensen"
+      },
+      {
+        "nameFirst": "Royce",
+        "nameLast": "Clayton"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Crede"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Dalesandro"
+      },
+      {
+        "nameFirst": "Ray",
+        "nameLast": "Durham"
+      },
+      {
+        "nameFirst": "Cal",
+        "nameLast": "Eldred"
+      },
+      {
+        "nameFirst": "Alan",
+        "nameLast": "Embree"
+      },
+      {
+        "nameFirst": "Josh",
+        "nameLast": "Fogg"
+      },
+      {
+        "nameFirst": "Keith",
+        "nameLast": "Foulke"
+      },
+      {
+        "nameFirst": "Jon",
+        "nameLast": "Garland"
+      },
+      {
+        "nameFirst": "Matt",
+        "nameLast": "Ginter"
+      },
+      {
+        "nameFirst": "Gary",
+        "nameLast": "Glover"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Graffanino"
+      },
+      {
+        "nameFirst": "Bob",
+        "nameLast": "Howry"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Johnson"
+      },
+      {
+        "nameFirst": "Paul",
+        "nameLast": "Konerko"
+      },
+      {
+        "nameFirst": "Carlos",
+        "nameLast": "Lee"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Liefer"
+      },
+      {
+        "nameFirst": "Sean",
+        "nameLast": "Lowe"
+      },
+      {
+        "nameFirst": "Magglio",
+        "nameLast": "Ordonez"
+      },
+      {
+        "nameFirst": "Antonio",
+        "nameLast": "Osuna"
+      },
+      {
+        "nameFirst": "Jim",
+        "nameLast": "Parque"
+      },
+      {
+        "nameFirst": "Josh",
+        "nameLast": "Paul"
+      },
+      {
+        "nameFirst": "Herbert",
+        "nameLast": "Perry"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "Pulsipher"
+      },
+      {
+        "nameFirst": "Julio",
+        "nameLast": "Ramirez"
+      },
+      {
+        "nameFirst": "Aaron",
+        "nameLast": "Rowand"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Singleton"
+      },
+      {
+        "nameFirst": "Frank",
+        "nameLast": "Thomas"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Valentin"
+      },
+      {
+        "nameFirst": "Ken",
+        "nameLast": "Vining"
+      },
+      {
+        "nameFirst": "David",
+        "nameLast": "Wells"
+      },
+      {
+        "nameFirst": "Kip",
+        "nameLast": "Wells"
+      },
+      {
+        "nameFirst": "Dan",
+        "nameLast": "Wright"
+      },
+      {
+        "nameFirst": "Kelly",
+        "nameLast": "Wunsch"
+      },
+      {
+        "nameFirst": "Manny",
+        "nameLast": "Aybar"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Bere"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Borowski"
+      },
+      {
+        "nameFirst": "Roosevelt",
+        "nameLast": "Brown"
+      },
+      {
+        "nameFirst": "Damon",
+        "nameLast": "Buford"
+      },
+      {
+        "nameFirst": "Miguel",
+        "nameLast": "Cairo"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Chiasson"
+      },
+      {
+        "nameFirst": "Ron",
+        "nameLast": "Coomer"
+      },
+      {
+        "nameFirst": "Juan",
+        "nameLast": "Cruz"
+      },
+      {
+        "nameFirst": "Delino",
+        "nameLast": "DeShields"
+      },
+      {
+        "nameFirst": "Courtney",
+        "nameLast": "Duncan"
+      },
+      {
+        "nameFirst": "Todd",
+        "nameLast": "Dunwoody"
+      },
+      {
+        "nameFirst": "Kyle",
+        "nameLast": "Farnsworth"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Fassero"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Fyhrie"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Girardi"
+      },
+      {
+        "nameFirst": "Tom",
+        "nameLast": "Gordon"
+      },
+      {
+        "nameFirst": "Ricky",
+        "nameLast": "Gutierrez"
+      },
+      {
+        "nameFirst": "Felix",
+        "nameLast": "Heredia"
+      },
+      {
+        "nameFirst": "Todd",
+        "nameLast": "Hundley"
+      },
+      {
+        "nameFirst": "Jon",
+        "nameLast": "Lieber"
+      },
+      {
+        "nameFirst": "Robert",
+        "nameLast": "Machado"
+      },
+      {
+        "nameFirst": "Ron",
+        "nameLast": "Mahay"
+      },
+      {
+        "nameFirst": "Gary",
+        "nameLast": "Matthews"
+      },
+      {
+        "nameFirst": "Fred",
+        "nameLast": "McGriff"
+      },
+      {
+        "nameFirst": "Chad",
+        "nameLast": "Meyers"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "Mueller"
+      },
+      {
+        "nameFirst": "Will",
+        "nameLast": "Ohman"
+      },
+      {
+        "nameFirst": "Augie",
+        "nameLast": "Ojeda"
+      },
+      {
+        "nameFirst": "Corey",
+        "nameLast": "Patterson"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Smith"
+      },
+      {
+        "nameFirst": "Sammy",
+        "nameLast": "Sosa"
+      },
+      {
+        "nameFirst": "Matt",
+        "nameLast": "Stairs"
+      },
+      {
+        "nameFirst": "Kevin",
+        "nameLast": "Tapani"
+      },
+      {
+        "nameFirst": "Julian",
+        "nameLast": "Tavarez"
+      },
+      {
+        "nameFirst": "Michael",
+        "nameLast": "Tucker"
+      },
+      {
+        "nameFirst": "Todd",
+        "nameLast": "Van Poppel"
+      },
+      {
+        "nameFirst": "David",
+        "nameLast": "Weathers"
+      },
+      {
+        "nameFirst": "Rondell",
+        "nameLast": "White"
+      },
+      {
+        "nameFirst": "Kerry",
+        "nameLast": "Wood"
+      },
+      {
+        "nameFirst": "Eric",
+        "nameLast": "Young"
+      },
+      {
+        "nameFirst": "Carlos",
+        "nameLast": "Zambrano"
+      },
+      {
+        "nameFirst": "Julio",
+        "nameLast": "Zuleta"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Acevedo"
+      },
+      {
+        "nameFirst": "Justin",
+        "nameLast": "Atchley"
+      },
+      {
+        "nameFirst": "Rob",
+        "nameLast": "Bell"
+      },
+      {
+        "nameFirst": "Aaron",
+        "nameLast": "Boone"
+      },
+      {
+        "nameFirst": "Jim",
+        "nameLast": "Brower"
+      },
+      {
+        "nameFirst": "Sean",
+        "nameLast": "Casey"
+      },
+      {
+        "nameFirst": "Juan",
+        "nameLast": "Castro"
+      },
+      {
+        "nameFirst": "Brady",
+        "nameLast": "Clark"
+      },
+      {
+        "nameFirst": "D. T.",
+        "nameLast": "Cromer"
+      },
+      {
+        "nameFirst": "Lance",
+        "nameLast": "Davis"
+      },
+      {
+        "nameFirst": "Elmer",
+        "nameLast": "Dessens"
+      },
+      {
+        "nameFirst": "Adam",
+        "nameLast": "Dunn"
+      },
+      {
+        "nameFirst": "Jared",
+        "nameLast": "Fernandez"
+      },
+      {
+        "nameFirst": "Osvaldo",
+        "nameLast": "Fernandez"
+      },
+      {
+        "nameFirst": "Raul",
+        "nameLast": "Gonzalez"
+      },
+      {
+        "nameFirst": "Danny",
+        "nameLast": "Graves"
+      },
+      {
+        "nameFirst": "Ken",
+        "nameLast": "Griffey"
+      },
+      {
+        "nameFirst": "Wilton",
+        "nameLast": "Guerrero"
+      },
+      {
+        "nameFirst": "Joey",
+        "nameLast": "Hamilton"
+      },
+      {
+        "nameFirst": "Pete",
+        "nameLast": "Harnisch"
+      },
+      {
+        "nameFirst": "Robin",
+        "nameLast": "Jennings"
+      },
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Larkin"
+      },
+      {
+        "nameFirst": "Brandon",
+        "nameLast": "Larson"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "LaRue"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "MacRae"
+      },
+      {
+        "nameFirst": "Hector",
+        "nameLast": "Mercado"
+      },
+      {
+        "nameFirst": "Corky",
+        "nameLast": "Miller"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Nichting"
+      },
+      {
+        "nameFirst": "Alex",
+        "nameLast": "Ochoa"
+      },
+      {
+        "nameFirst": "Calvin",
+        "nameLast": "Pickering"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Piersoll"
+      },
+      {
+        "nameFirst": "Pokey",
+        "nameLast": "Reese"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Reith"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Reitsma"
+      },
+      {
+        "nameFirst": "Dennys",
+        "nameLast": "Reyes"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Riedling"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Rijo"
+      },
+      {
+        "nameFirst": "Ruben",
+        "nameLast": "Rivera"
+      },
+      {
+        "nameFirst": "Frankie",
+        "nameLast": "Rodriguez"
+      },
+      {
+        "nameFirst": "Donnie",
+        "nameLast": "Sadler"
+      },
+      {
+        "nameFirst": "Deion",
+        "nameLast": "Sanders"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "Selby"
+      },
+      {
+        "nameFirst": "Kelly",
+        "nameLast": "Stinnett"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Sullivan"
+      },
+      {
+        "nameFirst": "Michael",
+        "nameLast": "Tucker"
+      },
+      {
+        "nameFirst": "Todd",
+        "nameLast": "Walker"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Williamson"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Winchester"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Wohlers"
+      },
+      {
+        "nameFirst": "Dmitri",
+        "nameLast": "Young"
+      },
+      {
+        "nameFirst": "Roberto",
+        "nameLast": "Alomar"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Bacsik"
+      },
+      {
+        "nameFirst": "Danys",
+        "nameLast": "Baez"
+      },
+      {
+        "nameFirst": "Milton",
+        "nameLast": "Bradley"
+      },
+      {
+        "nameFirst": "Russell",
+        "nameLast": "Branyan"
+      },
+      {
+        "nameFirst": "Dave",
+        "nameLast": "Burba"
+      },
+      {
+        "nameFirst": "Ellis",
+        "nameLast": "Burks"
+      },
+      {
+        "nameFirst": "Jolbert",
+        "nameLast": "Cabrera"
+      },
+      {
+        "nameFirst": "Bartolo",
+        "nameLast": "Colon"
+      },
+      {
+        "nameFirst": "Wil",
+        "nameLast": "Cordero"
+      },
+      {
+        "nameFirst": "Marty",
+        "nameLast": "Cordova"
+      },
+      {
+        "nameFirst": "Jacob",
+        "nameLast": "Cruz"
+      },
+      {
+        "nameFirst": "Einar",
+        "nameLast": "Diaz"
+      },
+      {
+        "nameFirst": "Ryan",
+        "nameLast": "Drese"
+      },
+      {
+        "nameFirst": "Tim",
+        "nameLast": "Drew"
+      },
+      {
+        "nameFirst": "Chuck",
+        "nameLast": "Finley"
+      },
+      {
+        "nameFirst": "Travis",
+        "nameLast": "Fryman"
+      },
+      {
+        "nameFirst": "Karim",
+        "nameLast": "Garcia"
+      },
+      {
+        "nameFirst": "Juan",
+        "nameLast": "Gonzalez"
+      },
+      {
+        "nameFirst": "Dave",
+        "nameLast": "Hollins"
+      },
+      {
+        "nameFirst": "Steve",
+        "nameLast": "Karsay"
+      },
+      {
+        "nameFirst": "Tim",
+        "nameLast": "Laker"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Lewis"
+      },
+      {
+        "nameFirst": "Kenny",
+        "nameLast": "Lofton"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "McDonald"
+      },
+      {
+        "nameFirst": "Charles",
+        "nameLast": "Nagy"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Radinsky"
+      },
+      {
+        "nameFirst": "Steve",
+        "nameLast": "Reed"
+      },
+      {
+        "nameFirst": "Ricardo",
+        "nameLast": "Rincon"
+      },
+      {
+        "nameFirst": "David",
+        "nameLast": "Riske"
+      },
+      {
+        "nameFirst": "Dave",
+        "nameLast": "Roberts"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Rocker"
+      },
+      {
+        "nameFirst": "Rich",
+        "nameLast": "Rodriguez"
+      },
+      {
+        "nameFirst": "CC",
+        "nameLast": "Sabathia"
+      },
+      {
+        "nameFirst": "Paul",
+        "nameLast": "Shuey"
+      },
+      {
+        "nameFirst": "Roy",
+        "nameLast": "Smith"
+      },
+      {
+        "nameFirst": "Justin",
+        "nameLast": "Speier"
+      },
+      {
+        "nameFirst": "Ed",
+        "nameLast": "Taubensee"
+      },
+      {
+        "nameFirst": "Jim",
+        "nameLast": "Thome"
+      },
+      {
+        "nameFirst": "Omar",
+        "nameLast": "Vizquel"
+      },
+      {
+        "nameFirst": "Jake",
+        "nameLast": "Westbrook"
+      },
+      {
+        "nameFirst": "Bob",
+        "nameLast": "Wickman"
+      },
+      {
+        "nameFirst": "Steve",
+        "nameLast": "Woodard"
+      },
+      {
+        "nameFirst": "Jaret",
+        "nameLast": "Wright"
+      },
+      {
+        "nameFirst": "Juan",
+        "nameLast": "Acevedo"
+      },
+      {
+        "nameFirst": "Pedro",
+        "nameLast": "Astacio"
+      },
+      {
+        "nameFirst": "Kimera",
+        "nameLast": "Bartee"
+      },
+      {
+        "nameFirst": "Todd",
+        "nameLast": "Belitz"
+      },
+      {
+        "nameFirst": "Gary",
+        "nameLast": "Bennett"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Bohanon"
+      },
+      {
+        "nameFirst": "Cliff",
+        "nameLast": "Brumbaugh"
+      },
+      {
+        "nameFirst": "Brent",
+        "nameLast": "Butler"
+      },
+      {
+        "nameFirst": "Shawn",
+        "nameLast": "Chacon"
+      },
+      {
+        "nameFirst": "Bobby",
+        "nameLast": "Chouinard"
+      },
+      {
+        "nameFirst": "Tim",
+        "nameLast": "Christman"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Cirillo"
+      },
+      {
+        "nameFirst": "Jacob",
+        "nameLast": "Cruz"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Davenport"
+      },
+      {
+        "nameFirst": "Kane",
+        "nameLast": "Davis"
+      },
+      {
+        "nameFirst": "Craig",
+        "nameLast": "Dingman"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Elarton"
+      },
+      {
+        "nameFirst": "Mario",
+        "nameLast": "Encarnacion"
+      },
+      {
+        "nameFirst": "Horacio",
+        "nameLast": "Estrada"
+      },
+      {
+        "nameFirst": "Sal",
+        "nameLast": "Fasano"
+      },
+      {
+        "nameFirst": "Ron",
+        "nameLast": "Gant"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Hampton"
+      },
+      {
+        "nameFirst": "Todd",
+        "nameLast": "Helton"
+      },
+      {
+        "nameFirst": "Todd",
+        "nameLast": "Hollandsworth"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Jennings"
+      },
+      {
+        "nameFirst": "Robin",
+        "nameLast": "Jennings"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Jimenez"
+      },
+      {
+        "nameFirst": "Brooks",
+        "nameLast": "Kieschnick"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Little"
+      },
+      {
+        "nameFirst": "Brent",
+        "nameLast": "Mayne"
+      },
+      {
+        "nameFirst": "Adam",
+        "nameLast": "Melhuse"
+      },
+      {
+        "nameFirst": "Dan",
+        "nameLast": "Miceli"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Myers"
+      },
+      {
+        "nameFirst": "Denny",
+        "nameLast": "Neagle"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Nichting"
+      },
+      {
+        "nameFirst": "Greg",
+        "nameLast": "Norton"
+      },
+      {
+        "nameFirst": "Alex",
+        "nameLast": "Ochoa"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Ortiz"
+      },
+      {
+        "nameFirst": "Neifi",
+        "nameLast": "Perez"
+      },
+      {
+        "nameFirst": "Ben",
+        "nameLast": "Petrick"
+      },
+      {
+        "nameFirst": "Juan",
+        "nameLast": "Pierre"
+      },
+      {
+        "nameFirst": "Jay",
+        "nameLast": "Powell"
+      },
+      {
+        "nameFirst": "Kevin",
+        "nameLast": "Sefcik"
+      },
+      {
+        "nameFirst": "Terry",
+        "nameLast": "Shumpert"
+      },
+      {
+        "nameFirst": "Justin",
+        "nameLast": "Speier"
+      },
+      {
+        "nameFirst": "Mac",
+        "nameLast": "Suzuki"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Thomson"
+      },
+      {
+        "nameFirst": "Juan",
+        "nameLast": "Uribe"
+      },
+      {
+        "nameFirst": "Ron",
+        "nameLast": "Villone"
+      },
+      {
+        "nameFirst": "Larry",
+        "nameLast": "Walker"
+      },
+      {
+        "nameFirst": "Todd",
+        "nameLast": "Walker"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Wasdin"
+      },
+      {
+        "nameFirst": "Gabe",
+        "nameLast": "White"
+      },
+      {
+        "nameFirst": "Matt",
+        "nameLast": "Anderson"
+      },
+      {
+        "nameFirst": "Adam",
+        "nameLast": "Bernero"
+      },
+      {
+        "nameFirst": "Willie",
+        "nameLast": "Blair"
+      },
+      {
+        "nameFirst": "Dave",
+        "nameLast": "Borkowski"
+      },
+      {
+        "nameFirst": "Javier",
+        "nameLast": "Cardona"
+      },
+      {
+        "nameFirst": "Roger",
+        "nameLast": "Cedeno"
+      },
+      {
+        "nameFirst": "Jermaine",
+        "nameLast": "Clark"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Clark"
+      },
+      {
+        "nameFirst": "Nate",
+        "nameLast": "Cornejo"
+      },
+      {
+        "nameFirst": "Deivi",
+        "nameLast": "Cruz"
+      },
+      {
+        "nameFirst": "Damion",
+        "nameLast": "Easley"
+      },
+      {
+        "nameFirst": "Juan",
+        "nameLast": "Encarnacion"
+      },
+      {
+        "nameFirst": "Robert",
+        "nameLast": "Fick"
+      },
+      {
+        "nameFirst": "Shane",
+        "nameLast": "Halter"
+      },
+      {
+        "nameFirst": "Bobby",
+        "nameLast": "Higginson"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Holt"
+      },
+      {
+        "nameFirst": "Brandon",
+        "nameLast": "Inge"
+      },
+      {
+        "nameFirst": "Ryan",
+        "nameLast": "Jackson"
+      },
+      {
+        "nameFirst": "Todd",
+        "nameLast": "Jones"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Lima"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Macias"
+      },
+      {
+        "nameFirst": "Wendell",
+        "nameLast": "Magee"
+      },
+      {
+        "nameFirst": "Billy",
+        "nameLast": "McMillon"
+      },
+      {
+        "nameFirst": "Matt",
+        "nameLast": "Miller"
+      },
+      {
+        "nameFirst": "Dave",
+        "nameLast": "Mlicki"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Moehler"
+      },
+      {
+        "nameFirst": "Eric",
+        "nameLast": "Munson"
+      },
+      {
+        "nameFirst": "Heath",
+        "nameLast": "Murray"
+      },
+      {
+        "nameFirst": "C. J.",
+        "nameLast": "Nitkowski"
+      },
+      {
+        "nameFirst": "Dean",
+        "nameLast": "Palmer"
+      },
+      {
+        "nameFirst": "Danny",
+        "nameLast": "Patterson"
+      },
+      {
+        "nameFirst": "Jarrod",
+        "nameLast": "Patterson"
+      },
+      {
+        "nameFirst": "Matt",
+        "nameLast": "Perisho"
+      },
+      {
+        "nameFirst": "Adam",
+        "nameLast": "Pettyjohn"
+      },
+      {
+        "nameFirst": "Luis",
+        "nameLast": "Pineda"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Redman"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Rivera"
+      },
+      {
+        "nameFirst": "Pedro",
+        "nameLast": "Santana"
+      },
+      {
+        "nameFirst": "Victor",
+        "nameLast": "Santos"
+      },
+      {
+        "nameFirst": "Randall",
+        "nameLast": "Simon"
+      },
+      {
+        "nameFirst": "Steve",
+        "nameLast": "Sparks"
+      },
+      {
+        "nameFirst": "Kevin",
+        "nameLast": "Tolar"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Wakeland"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Weaver"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Abbott"
+      },
+      {
+        "nameFirst": "Juan",
+        "nameLast": "Acevedo"
+      },
+      {
+        "nameFirst": "Antonio",
+        "nameLast": "Alfonseca"
+      },
+      {
+        "nameFirst": "Armando",
+        "nameLast": "Almanza"
+      },
+      {
+        "nameFirst": "Benito",
+        "nameLast": "Baez"
+      },
+      {
+        "nameFirst": "Josh",
+        "nameLast": "Beckett"
+      },
+      {
+        "nameFirst": "Dave",
+        "nameLast": "Berg"
+      },
+      {
+        "nameFirst": "Ricky",
+        "nameLast": "Bones"
+      },
+      {
+        "nameFirst": "A. J.",
+        "nameLast": "Burnett"
+      },
+      {
+        "nameFirst": "Luis",
+        "nameLast": "Castillo"
+      },
+      {
+        "nameFirst": "Ramon",
+        "nameLast": "Castro"
+      },
+      {
+        "nameFirst": "Matt",
+        "nameLast": "Clement"
+      },
+      {
+        "nameFirst": "Vic",
+        "nameLast": "Darensbourg"
+      },
+      {
+        "nameFirst": "Ryan",
+        "nameLast": "Dempster"
+      },
+      {
+        "nameFirst": "Cliff",
+        "nameLast": "Floyd"
+      },
+      {
+        "nameFirst": "Andy",
+        "nameLast": "Fox"
+      },
+      {
+        "nameFirst": "Alex",
+        "nameLast": "Gonzalez"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Grilli"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Gulan"
+      },
+      {
+        "nameFirst": "Charles",
+        "nameLast": "Johnson"
+      },
+      {
+        "nameFirst": "Gary",
+        "nameLast": "Knotts"
+      },
+      {
+        "nameFirst": "Derrek",
+        "nameLast": "Lee"
+      },
+      {
+        "nameFirst": "Braden",
+        "nameLast": "Looper"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Lowell"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Mabry"
+      },
+      {
+        "nameFirst": "Ryan",
+        "nameLast": "McGuire"
+      },
+      {
+        "nameFirst": "Dan",
+        "nameLast": "Miceli"
+      },
+      {
+        "nameFirst": "Kevin",
+        "nameLast": "Millar"
+      },
+      {
+        "nameFirst": "Chad",
+        "nameLast": "Mottola"
+      },
+      {
+        "nameFirst": "Lyle",
+        "nameLast": "Mouton"
+      },
+      {
+        "nameFirst": "Blaine",
+        "nameLast": "Neal"
+      },
+      {
+        "nameFirst": "Vladimir",
+        "nameLast": "Nunez"
+      },
+      {
+        "nameFirst": "Kevin",
+        "nameLast": "Olsen"
+      },
+      {
+        "nameFirst": "Eric",
+        "nameLast": "Owens"
+      },
+      {
+        "nameFirst": "Brad",
+        "nameLast": "Penny"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Redmond"
+      },
+      {
+        "nameFirst": "Johnny",
+        "nameLast": "Ruffin"
+      },
+      {
+        "nameFirst": "Jesus",
+        "nameLast": "Sanchez"
+      },
+      {
+        "nameFirst": "Chuck",
+        "nameLast": "Smith"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Strong"
+      },
+      {
+        "nameFirst": "Ryan",
+        "nameLast": "Thompson"
+      },
+      {
+        "nameFirst": "Preston",
+        "nameLast": "Wilson"
+      },
+      {
+        "nameFirst": "Moises",
+        "nameLast": "Alou"
+      },
+      {
+        "nameFirst": "Pedro",
+        "nameLast": "Astacio"
+      },
+      {
+        "nameFirst": "Brad",
+        "nameLast": "Ausmus"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Bagwell"
+      },
+      {
+        "nameFirst": "Glen",
+        "nameLast": "Barker"
+      },
+      {
+        "nameFirst": "Lance",
+        "nameLast": "Berkman"
+      },
+      {
+        "nameFirst": "Craig",
+        "nameLast": "Biggio"
+      },
+      {
+        "nameFirst": "Kent",
+        "nameLast": "Bottenfield"
+      },
+      {
+        "nameFirst": "Vinny",
+        "nameLast": "Castilla"
+      },
+      {
+        "nameFirst": "Nelson",
+        "nameLast": "Cruz"
+      },
+      {
+        "nameFirst": "Octavio",
+        "nameLast": "Dotel"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Elarton"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Eusebio"
+      },
+      {
+        "nameFirst": "Adam",
+        "nameLast": "Everett"
+      },
+      {
+        "nameFirst": "Wayne",
+        "nameLast": "Franklin"
+      },
+      {
+        "nameFirst": "Keith",
+        "nameLast": "Ginter"
+      },
+      {
+        "nameFirst": "Charlie",
+        "nameLast": "Hayes"
+      },
+      {
+        "nameFirst": "Carlos",
+        "nameLast": "Hernandez"
+      },
+      {
+        "nameFirst": "Richard",
+        "nameLast": "Hidalgo"
+      },
+      {
+        "nameFirst": "Michael",
+        "nameLast": "Jackson"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Lima"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Linebrink"
+      },
+      {
+        "nameFirst": "Mendy",
+        "nameLast": "Lopez"
+      },
+      {
+        "nameFirst": "Julio",
+        "nameLast": "Lugo"
+      },
+      {
+        "nameFirst": "Jim",
+        "nameLast": "Mann"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "McKnight"
+      },
+      {
+        "nameFirst": "Orlando",
+        "nameLast": "Merced"
+      },
+      {
+        "nameFirst": "Wade",
+        "nameLast": "Miller"
+      },
+      {
+        "nameFirst": "Dave",
+        "nameLast": "Mlicki"
+      },
+      {
+        "nameFirst": "Roy",
+        "nameLast": "Oswalt"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Powell"
+      },
+      {
+        "nameFirst": "Jay",
+        "nameLast": "Powell"
+      },
+      {
+        "nameFirst": "Tim",
+        "nameLast": "Redding"
+      },
+      {
+        "nameFirst": "Shane",
+        "nameLast": "Reynolds"
+      },
+      {
+        "nameFirst": "Wilfredo",
+        "nameLast": "Rodriguez"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Servais"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Slusarski"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "Spiers"
+      },
+      {
+        "nameFirst": "Ricky",
+        "nameLast": "Stone"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Truby"
+      },
+      {
+        "nameFirst": "Ron",
+        "nameLast": "Villone"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Vizcaino"
+      },
+      {
+        "nameFirst": "Billy",
+        "nameLast": "Wagner"
+      },
+      {
+        "nameFirst": "Daryle",
+        "nameLast": "Ward"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Williams"
+      },
+      {
+        "nameFirst": "Luis",
+        "nameLast": "Alicea"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Austin"
+      },
+      {
+        "nameFirst": "Cory",
+        "nameLast": "Bailey"
+      },
+      {
+        "nameFirst": "Carlos",
+        "nameLast": "Beltran"
+      },
+      {
+        "nameFirst": "Brandon",
+        "nameLast": "Berger"
+      },
+      {
+        "nameFirst": "Angel",
+        "nameLast": "Berroa"
+      },
+      {
+        "nameFirst": "Dee",
+        "nameLast": "Brown"
+      },
+      {
+        "nameFirst": "Paul",
+        "nameLast": "Byrd"
+      },
+      {
+        "nameFirst": "Endy",
+        "nameLast": "Chavez"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Cogan"
+      },
+      {
+        "nameFirst": "Wilson",
+        "nameLast": "Delgado"
+      },
+      {
+        "nameFirst": "Chad",
+        "nameLast": "Durbin"
+      },
+      {
+        "nameFirst": "Jermaine",
+        "nameLast": "Dye"
+      },
+      {
+        "nameFirst": "Sal",
+        "nameLast": "Fasano"
+      },
+      {
+        "nameFirst": "Carlos",
+        "nameLast": "Febles"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "George"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Grimsley"
+      },
+      {
+        "nameFirst": "Ken",
+        "nameLast": "Harvey"
+      },
+      {
+        "nameFirst": "Doug",
+        "nameLast": "Henry"
+      },
+      {
+        "nameFirst": "Roberto",
+        "nameLast": "Hernandez"
+      },
+      {
+        "nameFirst": "A. J.",
+        "nameLast": "Hinch"
+      },
+      {
+        "nameFirst": "Trent",
+        "nameLast": "Hubbard"
+      },
+      {
+        "nameFirst": "Raul",
+        "nameLast": "Ibanez"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "MacDougal"
+      },
+      {
+        "nameFirst": "Brent",
+        "nameLast": "Mayne"
+      },
+      {
+        "nameFirst": "Dave",
+        "nameLast": "McCarty"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Meadows"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Mullen"
+      },
+      {
+        "nameFirst": "Luis",
+        "nameLast": "Ordaz"
+      },
+      {
+        "nameFirst": "Hector",
+        "nameLast": "Ortiz"
+      },
+      {
+        "nameFirst": "Neifi",
+        "nameLast": "Perez"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Quinn"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Randa"
+      },
+      {
+        "nameFirst": "Dan",
+        "nameLast": "Reichert"
+      },
+      {
+        "nameFirst": "Donnie",
+        "nameLast": "Sadler"
+      },
+      {
+        "nameFirst": "Rey",
+        "nameLast": "Sanchez"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Santiago"
+      },
+      {
+        "nameFirst": "Blake",
+        "nameLast": "Stein"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Suppan"
+      },
+      {
+        "nameFirst": "Mac",
+        "nameLast": "Suzuki"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Sweeney"
+      },
+      {
+        "nameFirst": "Brad",
+        "nameLast": "Voyles"
+      },
+      {
+        "nameFirst": "Kris",
+        "nameLast": "Wilson"
+      },
+      {
+        "nameFirst": "Gregg",
+        "nameLast": "Zaun"
+      },
+      {
+        "nameFirst": "Terry",
+        "nameLast": "Adams"
+      },
+      {
+        "nameFirst": "Andy",
+        "nameLast": "Ashby"
+      },
+      {
+        "nameFirst": "Bruce",
+        "nameLast": "Aven"
+      },
+      {
+        "nameFirst": "James",
+        "nameLast": "Baldwin"
+      },
+      {
+        "nameFirst": "Adrian",
+        "nameLast": "Beltre"
+      },
+      {
+        "nameFirst": "Hiram",
+        "nameLast": "Bocachica"
+      },
+      {
+        "nameFirst": "Tim",
+        "nameLast": "Bogar"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Branson"
+      },
+      {
+        "nameFirst": "Kevin",
+        "nameLast": "Brown"
+      },
+      {
+        "nameFirst": "Giovanni",
+        "nameLast": "Carrara"
+      },
+      {
+        "nameFirst": "McKay",
+        "nameLast": "Christensen"
+      },
+      {
+        "nameFirst": "Alex",
+        "nameLast": "Cora"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Donnels"
+      },
+      {
+        "nameFirst": "Darren",
+        "nameLast": "Dreifort"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Fetters"
+      },
+      {
+        "nameFirst": "Eric",
+        "nameLast": "Gagne"
+      },
+      {
+        "nameFirst": "Tom",
+        "nameLast": "Goodwin"
+      },
+      {
+        "nameFirst": "Shawn",
+        "nameLast": "Green"
+      },
+      {
+        "nameFirst": "Marquis",
+        "nameLast": "Grissom"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Grudzielanek"
+      },
+      {
+        "nameFirst": "Dave",
+        "nameLast": "Hansen"
+      },
+      {
+        "nameFirst": "Matt",
+        "nameLast": "Herges"
+      },
+      {
+        "nameFirst": "Phil",
+        "nameLast": "Hiatt"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Johnson"
+      },
+      {
+        "nameFirst": "Eric",
+        "nameLast": "Karros"
+      },
+      {
+        "nameFirst": "Chad",
+        "nameLast": "Kreuter"
+      },
+      {
+        "nameFirst": "Paul",
+        "nameLast": "Lo Duca"
+      },
+      {
+        "nameFirst": "Terry",
+        "nameLast": "Mulholland"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Nunez"
+      },
+      {
+        "nameFirst": "Gregg",
+        "nameLast": "Olson"
+      },
+      {
+        "nameFirst": "Jesse",
+        "nameLast": "Orosco"
+      },
+      {
+        "nameFirst": "Chan Ho",
+        "nameLast": "Park"
+      },
+      {
+        "nameFirst": "Angel",
+        "nameLast": "Pena"
+      },
+      {
+        "nameFirst": "Luke",
+        "nameLast": "Prokopec"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Reboulet"
+      },
+      {
+        "nameFirst": "Alberto",
+        "nameLast": "Reyes"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Shaw"
+      },
+      {
+        "nameFirst": "Gary",
+        "nameLast": "Sheffield"
+      },
+      {
+        "nameFirst": "Dennis",
+        "nameLast": "Springer"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Trombley"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Williams"
+      },
+      {
+        "nameFirst": "Ronnie",
+        "nameLast": "Belliard"
+      },
+      {
+        "nameFirst": "Henry",
+        "nameLast": "Blanco"
+      },
+      {
+        "nameFirst": "Kevin",
+        "nameLast": "Brown"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Buddie"
+      },
+      {
+        "nameFirst": "Jeromy",
+        "nameLast": "Burnitz"
+      },
+      {
+        "nameFirst": "Raul",
+        "nameLast": "Casanova"
+      },
+      {
+        "nameFirst": "Lou",
+        "nameLast": "Collier"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Coolbaugh"
+      },
+      {
+        "nameFirst": "Rocky",
+        "nameLast": "Coppinger"
+      },
+      {
+        "nameFirst": "Will",
+        "nameLast": "Cunnane"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "D'Amico"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "DeJean"
+      },
+      {
+        "nameFirst": "Valerio",
+        "nameLast": "De Los Santos"
+      },
+      {
+        "nameFirst": "Angel",
+        "nameLast": "Echevarria"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Fernandez"
+      },
+      {
+        "nameFirst": "Chad",
+        "nameLast": "Fox"
+      },
+      {
+        "nameFirst": "Gus",
+        "nameLast": "Gandarillas"
+      },
+      {
+        "nameFirst": "Jeffrey",
+        "nameLast": "Hammonds"
+      },
+      {
+        "nameFirst": "Jimmy",
+        "nameLast": "Haynes"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Hernandez"
+      },
+      {
+        "nameFirst": "Tyler",
+        "nameLast": "Houston"
+      },
+      {
+        "nameFirst": "Geoff",
+        "nameLast": "Jenkins"
+      },
+      {
+        "nameFirst": "Ray",
+        "nameLast": "King"
+      },
+      {
+        "nameFirst": "Brandon",
+        "nameLast": "Kolb"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Leiter"
+      },
+      {
+        "nameFirst": "Curt",
+        "nameLast": "Leskanic"
+      },
+      {
+        "nameFirst": "Jesse",
+        "nameLast": "Levis"
+      },
+      {
+        "nameFirst": "Allen",
+        "nameLast": "Levrault"
+      },
+      {
+        "nameFirst": "Luis",
+        "nameLast": "Lopez"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Loretta"
+      },
+      {
+        "nameFirst": "James",
+        "nameLast": "Mouton"
+      },
+      {
+        "nameFirst": "Nick",
+        "nameLast": "Neugebauer"
+      },
+      {
+        "nameFirst": "Lance",
+        "nameLast": "Painter"
+      },
+      {
+        "nameFirst": "Elvis",
+        "nameLast": "Pena"
+      },
+      {
+        "nameFirst": "Robert",
+        "nameLast": "Perez"
+      },
+      {
+        "nameFirst": "Kyle",
+        "nameLast": "Peterson"
+      },
+      {
+        "nameFirst": "Ruben",
+        "nameLast": "Quevedo"
+      },
+      {
+        "nameFirst": "Paul",
+        "nameLast": "Rigdon"
+      },
+      {
+        "nameFirst": "Alex",
+        "nameLast": "Sanchez"
+      },
+      {
+        "nameFirst": "Richie",
+        "nameLast": "Sexson"
+      },
+      {
+        "nameFirst": "Ben",
+        "nameLast": "Sheets"
+      },
+      {
+        "nameFirst": "Mac",
+        "nameLast": "Suzuki"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Sweeney"
+      },
+      {
+        "nameFirst": "David",
+        "nameLast": "Weathers"
+      },
+      {
+        "nameFirst": "Devon",
+        "nameLast": "White"
+      },
+      {
+        "nameFirst": "Jamey",
+        "nameLast": "Wright"
+      },
+      {
+        "nameFirst": "Chad",
+        "nameLast": "Allen"
+      },
+      {
+        "nameFirst": "Grant",
+        "nameLast": "Balfour"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Barnes"
+      },
+      {
+        "nameFirst": "Casey",
+        "nameLast": "Blake"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Buchanan"
+      },
+      {
+        "nameFirst": "Hector",
+        "nameLast": "Carrasco"
+      },
+      {
+        "nameFirst": "Jack",
+        "nameLast": "Cressend"
+      },
+      {
+        "nameFirst": "Michael",
+        "nameLast": "Cuddyer"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Duvall"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Fiore"
+      },
+      {
+        "nameFirst": "Eddie",
+        "nameLast": "Guardado"
+      },
+      {
+        "nameFirst": "Cristian",
+        "nameLast": "Guzman"
+      },
+      {
+        "nameFirst": "LaTroy",
+        "nameLast": "Hawkins"
+      },
+      {
+        "nameFirst": "Denny",
+        "nameLast": "Hocking"
+      },
+      {
+        "nameFirst": "Torii",
+        "nameLast": "Hunter"
+      },
+      {
+        "nameFirst": "Adam",
+        "nameLast": "Johnson"
+      },
+      {
+        "nameFirst": "Jacque",
+        "nameLast": "Jones"
+      },
+      {
+        "nameFirst": "Todd",
+        "nameLast": "Jones"
+      },
+      {
+        "nameFirst": "Bobby",
+        "nameLast": "Kielty"
+      },
+      {
+        "nameFirst": "Corey",
+        "nameLast": "Koskie"
+      },
+      {
+        "nameFirst": "Matt",
+        "nameLast": "Lawton"
+      },
+      {
+        "nameFirst": "Matt",
+        "nameLast": "LeCroy"
+      },
+      {
+        "nameFirst": "Kyle",
+        "nameLast": "Lohse"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Maxwell"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Mays"
+      },
+      {
+        "nameFirst": "Quinton",
+        "nameLast": "McCracken"
+      },
+      {
+        "nameFirst": "Doug",
+        "nameLast": "Mientkiewicz"
+      },
+      {
+        "nameFirst": "Travis",
+        "nameLast": "Miller"
+      },
+      {
+        "nameFirst": "Eric",
+        "nameLast": "Milton"
+      },
+      {
+        "nameFirst": "Dustan",
+        "nameLast": "Mohr"
+      },
+      {
+        "nameFirst": "David",
+        "nameLast": "Ortiz"
+      },
+      {
+        "nameFirst": "A. J.",
+        "nameLast": "Pierzynski"
+      },
+      {
+        "nameFirst": "Tom",
+        "nameLast": "Prince"
+      },
+      {
+        "nameFirst": "Brad",
+        "nameLast": "Radke"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Redman"
+      },
+      {
+        "nameFirst": "Rick",
+        "nameLast": "Reed"
+      },
+      {
+        "nameFirst": "Juan",
+        "nameLast": "Rincon"
+      },
+      {
+        "nameFirst": "Luis",
+        "nameLast": "Rivas"
+      },
+      {
+        "nameFirst": "J. C.",
+        "nameLast": "Romero"
+      },
+      {
+        "nameFirst": "Johan",
+        "nameLast": "Santana"
+      },
+      {
+        "nameFirst": "Brad",
+        "nameLast": "Thomas"
+      },
+      {
+        "nameFirst": "Bob",
+        "nameLast": "Wells"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Armas"
+      },
+      {
+        "nameFirst": "Michael",
+        "nameLast": "Barrett"
+      },
+      {
+        "nameFirst": "Peter",
+        "nameLast": "Bergeron"
+      },
+      {
+        "nameFirst": "Matt",
+        "nameLast": "Blank"
+      },
+      {
+        "nameFirst": "Geoff",
+        "nameLast": "Blum"
+      },
+      {
+        "nameFirst": "Milton",
+        "nameLast": "Bradley"
+      },
+      {
+        "nameFirst": "Orlando",
+        "nameLast": "Cabrera"
+      },
+      {
+        "nameFirst": "Darwin",
+        "nameLast": "Cubillan"
+      },
+      {
+        "nameFirst": "Tomas",
+        "nameLast": "de la Rosa"
+      },
+      {
+        "nameFirst": "Rob",
+        "nameLast": "Ducey"
+      },
+      {
+        "nameFirst": "Joey",
+        "nameLast": "Eischen"
+      },
+      {
+        "nameFirst": "Vladimir",
+        "nameLast": "Guerrero"
+      },
+      {
+        "nameFirst": "Hideki",
+        "nameLast": "Irabu"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Johnson"
+      },
+      {
+        "nameFirst": "Terry",
+        "nameLast": "Jones"
+      },
+      {
+        "nameFirst": "Randy",
+        "nameLast": "Knorr"
+      },
+      {
+        "nameFirst": "Felipe",
+        "nameLast": "Lira"
+      },
+      {
+        "nameFirst": "Graeme",
+        "nameLast": "Lloyd"
+      },
+      {
+        "nameFirst": "Sandy",
+        "nameLast": "Martinez"
+      },
+      {
+        "nameFirst": "Henry",
+        "nameLast": "Mateo"
+      },
+      {
+        "nameFirst": "Troy",
+        "nameLast": "Mattes"
+      },
+      {
+        "nameFirst": "Ryan",
+        "nameLast": "Minor"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Mordecai"
+      },
+      {
+        "nameFirst": "Guillermo",
+        "nameLast": "Mota"
+      },
+      {
+        "nameFirst": "Bobby",
+        "nameLast": "Munoz"
+      },
+      {
+        "nameFirst": "Tomo",
+        "nameLast": "Ohka"
+      },
+      {
+        "nameFirst": "Carl",
+        "nameLast": "Pavano"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Peters"
+      },
+      {
+        "nameFirst": "Curtis",
+        "nameLast": "Pride"
+      },
+      {
+        "nameFirst": "Tim",
+        "nameLast": "Raines"
+      },
+      {
+        "nameFirst": "Britt",
+        "nameLast": "Reames"
+      },
+      {
+        "nameFirst": "Bob",
+        "nameLast": "Scanlan"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Schneider"
+      },
+      {
+        "nameFirst": "Fernando",
+        "nameLast": "Seguignol"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Smith"
+      },
+      {
+        "nameFirst": "Lee",
+        "nameLast": "Stevens"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Stewart"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Strickland"
+      },
+      {
+        "nameFirst": "Fernando",
+        "nameLast": "Tatis"
+      },
+      {
+        "nameFirst": "Anthony",
+        "nameLast": "Telford"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Thurman"
+      },
+      {
+        "nameFirst": "Andy",
+        "nameLast": "Tracy"
+      },
+      {
+        "nameFirst": "Ugueth",
+        "nameLast": "Urbina"
+      },
+      {
+        "nameFirst": "Javier",
+        "nameLast": "Vazquez"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Vidro"
+      },
+      {
+        "nameFirst": "Brad",
+        "nameLast": "Wilkerson"
+      },
+      {
+        "nameFirst": "Masato",
+        "nameLast": "Yoshii"
+      },
+      {
+        "nameFirst": "Carlos",
+        "nameLast": "Almanzar"
+      },
+      {
+        "nameFirst": "Erick",
+        "nameLast": "Almonte"
+      },
+      {
+        "nameFirst": "Clay",
+        "nameLast": "Bellinger"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Boehringer"
+      },
+      {
+        "nameFirst": "Darren",
+        "nameLast": "Bragg"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Brosius"
+      },
+      {
+        "nameFirst": "Randy",
+        "nameLast": "Choate"
+      },
+      {
+        "nameFirst": "Roger",
+        "nameLast": "Clemens"
+      },
+      {
+        "nameFirst": "Michael",
+        "nameLast": "Coleman"
+      },
+      {
+        "nameFirst": "Bobby",
+        "nameLast": "Estalella"
+      },
+      {
+        "nameFirst": "Todd",
+        "nameLast": "Greene"
+      },
+      {
+        "nameFirst": "Adrian",
+        "nameLast": "Hernandez"
+      },
+      {
+        "nameFirst": "Orlando",
+        "nameLast": "Hernandez"
+      },
+      {
+        "nameFirst": "Sterling",
+        "nameLast": "Hitchcock"
+      },
+      {
+        "nameFirst": "Derek",
+        "nameLast": "Jeter"
+      },
+      {
+        "nameFirst": "Brett",
+        "nameLast": "Jodie"
+      },
+      {
+        "nameFirst": "Nick",
+        "nameLast": "Johnson"
+      },
+      {
+        "nameFirst": "David",
+        "nameLast": "Justice"
+      },
+      {
+        "nameFirst": "Randy",
+        "nameLast": "Keisler"
+      },
+      {
+        "nameFirst": "Brandon",
+        "nameLast": "Knight"
+      },
+      {
+        "nameFirst": "Chuck",
+        "nameLast": "Knoblauch"
+      },
+      {
+        "nameFirst": "Ted",
+        "nameLast": "Lilly"
+      },
+      {
+        "nameFirst": "Tino",
+        "nameLast": "Martinez"
+      },
+      {
+        "nameFirst": "Donzell",
+        "nameLast": "McDonald"
+      },
+      {
+        "nameFirst": "Ramiro",
+        "nameLast": "Mendoza"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Mussina"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Oliver"
+      },
+      {
+        "nameFirst": "Paul",
+        "nameLast": "O'Neill"
+      },
+      {
+        "nameFirst": "Christian",
+        "nameLast": "Parker"
+      },
+      {
+        "nameFirst": "Robert",
+        "nameLast": "Perez"
+      },
+      {
+        "nameFirst": "Andy",
+        "nameLast": "Pettitte"
+      },
+      {
+        "nameFirst": "Jorge",
+        "nameLast": "Posada"
+      },
+      {
+        "nameFirst": "Juan",
+        "nameLast": "Rivera"
+      },
+      {
+        "nameFirst": "Mariano",
+        "nameLast": "Rivera"
+      },
+      {
+        "nameFirst": "Henry",
+        "nameLast": "Rodriguez"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Seabol"
+      },
+      {
+        "nameFirst": "Luis",
+        "nameLast": "Sojo"
+      },
+      {
+        "nameFirst": "Alfonso",
+        "nameLast": "Soriano"
+      },
+      {
+        "nameFirst": "Shane",
+        "nameLast": "Spencer"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Stanton"
+      },
+      {
+        "nameFirst": "Randy",
+        "nameLast": "Velarde"
+      },
+      {
+        "nameFirst": "Bernie",
+        "nameLast": "Williams"
+      },
+      {
+        "nameFirst": "Gerald",
+        "nameLast": "Williams"
+      },
+      {
+        "nameFirst": "Todd",
+        "nameLast": "Williams"
+      },
+      {
+        "nameFirst": "Enrique",
+        "nameLast": "Wilson"
+      },
+      {
+        "nameFirst": "Jay",
+        "nameLast": "Witasick"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Wohlers"
+      },
+      {
+        "nameFirst": "Benny",
+        "nameLast": "Agbayani"
+      },
+      {
+        "nameFirst": "Edgardo",
+        "nameLast": "Alfonzo"
+      },
+      {
+        "nameFirst": "Kevin",
+        "nameLast": "Appier"
+      },
+      {
+        "nameFirst": "Armando",
+        "nameLast": "Benitez"
+      },
+      {
+        "nameFirst": "Gary",
+        "nameLast": "Bennett"
+      },
+      {
+        "nameFirst": "Darren",
+        "nameLast": "Bragg"
+      },
+      {
+        "nameFirst": "Bruce",
+        "nameLast": "Chen"
+      },
+      {
+        "nameFirst": "Dennis",
+        "nameLast": "Cook"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Corey"
+      },
+      {
+        "nameFirst": "Alex",
+        "nameLast": "Escobar"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Franco"
+      },
+      {
+        "nameFirst": "Dicky",
+        "nameLast": "Gonzalez"
+      },
+      {
+        "nameFirst": "Darryl",
+        "nameLast": "Hamilton"
+      },
+      {
+        "nameFirst": "Lenny",
+        "nameLast": "Harris"
+      },
+      {
+        "nameFirst": "Brett",
+        "nameLast": "Hinchliffe"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Johnson"
+      },
+      {
+        "nameFirst": "Matt",
+        "nameLast": "Lawton"
+      },
+      {
+        "nameFirst": "Al",
+        "nameLast": "Leiter"
+      },
+      {
+        "nameFirst": "Tom",
+        "nameLast": "Martin"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "McEwing"
+      },
+      {
+        "nameFirst": "C. J.",
+        "nameLast": "Nitkowski"
+      },
+      {
+        "nameFirst": "Rey",
+        "nameLast": "Ordonez"
+      },
+      {
+        "nameFirst": "Jay",
+        "nameLast": "Payton"
+      },
+      {
+        "nameFirst": "Timo",
+        "nameLast": "Perez"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Phillips"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Piazza"
+      },
+      {
+        "nameFirst": "Todd",
+        "nameLast": "Pratt"
+      },
+      {
+        "nameFirst": "Rick",
+        "nameLast": "Reed"
+      },
+      {
+        "nameFirst": "Desi",
+        "nameLast": "Relaford"
+      },
+      {
+        "nameFirst": "Jerrod",
+        "nameLast": "Riggan"
+      },
+      {
+        "nameFirst": "Grant",
+        "nameLast": "Roberts"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Rose"
+      },
+      {
+        "nameFirst": "Glendon",
+        "nameLast": "Rusch"
+      },
+      {
+        "nameFirst": "Tsuyoshi",
+        "nameLast": "Shinjo"
+      },
+      {
+        "nameFirst": "Jorge",
+        "nameLast": "Toca"
+      },
+      {
+        "nameFirst": "Steve",
+        "nameLast": "Trachsel"
+      },
+      {
+        "nameFirst": "Jorge",
+        "nameLast": "Velandia"
+      },
+      {
+        "nameFirst": "Robin",
+        "nameLast": "Ventura"
+      },
+      {
+        "nameFirst": "Pete",
+        "nameLast": "Walker"
+      },
+      {
+        "nameFirst": "Donne",
+        "nameLast": "Wall"
+      },
+      {
+        "nameFirst": "Turk",
+        "nameLast": "Wendell"
+      },
+      {
+        "nameFirst": "Rick",
+        "nameLast": "White"
+      },
+      {
+        "nameFirst": "Vance",
+        "nameLast": "Wilson"
+      },
+      {
+        "nameFirst": "Todd",
+        "nameLast": "Zeile"
+      },
+      {
+        "nameFirst": "Andy",
+        "nameLast": "Abad"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Bellhorn"
+      },
+      {
+        "nameFirst": "Chad",
+        "nameLast": "Bradford"
+      },
+      {
+        "nameFirst": "Eric",
+        "nameLast": "Byrnes"
+      },
+      {
+        "nameFirst": "Eric",
+        "nameLast": "Chavez"
+      },
+      {
+        "nameFirst": "Ryan",
+        "nameLast": "Christenson"
+      },
+      {
+        "nameFirst": "Johnny",
+        "nameLast": "Damon"
+      },
+      {
+        "nameFirst": "Jermaine",
+        "nameLast": "Dye"
+      },
+      {
+        "nameFirst": "Sal",
+        "nameLast": "Fasano"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Fyhrie"
+      },
+      {
+        "nameFirst": "Ron",
+        "nameLast": "Gant"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Giambi"
+      },
+      {
+        "nameFirst": "Jeremy",
+        "nameLast": "Giambi"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Guthrie"
+      },
+      {
+        "nameFirst": "Chad",
+        "nameLast": "Harville"
+      },
+      {
+        "nameFirst": "Gil",
+        "nameLast": "Heredia"
+      },
+      {
+        "nameFirst": "Ramon",
+        "nameLast": "Hernandez"
+      },
+      {
+        "nameFirst": "Erik",
+        "nameLast": "Hiljus"
+      },
+      {
+        "nameFirst": "Tim",
+        "nameLast": "Hudson"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Isringhausen"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Jaha"
+      },
+      {
+        "nameFirst": "Robin",
+        "nameLast": "Jennings"
+      },
+      {
+        "nameFirst": "Cory",
+        "nameLast": "Lidle"
+      },
+      {
+        "nameFirst": "Terrence",
+        "nameLast": "Long"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Magnante"
+      },
+      {
+        "nameFirst": "T. J.",
+        "nameLast": "Mathews"
+      },
+      {
+        "nameFirst": "Billy",
+        "nameLast": "McMillon"
+      },
+      {
+        "nameFirst": "Jim",
+        "nameLast": "Mecir"
+      },
+      {
+        "nameFirst": "Frank",
+        "nameLast": "Menechino"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Mulder"
+      },
+      {
+        "nameFirst": "Greg",
+        "nameLast": "Myers"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Ortiz"
+      },
+      {
+        "nameFirst": "Adam",
+        "nameLast": "Piatt"
+      },
+      {
+        "nameFirst": "Rob",
+        "nameLast": "Ryan"
+      },
+      {
+        "nameFirst": "Olmedo",
+        "nameLast": "Saenz"
+      },
+      {
+        "nameFirst": "F. P.",
+        "nameLast": "Santangelo"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Tam"
+      },
+      {
+        "nameFirst": "Miguel",
+        "nameLast": "Tejada"
+      },
+      {
+        "nameFirst": "Mario",
+        "nameLast": "Valdez"
+      },
+      {
+        "nameFirst": "Luis",
+        "nameLast": "Vizcaino"
+      },
+      {
+        "nameFirst": "Tom",
+        "nameLast": "Wilson"
+      },
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Zito"
+      },
+      {
+        "nameFirst": "Bobby",
+        "nameLast": "Abreu"
+      },
+      {
+        "nameFirst": "Marlon",
+        "nameLast": "Anderson"
+      },
+      {
+        "nameFirst": "Gary",
+        "nameLast": "Bennett"
+      },
+      {
+        "nameFirst": "Ricky",
+        "nameLast": "Bottalico"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Brock"
+      },
+      {
+        "nameFirst": "Pat",
+        "nameLast": "Burrell"
+      },
+      {
+        "nameFirst": "Paul",
+        "nameLast": "Byrd"
+      },
+      {
+        "nameFirst": "Bruce",
+        "nameLast": "Chen"
+      },
+      {
+        "nameFirst": "Dave",
+        "nameLast": "Coggin"
+      },
+      {
+        "nameFirst": "Dennis",
+        "nameLast": "Cook"
+      },
+      {
+        "nameFirst": "Rheal",
+        "nameLast": "Cormier"
+      },
+      {
+        "nameFirst": "Felipe",
+        "nameLast": "Crespo"
+      },
+      {
+        "nameFirst": "Omar",
+        "nameLast": "Daal"
+      },
+      {
+        "nameFirst": "Rob",
+        "nameLast": "Ducey"
+      },
+      {
+        "nameFirst": "Brandon",
+        "nameLast": "Duckworth"
+      },
+      {
+        "nameFirst": "Johnny",
+        "nameLast": "Estrada"
+      },
+      {
+        "nameFirst": "Nelson",
+        "nameLast": "Figueroa"
+      },
+      {
+        "nameFirst": "P. J.",
+        "nameLast": "Forbes"
+      },
+      {
+        "nameFirst": "Doug",
+        "nameLast": "Glanville"
+      },
+      {
+        "nameFirst": "Wayne",
+        "nameLast": "Gomes"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Hunter"
+      },
+      {
+        "nameFirst": "Kevin",
+        "nameLast": "Jordan"
+      },
+      {
+        "nameFirst": "Travis",
+        "nameLast": "Lee"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Lieberthal"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Mesa"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Michaels"
+      },
+      {
+        "nameFirst": "David",
+        "nameLast": "Newhan"
+      },
+      {
+        "nameFirst": "Doug",
+        "nameLast": "Nickle"
+      },
+      {
+        "nameFirst": "Eddie",
+        "nameLast": "Oropesa"
+      },
+      {
+        "nameFirst": "Vicente",
+        "nameLast": "Padilla"
+      },
+      {
+        "nameFirst": "Tomas",
+        "nameLast": "Perez"
+      },
+      {
+        "nameFirst": "Robert",
+        "nameLast": "Person"
+      },
+      {
+        "nameFirst": "Cliff",
+        "nameLast": "Politte"
+      },
+      {
+        "nameFirst": "Todd",
+        "nameLast": "Pratt"
+      },
+      {
+        "nameFirst": "Nick",
+        "nameLast": "Punto"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Rolen"
+      },
+      {
+        "nameFirst": "Jimmy",
+        "nameLast": "Rollins"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Santiago"
+      },
+      {
+        "nameFirst": "Reggie",
+        "nameLast": "Taylor"
+      },
+      {
+        "nameFirst": "Amaury",
+        "nameLast": "Telemaco"
+      },
+      {
+        "nameFirst": "Eric",
+        "nameLast": "Valent"
+      },
+      {
+        "nameFirst": "Ed",
+        "nameLast": "Vosberg"
+      },
+      {
+        "nameFirst": "Matt",
+        "nameLast": "Walbeck"
+      },
+      {
+        "nameFirst": "Turner",
+        "nameLast": "Ward"
+      },
+      {
+        "nameFirst": "Turk",
+        "nameLast": "Wendell"
+      },
+      {
+        "nameFirst": "Randy",
+        "nameLast": "Wolf"
+      },
+      {
+        "nameFirst": "Jimmy",
+        "nameLast": "Anderson"
+      },
+      {
+        "nameFirst": "Bronson",
+        "nameLast": "Arroyo"
+      },
+      {
+        "nameFirst": "Andy",
+        "nameLast": "Barkett"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Beimel"
+      },
+      {
+        "nameFirst": "Derek",
+        "nameLast": "Bell"
+      },
+      {
+        "nameFirst": "Adrian",
+        "nameLast": "Brown"
+      },
+      {
+        "nameFirst": "Emil",
+        "nameLast": "Brown"
+      },
+      {
+        "nameFirst": "Humberto",
+        "nameLast": "Cota"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Fetters"
+      },
+      {
+        "nameFirst": "Luis",
+        "nameLast": "Figueroa"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Giles"
+      },
+      {
+        "nameFirst": "Chad",
+        "nameLast": "Hermansen"
+      },
+      {
+        "nameFirst": "Alex",
+        "nameLast": "Hernandez"
+      },
+      {
+        "nameFirst": "Adam",
+        "nameLast": "Hyzdu"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Kendall"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Lincoln"
+      },
+      {
+        "nameFirst": "Rich",
+        "nameLast": "Loiselle"
+      },
+      {
+        "nameFirst": "Mendy",
+        "nameLast": "Lopez"
+      },
+      {
+        "nameFirst": "Rob",
+        "nameLast": "Mackowiak"
+      },
+      {
+        "nameFirst": "Josias",
+        "nameLast": "Manzanillo"
+      },
+      {
+        "nameFirst": "Damaso",
+        "nameLast": "Marte"
+      },
+      {
+        "nameFirst": "Ramon",
+        "nameLast": "Martinez"
+      },
+      {
+        "nameFirst": "Gary",
+        "nameLast": "Matthews"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "McKnight"
+      },
+      {
+        "nameFirst": "Pat",
+        "nameLast": "Meares"
+      },
+      {
+        "nameFirst": "Warren",
+        "nameLast": "Morris"
+      },
+      {
+        "nameFirst": "Terry",
+        "nameLast": "Mulholland"
+      },
+      {
+        "nameFirst": "Abraham",
+        "nameLast": "Nunez"
+      },
+      {
+        "nameFirst": "Omar",
+        "nameLast": "Olivares"
+      },
+      {
+        "nameFirst": "Keith",
+        "nameLast": "Osik"
+      },
+      {
+        "nameFirst": "Aramis",
+        "nameLast": "Ramirez"
+      },
+      {
+        "nameFirst": "Tike",
+        "nameLast": "Redman"
+      },
+      {
+        "nameFirst": "Armando",
+        "nameLast": "Rios"
+      },
+      {
+        "nameFirst": "Todd",
+        "nameLast": "Ritchie"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Sauerbeck"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Schmidt"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Silva"
+      },
+      {
+        "nameFirst": "Billy",
+        "nameLast": "Taylor"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Vander Wal"
+      },
+      {
+        "nameFirst": "Ryan",
+        "nameLast": "Vogelsong"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Wehner"
+      },
+      {
+        "nameFirst": "Don",
+        "nameLast": "Wengert"
+      },
+      {
+        "nameFirst": "Marc",
+        "nameLast": "Wilkins"
+      },
+      {
+        "nameFirst": "David",
+        "nameLast": "Williams"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Williams"
+      },
+      {
+        "nameFirst": "Craig",
+        "nameLast": "Wilson"
+      },
+      {
+        "nameFirst": "Enrique",
+        "nameLast": "Wilson"
+      },
+      {
+        "nameFirst": "Jack",
+        "nameLast": "Wilson"
+      },
+      {
+        "nameFirst": "Kevin",
+        "nameLast": "Young"
+      },
+      {
+        "nameFirst": "Alex",
+        "nameLast": "Arias"
+      },
+      {
+        "nameFirst": "Emil",
+        "nameLast": "Brown"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Colangelo"
+      },
+      {
+        "nameFirst": "Cesar",
+        "nameLast": "Crespo"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Darr"
+      },
+      {
+        "nameFirst": "Tom",
+        "nameLast": "Davey"
+      },
+      {
+        "nameFirst": "Ben",
+        "nameLast": "Davis"
+      },
+      {
+        "nameFirst": "Adam",
+        "nameLast": "Eaton"
+      },
+      {
+        "nameFirst": "Jeremy",
+        "nameLast": "Fikac"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Gomez"
+      },
+      {
+        "nameFirst": "Wiki",
+        "nameLast": "Gonzalez"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Gwynn"
+      },
+      {
+        "nameFirst": "Rickey",
+        "nameLast": "Henderson"
+      },
+      {
+        "nameFirst": "Junior",
+        "nameLast": "Herndon"
+      },
+      {
+        "nameFirst": "Sterling",
+        "nameLast": "Hitchcock"
+      },
+      {
+        "nameFirst": "Trevor",
+        "nameLast": "Hoffman"
+      },
+      {
+        "nameFirst": "Damian",
+        "nameLast": "Jackson"
+      },
+      {
+        "nameFirst": "Kevin",
+        "nameLast": "Jarvis"
+      },
+      {
+        "nameFirst": "D'Angelo",
+        "nameLast": "Jimenez"
+      },
+      {
+        "nameFirst": "Brett",
+        "nameLast": "Jodie"
+      },
+      {
+        "nameFirst": "Bobby",
+        "nameLast": "Jones"
+      },
+      {
+        "nameFirst": "Ryan",
+        "nameLast": "Klesko"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Kotsay"
+      },
+      {
+        "nameFirst": "Ray",
+        "nameLast": "Lankford"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Lawrence"
+      },
+      {
+        "nameFirst": "David",
+        "nameLast": "Lee"
+      },
+      {
+        "nameFirst": "Carlton",
+        "nameLast": "Loewer"
+      },
+      {
+        "nameFirst": "David",
+        "nameLast": "Lundquist"
+      },
+      {
+        "nameFirst": "Dave",
+        "nameLast": "Magadan"
+      },
+      {
+        "nameFirst": "Dave",
+        "nameLast": "Maurer"
+      },
+      {
+        "nameFirst": "Chuck",
+        "nameLast": "McElroy"
+      },
+      {
+        "nameFirst": "Donaldo",
+        "nameLast": "Mendez"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Middlebrook"
+      },
+      {
+        "nameFirst": "Rodney",
+        "nameLast": "Myers"
+      },
+      {
+        "nameFirst": "Phil",
+        "nameLast": "Nevin"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Nunez"
+      },
+      {
+        "nameFirst": "Jimmy",
+        "nameLast": "Osting"
+      },
+      {
+        "nameFirst": "Santiago",
+        "nameLast": "Perez"
+      },
+      {
+        "nameFirst": "Adam",
+        "nameLast": "Riggs"
+      },
+      {
+        "nameFirst": "Rudy",
+        "nameLast": "Seanez"
+      },
+      {
+        "nameFirst": "Wascar",
+        "nameLast": "Serrano"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Tollberg"
+      },
+      {
+        "nameFirst": "Bubba",
+        "nameLast": "Trammell"
+      },
+      {
+        "nameFirst": "Kevin",
+        "nameLast": "Walker"
+      },
+      {
+        "nameFirst": "Rick",
+        "nameLast": "Wilkins"
+      },
+      {
+        "nameFirst": "Woody",
+        "nameLast": "Williams"
+      },
+      {
+        "nameFirst": "Jay",
+        "nameLast": "Witasick"
+      },
+      {
+        "nameFirst": "Kevin",
+        "nameLast": "Witt"
+      },
+      {
+        "nameFirst": "Paul",
+        "nameLast": "Abbott"
+      },
+      {
+        "nameFirst": "David",
+        "nameLast": "Bell"
+      },
+      {
+        "nameFirst": "Bret",
+        "nameLast": "Boone"
+      },
+      {
+        "nameFirst": "Pat",
+        "nameLast": "Borders"
+      },
+      {
+        "nameFirst": "Jay",
+        "nameLast": "Buhner"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Cameron"
+      },
+      {
+        "nameFirst": "Norm",
+        "nameLast": "Charlton"
+      },
+      {
+        "nameFirst": "Ryan",
+        "nameLast": "Franklin"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Fuentes"
+      },
+      {
+        "nameFirst": "Freddy",
+        "nameLast": "Garcia"
+      },
+      {
+        "nameFirst": "Charles",
+        "nameLast": "Gipson"
+      },
+      {
+        "nameFirst": "Carlos",
+        "nameLast": "Guillen"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Halama"
+      },
+      {
+        "nameFirst": "Stan",
+        "nameLast": "Javier"
+      },
+      {
+        "nameFirst": "Gene",
+        "nameLast": "Kingsale"
+      },
+      {
+        "nameFirst": "Tom",
+        "nameLast": "Lampkin"
+      },
+      {
+        "nameFirst": "Al",
+        "nameLast": "Martin"
+      },
+      {
+        "nameFirst": "Edgar",
+        "nameLast": "Martinez"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "McLemore"
+      },
+      {
+        "nameFirst": "Jamie",
+        "nameLast": "Moyer"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Nelson"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Olerud"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Paniagua"
+      },
+      {
+        "nameFirst": "Joel",
+        "nameLast": "Pineiro"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Podsednik"
+      },
+      {
+        "nameFirst": "Arthur",
+        "nameLast": "Rhodes"
+      },
+      {
+        "nameFirst": "Anthony",
+        "nameLast": "Sanders"
+      },
+      {
+        "nameFirst": "Kazuhiro",
+        "nameLast": "Sasaki"
+      },
+      {
+        "nameFirst": "Aaron",
+        "nameLast": "Sele"
+      },
+      {
+        "nameFirst": "Ed",
+        "nameLast": "Sprague"
+      },
+      {
+        "nameFirst": "Denny",
+        "nameLast": "Stark"
+      },
+      {
+        "nameFirst": "Ichiro",
+        "nameLast": "Suzuki"
+      },
+      {
+        "nameFirst": "Brett",
+        "nameLast": "Tomko"
+      },
+      {
+        "nameFirst": "Ramon",
+        "nameLast": "Vazquez"
+      },
+      {
+        "nameFirst": "Dan",
+        "nameLast": "Wilson"
+      },
+      {
+        "nameFirst": "Kurt",
+        "nameLast": "Ainsworth"
+      },
+      {
+        "nameFirst": "Rich",
+        "nameLast": "Aurilia"
+      },
+      {
+        "nameFirst": "Marvin",
+        "nameLast": "Benard"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Boehringer"
+      },
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Christiansen"
+      },
+      {
+        "nameFirst": "Felipe",
+        "nameLast": "Crespo"
+      },
+      {
+        "nameFirst": "Eric",
+        "nameLast": "Davis"
+      },
+      {
+        "nameFirst": "Russ",
+        "nameLast": "Davis"
+      },
+      {
+        "nameFirst": "Shawon",
+        "nameLast": "Dunston"
+      },
+      {
+        "nameFirst": "Alan",
+        "nameLast": "Embree"
+      },
+      {
+        "nameFirst": "Bobby",
+        "nameLast": "Estalella"
+      },
+      {
+        "nameFirst": "Shawn",
+        "nameLast": "Estes"
+      },
+      {
+        "nameFirst": "Pedro",
+        "nameLast": "Feliz"
+      },
+      {
+        "nameFirst": "Aaron",
+        "nameLast": "Fultz"
+      },
+      {
+        "nameFirst": "Andres",
+        "nameLast": "Galarraga"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Gardner"
+      },
+      {
+        "nameFirst": "Wayne",
+        "nameLast": "Gomes"
+      },
+      {
+        "nameFirst": "Edwards",
+        "nameLast": "Guzman"
+      },
+      {
+        "nameFirst": "Livan",
+        "nameLast": "Hernandez"
+      },
+      {
+        "nameFirst": "Ryan",
+        "nameLast": "Jensen"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Kent"
+      },
+      {
+        "nameFirst": "Jalal",
+        "nameLast": "Leach"
+      },
+      {
+        "nameFirst": "Ramon",
+        "nameLast": "Martinez"
+      },
+      {
+        "nameFirst": "Damon",
+        "nameLast": "Minor"
+      },
+      {
+        "nameFirst": "Calvin",
+        "nameLast": "Murray"
+      },
+      {
+        "nameFirst": "Robb",
+        "nameLast": "Nen"
+      },
+      {
+        "nameFirst": "Russ",
+        "nameLast": "Ortiz"
+      },
+      {
+        "nameFirst": "Dante",
+        "nameLast": "Powell"
+      },
+      {
+        "nameFirst": "Cody",
+        "nameLast": "Ransom"
+      },
+      {
+        "nameFirst": "Armando",
+        "nameLast": "Rios"
+      },
+      {
+        "nameFirst": "Felix",
+        "nameLast": "Rodriguez"
+      },
+      {
+        "nameFirst": "Kirk",
+        "nameLast": "Rueter"
+      },
+      {
+        "nameFirst": "Benito",
+        "nameLast": "Santiago"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Schmidt"
+      },
+      {
+        "nameFirst": "J. T.",
+        "nameLast": "Snow"
+      },
+      {
+        "nameFirst": "Yorvit",
+        "nameLast": "Torrealba"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Vander Wal"
+      },
+      {
+        "nameFirst": "Ryan",
+        "nameLast": "Vogelsong"
+      },
+      {
+        "nameFirst": "Tim",
+        "nameLast": "Worrell"
+      },
+      {
+        "nameFirst": "Chad",
+        "nameLast": "Zerbe"
+      },
+      {
+        "nameFirst": "Rick",
+        "nameLast": "Ankiel"
+      },
+      {
+        "nameFirst": "Alan",
+        "nameLast": "Benes"
+      },
+      {
+        "nameFirst": "Andy",
+        "nameLast": "Benes"
+      },
+      {
+        "nameFirst": "Bobby",
+        "nameLast": "Bonilla"
+      },
+      {
+        "nameFirst": "Miguel",
+        "nameLast": "Cairo"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Christiansen"
+      },
+      {
+        "nameFirst": "Stubby",
+        "nameLast": "Clapp"
+      },
+      {
+        "nameFirst": "J. D.",
+        "nameLast": "Drew"
+      },
+      {
+        "nameFirst": "Jim",
+        "nameLast": "Edmonds"
+      },
+      {
+        "nameFirst": "Luther",
+        "nameLast": "Hackman"
+      },
+      {
+        "nameFirst": "Dustin",
+        "nameLast": "Hermanson"
+      },
+      {
+        "nameFirst": "Chad",
+        "nameLast": "Hutchinson"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "James"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Karnuth"
+      },
+      {
+        "nameFirst": "Darryl",
+        "nameLast": "Kile"
+      },
+      {
+        "nameFirst": "Steve",
+        "nameLast": "Kline"
+      },
+      {
+        "nameFirst": "Ray",
+        "nameLast": "Lankford"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Mabry"
+      },
+      {
+        "nameFirst": "Eli",
+        "nameLast": "Marrero"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Matheny"
+      },
+      {
+        "nameFirst": "T. J.",
+        "nameLast": "Mathews"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Matthews"
+      },
+      {
+        "nameFirst": "Keith",
+        "nameLast": "McDonald"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "McGwire"
+      },
+      {
+        "nameFirst": "Matt",
+        "nameLast": "Morris"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "Ortega"
+      },
+      {
+        "nameFirst": "Craig",
+        "nameLast": "Paquette"
+      },
+      {
+        "nameFirst": "Placido",
+        "nameLast": "Polanco"
+      },
+      {
+        "nameFirst": "Albert",
+        "nameLast": "Pujols"
+      },
+      {
+        "nameFirst": "Edgar",
+        "nameLast": "Renteria"
+      },
+      {
+        "nameFirst": "Kerry",
+        "nameLast": "Robinson"
+      },
+      {
+        "nameFirst": "Luis",
+        "nameLast": "Saturria"
+      },
+      {
+        "nameFirst": "Bud",
+        "nameLast": "Smith"
+      },
+      {
+        "nameFirst": "Gene",
+        "nameLast": "Stechschulte"
+      },
+      {
+        "nameFirst": "Larry",
+        "nameLast": "Sutton"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Tabaka"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Timlin"
+      },
+      {
+        "nameFirst": "Dave",
+        "nameLast": "Veres"
+      },
+      {
+        "nameFirst": "Fernando",
+        "nameLast": "Vina"
+      },
+      {
+        "nameFirst": "Woody",
+        "nameLast": "Williams"
+      },
+      {
+        "nameFirst": "Brent",
+        "nameLast": "Abernathy"
+      },
+      {
+        "nameFirst": "Nick",
+        "nameLast": "Bierbrodt"
+      },
+      {
+        "nameFirst": "Mickey",
+        "nameLast": "Callaway"
+      },
+      {
+        "nameFirst": "Vinny",
+        "nameLast": "Castilla"
+      },
+      {
+        "nameFirst": "Jesus",
+        "nameLast": "Colome"
+      },
+      {
+        "nameFirst": "Steve",
+        "nameLast": "Cox"
+      },
+      {
+        "nameFirst": "Doug",
+        "nameLast": "Creek"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Difelice"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Fiore"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Flaherty"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Gomez"
+      },
+      {
+        "nameFirst": "Ben",
+        "nameLast": "Grieve"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Guillen"
+      },
+      {
+        "nameFirst": "Toby",
+        "nameLast": "Hall"
+      },
+      {
+        "nameFirst": "Travis",
+        "nameLast": "Harper"
+      },
+      {
+        "nameFirst": "Ken",
+        "nameLast": "Hill"
+      },
+      {
+        "nameFirst": "Paul",
+        "nameLast": "Hoover"
+      },
+      {
+        "nameFirst": "Aubrey",
+        "nameLast": "Huff"
+      },
+      {
+        "nameFirst": "Russ",
+        "nameLast": "Johnson"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Judd"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Kennedy"
+      },
+      {
+        "nameFirst": "Albie",
+        "nameLast": "Lopez"
+      },
+      {
+        "nameFirst": "Felix",
+        "nameLast": "Martinez"
+      },
+      {
+        "nameFirst": "Fred",
+        "nameLast": "McGriff"
+      },
+      {
+        "nameFirst": "Rusty",
+        "nameLast": "Meacham"
+      },
+      {
+        "nameFirst": "Travis",
+        "nameLast": "Phelps"
+      },
+      {
+        "nameFirst": "Ariel",
+        "nameLast": "Prieto"
+      },
+      {
+        "nameFirst": "Bryan",
+        "nameLast": "Rekar"
+      },
+      {
+        "nameFirst": "Damian",
+        "nameLast": "Rolls"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Rose"
+      },
+      {
+        "nameFirst": "Ryan",
+        "nameLast": "Rupe"
+      },
+      {
+        "nameFirst": "Jared",
+        "nameLast": "Sandberg"
+      },
+      {
+        "nameFirst": "Bobby",
+        "nameLast": "Seay"
+      },
+      {
+        "nameFirst": "Andy",
+        "nameLast": "Sheets"
+      },
+      {
+        "nameFirst": "Bob",
+        "nameLast": "Smith"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Standridge"
+      },
+      {
+        "nameFirst": "Tanyon",
+        "nameLast": "Sturtze"
+      },
+      {
+        "nameFirst": "Jason",
+        "nameLast": "Tyner"
+      },
+      {
+        "nameFirst": "Greg",
+        "nameLast": "Vaughn"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Wallace"
+      },
+      {
+        "nameFirst": "Dan",
+        "nameLast": "Wheeler"
+      },
+      {
+        "nameFirst": "Gerald",
+        "nameLast": "Williams"
+      },
+      {
+        "nameFirst": "Paul",
+        "nameLast": "Wilson"
+      },
+      {
+        "nameFirst": "Randy",
+        "nameLast": "Winn"
+      },
+      {
+        "nameFirst": "Esteban",
+        "nameLast": "Yan"
+      },
+      {
+        "nameFirst": "Victor",
+        "nameLast": "Zambrano"
+      },
+      {
+        "nameFirst": "Rob",
+        "nameLast": "Bell"
+      },
+      {
+        "nameFirst": "Joaquin",
+        "nameLast": "Benoit"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Brantley"
+      },
+      {
+        "nameFirst": "Cliff",
+        "nameLast": "Brumbaugh"
+      },
+      {
+        "nameFirst": "Ken",
+        "nameLast": "Caminiti"
+      },
+      {
+        "nameFirst": "Frank",
+        "nameLast": "Catalanotto"
+      },
+      {
+        "nameFirst": "Francisco",
+        "nameLast": "Cordero"
+      },
+      {
+        "nameFirst": "Tim",
+        "nameLast": "Crabtree"
+      },
+      {
+        "nameFirst": "Chad",
+        "nameLast": "Curtis"
+      },
+      {
+        "nameFirst": "Doug",
+        "nameLast": "Davis"
+      },
+      {
+        "nameFirst": "R. A.",
+        "nameLast": "Dickey"
+      },
+      {
+        "nameFirst": "Kelly",
+        "nameLast": "Dransfeldt"
+      },
+      {
+        "nameFirst": "Justin",
+        "nameLast": "Duchscherer"
+      },
+      {
+        "nameFirst": "Kevin",
+        "nameLast": "Foster"
+      },
+      {
+        "nameFirst": "Andres",
+        "nameLast": "Galarraga"
+      },
+      {
+        "nameFirst": "Ryan",
+        "nameLast": "Glynn"
+      },
+      {
+        "nameFirst": "Rusty",
+        "nameLast": "Greer"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "Haselman"
+      },
+      {
+        "nameFirst": "Rick",
+        "nameLast": "Helling"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Hubbard"
+      },
+      {
+        "nameFirst": "Marcus",
+        "nameLast": "Jensen"
+      },
+      {
+        "nameFirst": "Jonathan",
+        "nameLast": "Johnson"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Judd"
+      },
+      {
+        "nameFirst": "Gabe",
+        "nameLast": "Kapler"
+      },
+      {
+        "nameFirst": "Danny",
+        "nameLast": "Kolb"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Lamb"
+      },
+      {
+        "nameFirst": "Ricky",
+        "nameLast": "Ledee"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Magruder"
+      },
+      {
+        "nameFirst": "Pat",
+        "nameLast": "Mahomes"
+      },
+      {
+        "nameFirst": "Ruben",
+        "nameLast": "Mateo"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Michalak"
+      },
+      {
+        "nameFirst": "Doug",
+        "nameLast": "Mirabelli"
+      },
+      {
+        "nameFirst": "Craig",
+        "nameLast": "Monroe"
+      },
+      {
+        "nameFirst": "Juan",
+        "nameLast": "Moreno"
+      },
+      {
+        "nameFirst": "Aaron",
+        "nameLast": "Myette"
+      },
+      {
+        "nameFirst": "Darren",
+        "nameLast": "Oliver"
+      },
+      {
+        "nameFirst": "Rafael",
+        "nameLast": "Palmeiro"
+      },
+      {
+        "nameFirst": "Carlos",
+        "nameLast": "Pena"
+      },
+      {
+        "nameFirst": "Mark",
+        "nameLast": "Petkovsek"
+      },
+      {
+        "nameFirst": "Bo",
+        "nameLast": "Porter"
+      },
+      {
+        "nameFirst": "Alex",
+        "nameLast": "Rodriguez"
+      },
+      {
+        "nameFirst": "Ivan",
+        "nameLast": "Rodriguez"
+      },
+      {
+        "nameFirst": "Kenny",
+        "nameLast": "Rogers"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Sheldon"
+      },
+      {
+        "nameFirst": "Ruben",
+        "nameLast": "Sierra"
+      },
+      {
+        "nameFirst": "J. D.",
+        "nameLast": "Smart"
+      },
+      {
+        "nameFirst": "Randy",
+        "nameLast": "Velarde"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Venafro"
+      },
+      {
+        "nameFirst": "Brandon",
+        "nameLast": "Villafuerte"
+      },
+      {
+        "nameFirst": "Michael",
+        "nameLast": "Young"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Zimmerman"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Batista"
+      },
+      {
+        "nameFirst": "Kevin",
+        "nameLast": "Beirne"
+      },
+      {
+        "nameFirst": "Pedro",
+        "nameLast": "Borbon"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Bowles"
+      },
+      {
+        "nameFirst": "Homer",
+        "nameLast": "Bush"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Carpenter"
+      },
+      {
+        "nameFirst": "Alberto",
+        "nameLast": "Castillo"
+      },
+      {
+        "nameFirst": "Pasqual",
+        "nameLast": "Coco"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Cruz"
+      },
+      {
+        "nameFirst": "Carlos",
+        "nameLast": "Delgado"
+      },
+      {
+        "nameFirst": "Matt",
+        "nameLast": "DeWitt"
+      },
+      {
+        "nameFirst": "Kelvim",
+        "nameLast": "Escobar"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Eyre"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Fernandez"
+      },
+      {
+        "nameFirst": "Bob",
+        "nameLast": "File"
+      },
+      {
+        "nameFirst": "Darrin",
+        "nameLast": "Fletcher"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Frascatore"
+      },
+      {
+        "nameFirst": "Ryan",
+        "nameLast": "Freel"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Frye"
+      },
+      {
+        "nameFirst": "Brad",
+        "nameLast": "Fullmer"
+      },
+      {
+        "nameFirst": "Alex",
+        "nameLast": "Gonzalez"
+      },
+      {
+        "nameFirst": "Roy",
+        "nameLast": "Halladay"
+      },
+      {
+        "nameFirst": "Joey",
+        "nameLast": "Hamilton"
+      },
+      {
+        "nameFirst": "Cesar",
+        "nameLast": "Izturis"
+      },
+      {
+        "nameFirst": "Billy",
+        "nameLast": "Koch"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Latham"
+      },
+      {
+        "nameFirst": "Esteban",
+        "nameLast": "Loaiza"
+      },
+      {
+        "nameFirst": "Felipe",
+        "nameLast": "Lopez"
+      },
+      {
+        "nameFirst": "Luis",
+        "nameLast": "Lopez"
+      },
+      {
+        "nameFirst": "Brandon",
+        "nameLast": "Lyon"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Michalak"
+      },
+      {
+        "nameFirst": "Raul",
+        "nameLast": "Mondesi"
+      },
+      {
+        "nameFirst": "Lance",
+        "nameLast": "Painter"
+      },
+      {
+        "nameFirst": "Steve",
+        "nameLast": "Parris"
+      },
+      {
+        "nameFirst": "Josh",
+        "nameLast": "Phelps"
+      },
+      {
+        "nameFirst": "Dan",
+        "nameLast": "Plesac"
+      },
+      {
+        "nameFirst": "Paul",
+        "nameLast": "Quantrill"
+      },
+      {
+        "nameFirst": "Brian",
+        "nameLast": "Simmons"
+      },
+      {
+        "nameFirst": "Shannon",
+        "nameLast": "Stewart"
+      },
+      {
+        "nameFirst": "Vernon",
+        "nameLast": "Wells"
+      },
+      {
+        "nameFirst": "Chris",
+        "nameLast": "Woodward"
+      }
+    ]
+  },
+  "Which player was the first to reach 3,000 hits in Major League Baseball history?": {
+    "question": "Which player was the first to reach 3,000 hits in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Cap",
+        "nameLast": "Anson"
+      }
+    ]
+  },
+  "What is the name of the player who hit the most home runs in a single season in Major League Baseball history?": {
+    "question": "What is the name of the player who hit the most home runs in a single season in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      }
+    ]
+  },
+  "Which player hit the most home runs in a single season?": {
+    "question": "Which player hit the most home runs in a single season?",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      }
+    ]
+  },
+  "Which player received the most career hits in Major League Baseball?": {
+    "question": "Which player received the most career hits in Major League Baseball?",
+    "result": [
+      {
+        "nameFirst": "Pete",
+        "nameLast": "Rose"
+      }
+    ]
   }
 }

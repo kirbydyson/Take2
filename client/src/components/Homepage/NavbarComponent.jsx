@@ -77,7 +77,7 @@ export default function Navbar() {
                     <Link href='/scoredle'>Scoredle</Link>
                 </li>
                 <li>
-                    <Link href='/connections'>Connections</Link>
+                    <Link href='/word-series'>Word Series</Link>
                 </li>
                 <li>
                     <Link href='/trivia'>Trivia</Link>

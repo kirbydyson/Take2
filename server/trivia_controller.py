@@ -3,6 +3,7 @@ from utils.db_context import get_db_context
 from db import get_connection
 from openai import OpenAI
 from dotenv import load_dotenv
+from datetime import datetime
 import os
 import json
 import decimal
@@ -153,4 +154,42 @@ def get_random_teams():
 
     return jsonify({"teams": [row["teamName"] for row in rows]})
 
+@trivia_bp.route('/api/trivia/save-game', methods=['POST'])
+def save_trivia_game():
+    if session.get('email') is None:
+        return jsonify({"error": "Unauthorized"}), 401
 
+    data = request.json
+    number_correct = data.get('number_correct')
+
+    if number_correct is None or not isinstance(number_correct, int):
+        return jsonify({"error": "Invalid number_correct"}), 400
+
+    conn = get_connection()
+    cursor = conn.cursor()
+
+    # Get user_id based on session email
+    cursor.execute("SELECT id FROM users WHERE email = %s", (session['email'],))
+    user = cursor.fetchone()
+
+    if not user:
+        cursor.close()
+        conn.close()
+        return jsonify({"error": "User not found"}), 404
+
+    user_id = user[0]
+
+    # Insert game result
+    cursor.execute(
+        """
+        INSERT INTO trivia_game_results (userId, number_correct)
+        VALUES (%s, %s)
+        """,
+        (user_id, number_correct)
+    )
+
+    conn.commit()
+    cursor.close()
+    conn.close()
+
+    return jsonify({"message": "Game saved successfully"}), 200
