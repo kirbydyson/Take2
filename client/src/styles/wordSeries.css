@@ -9,8 +9,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 80px 40px 20px 40px; /* Matches Scoredle spacing */
 }
+
+.wordseries-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+
+}
+
 
 .wordseries-header h1 {
   margin: 0;
@@ -24,12 +33,17 @@
 .wordseries-message-area {
   margin-bottom: 20px;
   min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .wordseries-message {
   font-weight: bold;
   color: #007bff;
-  margin-bottom: 5px;
+  margin: 0;
+  font-size: 16px;
 }
 
 .wordseries-attempts {
@@ -48,6 +62,7 @@
   height: 80px;
   border-radius: 8px;
   background-color: #f8f8f8;
+   color: black;
   border: 2px solid #ddd;
   display: flex;
   align-items: center;
@@ -164,6 +179,56 @@
   font-size: 16px;
   margin-bottom: 15px;
 }
+.wordseries-button-area {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+  }
+  .wordseries-submit-button,
+  .wordseries-deselect-button,
+  .wordseries-shuffle-button {
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    min-width: 100px;
+}
+  .wordseries-submit-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.wordseries-submit-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.03);
+}
+
+.wordseries-deselect-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+.wordseries-deselect-button:hover {
+  background-color: #5a6268;
+  transform: scale(1.03);
+}
+
+.wordseries-shuffle-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.wordseries-shuffle-button:hover {
+  background-color: #218838;
+  transform: scale(1.03);
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
@@ -171,9 +236,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .wordseries-button-area {
-    flex-direction: column;
-  }
 
   .wordseries-player-cell {
     height: 70px;
