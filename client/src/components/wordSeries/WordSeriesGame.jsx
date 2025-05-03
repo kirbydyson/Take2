@@ -4,7 +4,6 @@ import IconButton from '@mui/material/IconButton';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import Grid from './Grid';
 
-// TODO: finish the webpage for the game
 export default function WordSeriesGame() {
     const [players, setPlayers] = useState([]);
     const [selectedPlayers, setSelectedPlayers] = useState([]);
@@ -12,25 +11,28 @@ export default function WordSeriesGame() {
     const [showInstructions, setShowInstructions] = useState(false);
 
     useEffect(() => {
-        // Test data
-        setPlayers([
-            { id: 1, name: 'Derek Jeter' },
-            { id: 2, name: 'Babe Ruth' },
-            { id: 3, name: 'Jackie Robinson' },
-            { id: 4, name: 'Ken Griffey Jr.' },
-            { id: 5, name: 'Willie Mays' },
-            { id: 6, name: 'Mickey Mantle' },
-            { id: 7, name: 'Hank Aaron' },
-            { id: 8, name: 'Lou Gehrig' },
-            { id: 9, name: 'Shohei Ohtani' },
-            { id: 10, name: 'Mike Trout' },
-            { id: 11, name: 'Clayton Kershaw' },
-            { id: 12, name: 'Justin Verlander' },
-            { id: 13, name: 'Max Scherzer' },
-            { id: 14, name: 'Aaron Judge' },
-            { id: 15, name: 'Freddie Freeman' },
-            { id: 16, name: 'Ronald Acuña Jr.' },
-        ]);
+        const fetchWordSeriesGroups = async () => {
+            try {
+                const res = await fetch(
+                    'http://localhost:8080/api/wordseries/get-words',
+                );
+                const data = await res.json();
+
+                if (data.groups) {
+                    const combinedPlayers = data.groups
+                        .flatMap((group) => group.players)
+                        .map((name, idx) => ({
+                            id: idx + 1,
+                            name,
+                        }));
+                    setPlayers(combinedPlayers);
+                }
+            } catch (err) {
+                console.error('Error fetching word series groups:', err);
+            }
+        };
+
+        fetchWordSeriesGroups();
     }, []);
 
     const handlePlayerClick = (player) => {
