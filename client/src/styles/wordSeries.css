@@ -1,184 +1,200 @@
 .wordseries-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
 }
 
 .wordseries-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 80px 40px 20px 40px; /* Matches Scoredle spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 40px 20px 40px;
+    /* Matches Scoredle spacing */
 }
 
 .wordseries-title {
-  font-size: 32px;
-  font-weight: bold;
-  color: black;
-  margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
 
 }
 
 
 .wordseries-header h1 {
-  margin: 0;
-  color: #333;
+    margin: 0;
+    color: #333;
 }
 
 .wordseries-help-button {
-  color: #666;
+    color: #666;
 }
 
 .wordseries-message-area {
-  margin-bottom: 20px;
-  min-height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    margin-bottom: 20px;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .wordseries-message {
-  font-weight: bold;
-  color: #007bff;
-  margin: 0;
-  font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    margin: 0;
+    font-size: 16px;
 }
 
 .wordseries-attempts {
-  font-size: 14px;
-  color: #666;
+    font-size: 14px;
+    color: #666;
 }
 
 .wordseries-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .wordseries-player-cell {
-  height: 80px;
-  border-radius: 8px;
-  background-color: #f8f8f8;
-   color: black;
-  border: 2px solid #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  padding: 10px;
-  word-break: break-word;
+    height: 80px;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    color: black;
+    border: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 10px;
+    word-break: break-word;
 }
 
 .wordseries-player-cell:hover:not(:disabled) {
-  transform: scale(1.02);
-  border-color: #007bff;
+    transform: scale(1.02);
+    border-color: #007bff;
 }
 
 .wordseries-player-cell.wordseries-selected {
-  background-color: #0066cc;
-  color: white;
-  border-color: #0044aa;
+    background-color: #0066cc;
+    color: white;
+    border-color: #0044aa;
 }
 
 .wordseries-player-cell:disabled {
-  cursor: default;
-  opacity: 1; /* Keep opacity at 1 to show solved groups */
+    cursor: default;
+    opacity: 1;
+    /* Keep opacity at 1 to show solved groups */
 }
 
 /* Group colors */
-.wordseries-yellow, .wordseries-group-item.wordseries-yellow,
-.wordseries-missed-group.wordseries-yellow, .wordseries-found-group.wordseries-yellow {
-  background-color: #f1c40f;
-  color: #000;
-  border-color: #f39c12;
+.wordseries-yellow,
+.wordseries-group-item.wordseries-yellow,
+.wordseries-missed-group.wordseries-yellow,
+.wordseries-found-group.wordseries-yellow {
+    background-color: #f1c40f;
+    color: #000;
+    border-color: #f39c12;
 }
 
-.wordseries-green, .wordseries-group-item.wordseries-green,
-.wordseries-missed-group.wordseries-green, .wordseries-found-group.wordseries-green {
-  background-color: #2ecc71;
-  color: #000;
-  border-color: #27ae60;
+.wordseries-green,
+.wordseries-group-item.wordseries-green,
+.wordseries-missed-group.wordseries-green,
+.wordseries-found-group.wordseries-green {
+    background-color: #2ecc71;
+    color: #000;
+    border-color: #27ae60;
 }
 
-.wordseries-blue, .wordseries-group-item.wordseries-blue,
-.wordseries-missed-group.wordseries-blue, .wordseries-found-group.wordseries-blue {
-  background-color: #3498db;
-  color: #fff;
-  border-color: #2980b9;
+.wordseries-blue,
+.wordseries-group-item.wordseries-blue,
+.wordseries-missed-group.wordseries-blue,
+.wordseries-found-group.wordseries-blue {
+    background-color: #3498db;
+    color: #fff;
+    border-color: #2980b9;
 }
 
-.wordseries-purple, .wordseries-group-item.wordseries-purple,
-.wordseries-missed-group.wordseries-purple, .wordseries-found-group.wordseries-purple {
-  background-color: #9b59b6;
-  color: #fff;
-  border-color: #8e44ad;
+.wordseries-purple,
+.wordseries-group-item.wordseries-purple,
+.wordseries-missed-group.wordseries-purple,
+.wordseries-found-group.wordseries-purple {
+    background-color: #9b59b6;
+    color: #fff;
+    border-color: #8e44ad;
 }
 
 .wordseries-button-area {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
 }
 
 .wordseries-shuffle-button,
 .wordseries-submit-button,
 .wordseries-deselect-button {
-  flex: 1;
+    flex: 1;
 }
 
 .wordseries-discovered-groups {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
 }
 
 .wordseries-group-item {
-  padding: 10px;
-  border-radius: 5px;
-  text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
 }
 
 .wordseries-group-name {
-  font-weight: bold;
-  font-size: 16px;
-  margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
 .wordseries-group-players {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 .wordseries-missed-group,
 .wordseries-found-group {
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .wordseries-summary {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .wordseries-loading,
 .wordseries-error {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 18px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
 }
 
 .wordseries-modal-message {
-  font-size: 16px;
-  margin-bottom: 15px;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
+
 .wordseries-button-area {
     display: flex;
     justify-content: center;
@@ -186,10 +202,11 @@
     margin-top: 20px;
     flex-wrap: wrap;
 
-  }
-  .wordseries-submit-button,
-  .wordseries-deselect-button,
-  .wordseries-shuffle-button {
+}
+
+.wordseries-submit-button,
+.wordseries-deselect-button,
+.wordseries-shuffle-button {
     padding: 10px 18px;
     font-size: 14px;
     font-weight: bold;
@@ -199,46 +216,47 @@
     transition: background-color 0.3s ease, transform 0.1s ease;
     min-width: 100px;
 }
-  .wordseries-submit-button {
-  background-color: #007bff;
-  color: white;
+
+.wordseries-submit-button {
+    background-color: #007bff;
+    color: white;
 }
 
 .wordseries-submit-button:hover {
-  background-color: #0056b3;
-  transform: scale(1.03);
+    background-color: #0056b3;
+    transform: scale(1.03);
 }
 
 .wordseries-deselect-button {
-  background-color: #6c757d;
-  color: white;
+    background-color: #6c757d;
+    color: white;
 }
 
 .wordseries-deselect-button:hover {
-  background-color: #5a6268;
-  transform: scale(1.03);
+    background-color: #5a6268;
+    transform: scale(1.03);
 }
 
 .wordseries-shuffle-button {
-  background-color: #28a745;
-  color: white;
+    background-color: #28a745;
+    color: white;
 }
 
 .wordseries-shuffle-button:hover {
-  background-color: #218838;
-  transform: scale(1.03);
+    background-color: #218838;
+    transform: scale(1.03);
 }
 
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
-  .wordseries-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .wordseries-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 
-  .wordseries-player-cell {
-    height: 70px;
-    font-size: 12px;
-  }
+    .wordseries-player-cell {
+        height: 70px;
+        font-size: 12px;
+    }
 }

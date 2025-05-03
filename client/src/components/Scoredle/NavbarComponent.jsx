@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '../../styles/Navbar.module.css';
+import styles from '../../styles/NavbarBlack.module.css';
 import { useEffect, useState, useRef } from 'react';
 import Avatar from '@mui/material/Avatar';
 import Popper from '@mui/material/Popper';
@@ -55,7 +55,10 @@ export default function Navbar() {
     };
 
     const handleLogout = async () => {
-        await fetch('http://localhost:8080/auth/logout', { method: 'POST', credentials: 'include' });
+        await fetch('http://localhost:8080/auth/logout', {
+            method: 'POST',
+            credentials: 'include',
+        });
         setUser(null);
         setOpen(false);
     };
@@ -130,19 +133,20 @@ export default function Navbar() {
                         </Popper>
                     </>
                 ) : (
-                        <Button
-                            variant='contained'
-                            href='/login'
-                            sx={{
-                                padding: '6px 30px',
-                                borderRadius: '50px',
-                                color: 'black',
-                                backgroundColor: 'white',
-                                letterSpacing: '1px',
-                                fontSize: '1rem',
-                                textTransform: 'none',
-                                fontWeight: 'bold',
-                            }}>
+                    <Button
+                        variant='contained'
+                        href='/login'
+                        sx={{
+                            padding: '6px 30px',
+                            borderRadius: '50px',
+                            color: 'black',
+                            backgroundColor: 'white',
+                            letterSpacing: '1px',
+                            fontSize: '1rem',
+                            textTransform: 'none',
+                            fontWeight: 'bold',
+                        }}
+                    >
                         Login
                     </Button>
                 )}

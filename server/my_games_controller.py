@@ -1,0 +1,48 @@
+from flask import Blueprint, jsonify, session
+from db import get_connection
+
+my_games_bp = Blueprint('my_games', __name__)
+
+@my_games_bp.route('/api/my-games', methods=['GET'])
+def get_my_games():
+    if session.get('email') is None:
+        return jsonify({"error": "Unauthorized"}), 401
+
+    conn = get_connection()
+    cursor = conn.cursor(dictionary=True)
+
+    # Get user ID
+    cursor.execute("SELECT id FROM users WHERE email = %s", (session['email'],))
+    user = cursor.fetchone()
+    if not user:
+        cursor.close()
+        conn.close()
+        return jsonify({"error": "User not found"}), 404
+
+    userId = user['id']
+
+    # Get trivia game results
+    cursor.execute("""
+        SELECT id, number_correct, played_at
+        FROM trivia_game_results
+        WHERE userId = %s
+        ORDER BY played_at DESC
+    """, (userId,))
+    trivia_games = cursor.fetchall()
+
+    # Get scoredle game results
+    cursor.execute("""
+        SELECT id, correctWord, attemptCount, guessedWord, timestamp
+        FROM scoredle_games
+        WHERE userId = %s
+        ORDER BY timestamp DESC
+    """, (userId,))
+    scoredle_games = cursor.fetchall()
+
+    cursor.close()
+    conn.close()
+
+    return jsonify({
+        "triviaGames": trivia_games,
+        "scoredleGames": scoredle_games
+    })
