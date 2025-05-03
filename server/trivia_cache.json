@@ -351,5 +351,1966 @@
         "nameLast": "Ruth"
       }
     ]
+  },
+  "Which team won the first World Series in Major League Baseball history?": {
+    "question": "Which team won the first World Series in Major League Baseball history?",
+    "result": [
+      {
+        "team_name": "Altoona Mountain City"
+      },
+      {
+        "team_name": "Buffalo Bisons"
+      },
+      {
+        "team_name": "Baltimore Orioles"
+      },
+      {
+        "team_name": "Baltimore Monumentals"
+      },
+      {
+        "team_name": "Brooklyn Atlantics"
+      },
+      {
+        "team_name": "Boston Beaneaters"
+      },
+      {
+        "team_name": "Boston Reds"
+      },
+      {
+        "team_name": "Chicago White Stockings"
+      },
+      {
+        "team_name": "Chicago/Pittsburgh (Union League)"
+      },
+      {
+        "team_name": "Cleveland Blues"
+      },
+      {
+        "team_name": "Columbus Buckeyes"
+      },
+      {
+        "team_name": "Cincinnati Red Stockings"
+      },
+      {
+        "team_name": "Cincinnati Outlaw Reds"
+      },
+      {
+        "team_name": "Detroit Wolverines"
+      },
+      {
+        "team_name": "Indianapolis Hoosiers"
+      },
+      {
+        "team_name": "Kansas City Cowboys"
+      },
+      {
+        "team_name": "Louisville Eclipse"
+      },
+      {
+        "team_name": "Milwaukee Brewers"
+      },
+      {
+        "team_name": "New York Gothams"
+      },
+      {
+        "team_name": "New York Metropolitans"
+      },
+      {
+        "team_name": "Philadelphia Athletics"
+      },
+      {
+        "team_name": "Philadelphia Quakers"
+      },
+      {
+        "team_name": "Philadelphia Keystones"
+      },
+      {
+        "team_name": "Providence Grays"
+      },
+      {
+        "team_name": "Pittsburg Alleghenys"
+      },
+      {
+        "team_name": "Richmond Virginians"
+      },
+      {
+        "team_name": "St. Louis Browns"
+      },
+      {
+        "team_name": "St. Louis Maroons"
+      },
+      {
+        "team_name": "St. Paul White Caps"
+      },
+      {
+        "team_name": "Toledo Blue Stockings"
+      },
+      {
+        "team_name": "Wilmington Quicksteps"
+      },
+      {
+        "team_name": "Washington Nationals"
+      },
+      {
+        "team_name": "Washington Nationals"
+      }
+    ]
+  },
+  "What is the name of the player who hit the most home runs in a single season?": {
+    "question": "What is the name of the player who hit the most home runs in a single season?",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      }
+    ]
+  },
+  "Which team won the first ever World Series in 1903?": {
+    "question": "Which team won the first ever World Series in 1903?",
+    "result": [
+      {
+        "team_name": "Boston Americans"
+      }
+    ]
+  },
+  "Who was the first player to hit 500 career home runs in the MLB?": {
+    "question": "Who was the first player to hit 500 career home runs in the MLB?",
+    "result": [
+      {
+        "nameFirst": "Babe",
+        "nameLast": "Ruth"
+      }
+    ]
+  },
+  "Who was the first player to hit 60 home runs in a single season in Major League Baseball history?": {
+    "question": "Who was the first player to hit 60 home runs in a single season in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Babe",
+        "nameLast": "Ruth"
+      }
+    ]
+  },
+  "Which team won the 2019 World Series?": {
+    "question": "Which team won the 2019 World Series?",
+    "result": [
+      {
+        "team_name": "Washington Nationals"
+      }
+    ]
+  },
+  "Who was the first player to win the Rookie of the Year and Most Valuable Player awards in the same season in Major League Baseball history?": {
+    "question": "Who was the first player to win the Rookie of the Year and Most Valuable Player awards in the same season in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Jackie",
+        "nameLast": "Robinson"
+      }
+    ]
+  },
+  "Which team won the World Series in 2004?": {
+    "question": "Which team won the World Series in 2004?",
+    "result": [
+      {
+        "team_name": "Boston Red Sox"
+      }
+    ]
+  },
+  "Which player holds the record for most career home runs in Major League Baseball history?": {
+    "question": "Which player holds the record for most career home runs in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      }
+    ]
+  },
+  "Who was the first player to hit 500 career home runs?": {
+    "question": "Who was the first player to hit 500 career home runs?",
+    "result": [
+      {
+        "nameFirst": "Babe",
+        "nameLast": "Ruth"
+      }
+    ]
+  },
+  "What team won the World Series in 2020?": {
+    "question": "What team won the World Series in 2020?",
+    "result": [
+      {
+        "team_name": "Los Angeles Dodgers"
+      }
+    ]
+  },
+  "Which team won the most World Series championships in Major League Baseball history?": {
+    "question": "Which team won the most World Series championships in Major League Baseball history?",
+    "result": [
+      {
+        "team_name": "New York Yankees"
+      }
+    ]
+  },
+  "Who was the first player to hit 50 home runs in a single season?": {
+    "question": "Who was the first player to hit 50 home runs in a single season?",
+    "result": [
+      {
+        "nameFirst": "Babe",
+        "nameLast": "Ruth"
+      }
+    ]
+  },
+  "What is the name of the player who holds the record for most career hits in Major League Baseball?": {
+    "question": "What is the name of the player who holds the record for most career hits in Major League Baseball?",
+    "result": [
+      {
+        "nameFirst": "Pete",
+        "nameLast": "Rose"
+      }
+    ]
+  },
+  "Which player holds the record for most career home runs in Major League Baseball?": {
+    "question": "Which player holds the record for most career home runs in Major League Baseball?",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      }
+    ]
+  },
+  "In which year was Babe Ruth inducted into the Baseball Hall of Fame?": {
+    "question": "In which year was Babe Ruth inducted into the Baseball Hall of Fame?",
+    "result": [
+      {
+        "nameFirst": "Ty",
+        "nameLast": "Cobb"
+      },
+      {
+        "nameFirst": "Babe",
+        "nameLast": "Ruth"
+      },
+      {
+        "nameFirst": "Honus",
+        "nameLast": "Wagner"
+      },
+      {
+        "nameFirst": "Christy",
+        "nameLast": "Mathewson"
+      },
+      {
+        "nameFirst": "Walter",
+        "nameLast": "Johnson"
+      },
+      {
+        "nameFirst": "Nap",
+        "nameLast": "Lajoie"
+      },
+      {
+        "nameFirst": "Tris",
+        "nameLast": "Speaker"
+      },
+      {
+        "nameFirst": "Cy",
+        "nameLast": "Young"
+      },
+      {
+        "nameFirst": "Morgan",
+        "nameLast": "Bulkeley"
+      },
+      {
+        "nameFirst": "Ban",
+        "nameLast": "Johnson"
+      },
+      {
+        "nameFirst": "Connie",
+        "nameLast": "Mack"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "McGraw"
+      },
+      {
+        "nameFirst": "George",
+        "nameLast": "Wright"
+      },
+      {
+        "nameFirst": "Pete",
+        "nameLast": "Alexander"
+      },
+      {
+        "nameFirst": "Alexander",
+        "nameLast": "Cartwright"
+      },
+      {
+        "nameFirst": "Henry",
+        "nameLast": "Chadwick"
+      },
+      {
+        "nameFirst": "George",
+        "nameLast": "Sisler"
+      },
+      {
+        "nameFirst": "Eddie",
+        "nameLast": "Collins"
+      },
+      {
+        "nameFirst": "Willie",
+        "nameLast": "Keeler"
+      },
+      {
+        "nameFirst": "Cap",
+        "nameLast": "Anson"
+      },
+      {
+        "nameFirst": "Charlie",
+        "nameLast": "Comiskey"
+      },
+      {
+        "nameFirst": "Candy",
+        "nameLast": "Cummings"
+      },
+      {
+        "nameFirst": "Buck",
+        "nameLast": "Ewing"
+      },
+      {
+        "nameFirst": "Lou",
+        "nameLast": "Gehrig"
+      },
+      {
+        "nameFirst": "Old Hoss",
+        "nameLast": "Radbourn"
+      },
+      {
+        "nameFirst": "Al",
+        "nameLast": "Spalding"
+      },
+      {
+        "nameFirst": "Rogers",
+        "nameLast": "Hornsby"
+      },
+      {
+        "nameFirst": "Kenesaw",
+        "nameLast": "Landis"
+      },
+      {
+        "nameFirst": "Roger",
+        "nameLast": "Bresnahan"
+      },
+      {
+        "nameFirst": "Dan",
+        "nameLast": "Brouthers"
+      },
+      {
+        "nameFirst": "Fred",
+        "nameLast": "Clarke"
+      },
+      {
+        "nameFirst": "Jimmy",
+        "nameLast": "Collins"
+      },
+      {
+        "nameFirst": "Ed",
+        "nameLast": "Delahanty"
+      },
+      {
+        "nameFirst": "Hugh",
+        "nameLast": "Duffy"
+      },
+      {
+        "nameFirst": "Hughie",
+        "nameLast": "Jennings"
+      },
+      {
+        "nameFirst": "King",
+        "nameLast": "Kelly"
+      },
+      {
+        "nameFirst": "Jim",
+        "nameLast": "O'Rourke"
+      },
+      {
+        "nameFirst": "Wilbert",
+        "nameLast": "Robinson"
+      },
+      {
+        "nameFirst": "Jesse",
+        "nameLast": "Burkett"
+      },
+      {
+        "nameFirst": "Frank",
+        "nameLast": "Chance"
+      },
+      {
+        "nameFirst": "Jack",
+        "nameLast": "Chesbro"
+      },
+      {
+        "nameFirst": "Johnny",
+        "nameLast": "Evers"
+      },
+      {
+        "nameFirst": "Clark",
+        "nameLast": "Griffith"
+      },
+      {
+        "nameFirst": "Tommy",
+        "nameLast": "McCarthy"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "McGinnity"
+      },
+      {
+        "nameFirst": "Eddie",
+        "nameLast": "Plank"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Tinker"
+      },
+      {
+        "nameFirst": "Rube",
+        "nameLast": "Waddell"
+      },
+      {
+        "nameFirst": "Ed",
+        "nameLast": "Walsh"
+      },
+      {
+        "nameFirst": "Carl",
+        "nameLast": "Hubbell"
+      },
+      {
+        "nameFirst": "Frankie",
+        "nameLast": "Frisch"
+      },
+      {
+        "nameFirst": "Mickey",
+        "nameLast": "Cochrane"
+      },
+      {
+        "nameFirst": "Lefty",
+        "nameLast": "Grove"
+      },
+      {
+        "nameFirst": "Herb",
+        "nameLast": "Pennock"
+      },
+      {
+        "nameFirst": "Pie",
+        "nameLast": "Traynor"
+      },
+      {
+        "nameFirst": "Charlie",
+        "nameLast": "Gehringer"
+      },
+      {
+        "nameFirst": "Mordecai",
+        "nameLast": "Brown"
+      },
+      {
+        "nameFirst": "Kid",
+        "nameLast": "Nichols"
+      },
+      {
+        "nameFirst": "Mel",
+        "nameLast": "Ott"
+      },
+      {
+        "nameFirst": "Jimmie",
+        "nameLast": "Foxx"
+      },
+      {
+        "nameFirst": "Harry",
+        "nameLast": "Heilmann"
+      },
+      {
+        "nameFirst": "Paul",
+        "nameLast": "Waner"
+      },
+      {
+        "nameFirst": "Dizzy",
+        "nameLast": "Dean"
+      },
+      {
+        "nameFirst": "Al",
+        "nameLast": "Simmons"
+      },
+      {
+        "nameFirst": "Ed",
+        "nameLast": "Barrow"
+      },
+      {
+        "nameFirst": "Charles",
+        "nameLast": "Bender"
+      },
+      {
+        "nameFirst": "Tommy",
+        "nameLast": "Connolly"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "Klem"
+      },
+      {
+        "nameFirst": "Bobby",
+        "nameLast": "Wallace"
+      },
+      {
+        "nameFirst": "Harry",
+        "nameLast": "Wright"
+      },
+      {
+        "nameFirst": "Rabbit",
+        "nameLast": "Maranville"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "Dickey"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "Terry"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "DiMaggio"
+      },
+      {
+        "nameFirst": "Ted",
+        "nameLast": "Lyons"
+      },
+      {
+        "nameFirst": "Dazzy",
+        "nameLast": "Vance"
+      },
+      {
+        "nameFirst": "Gabby",
+        "nameLast": "Hartnett"
+      },
+      {
+        "nameFirst": "Home Run",
+        "nameLast": "Baker"
+      },
+      {
+        "nameFirst": "Ray",
+        "nameLast": "Schalk"
+      },
+      {
+        "nameFirst": "Hank",
+        "nameLast": "Greenberg"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Cronin"
+      },
+      {
+        "nameFirst": "Sam",
+        "nameLast": "Crawford"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "McCarthy"
+      },
+      {
+        "nameFirst": "Zack",
+        "nameLast": "Wheat"
+      },
+      {
+        "nameFirst": "Max",
+        "nameLast": "Carey"
+      },
+      {
+        "nameFirst": "Billy",
+        "nameLast": "Hamilton"
+      },
+      {
+        "nameFirst": "Bob",
+        "nameLast": "Feller"
+      },
+      {
+        "nameFirst": "Jackie",
+        "nameLast": "Robinson"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "McKechnie"
+      },
+      {
+        "nameFirst": "Edd",
+        "nameLast": "Roush"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Clarkson"
+      },
+      {
+        "nameFirst": "Elmer",
+        "nameLast": "Flick"
+      },
+      {
+        "nameFirst": "Sam",
+        "nameLast": "Rice"
+      },
+      {
+        "nameFirst": "Eppa",
+        "nameLast": "Rixey"
+      },
+      {
+        "nameFirst": "Luke",
+        "nameLast": "Appling"
+      },
+      {
+        "nameFirst": "Red",
+        "nameLast": "Faber"
+      },
+      {
+        "nameFirst": "Burleigh",
+        "nameLast": "Grimes"
+      },
+      {
+        "nameFirst": "Miller",
+        "nameLast": "Huggins"
+      },
+      {
+        "nameFirst": "Tim",
+        "nameLast": "Keefe"
+      },
+      {
+        "nameFirst": "Heinie",
+        "nameLast": "Manush"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Ward"
+      },
+      {
+        "nameFirst": "Pud",
+        "nameLast": "Galvin"
+      },
+      {
+        "nameFirst": "Ted",
+        "nameLast": "Williams"
+      },
+      {
+        "nameFirst": "Casey",
+        "nameLast": "Stengel"
+      },
+      {
+        "nameFirst": "Red",
+        "nameLast": "Ruffing"
+      },
+      {
+        "nameFirst": "Branch",
+        "nameLast": "Rickey"
+      },
+      {
+        "nameFirst": "Lloyd",
+        "nameLast": "Waner"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Medwick"
+      },
+      {
+        "nameFirst": "Kiki",
+        "nameLast": "Cuyler"
+      },
+      {
+        "nameFirst": "Goose",
+        "nameLast": "Goslin"
+      },
+      {
+        "nameFirst": "Stan",
+        "nameLast": "Musial"
+      },
+      {
+        "nameFirst": "Roy",
+        "nameLast": "Campanella"
+      },
+      {
+        "nameFirst": "Stan",
+        "nameLast": "Coveleski"
+      },
+      {
+        "nameFirst": "Waite",
+        "nameLast": "Hoyt"
+      },
+      {
+        "nameFirst": "Lou",
+        "nameLast": "Boudreau"
+      },
+      {
+        "nameFirst": "Earle",
+        "nameLast": "Combs"
+      },
+      {
+        "nameFirst": "Ford",
+        "nameLast": "Frick"
+      },
+      {
+        "nameFirst": "Jesse",
+        "nameLast": "Haines"
+      },
+      {
+        "nameFirst": "Dave",
+        "nameLast": "Bancroft"
+      },
+      {
+        "nameFirst": "Jake",
+        "nameLast": "Beckley"
+      },
+      {
+        "nameFirst": "Chick",
+        "nameLast": "Hafey"
+      },
+      {
+        "nameFirst": "Harry",
+        "nameLast": "Hooper"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Kelley"
+      },
+      {
+        "nameFirst": "Rube",
+        "nameLast": "Marquard"
+      },
+      {
+        "nameFirst": "Satchel",
+        "nameLast": "Paige"
+      },
+      {
+        "nameFirst": "George",
+        "nameLast": "Weiss"
+      },
+      {
+        "nameFirst": "Sandy",
+        "nameLast": "Koufax"
+      },
+      {
+        "nameFirst": "Yogi",
+        "nameLast": "Berra"
+      },
+      {
+        "nameFirst": "Early",
+        "nameLast": "Wynn"
+      },
+      {
+        "nameFirst": "Josh",
+        "nameLast": "Gibson"
+      },
+      {
+        "nameFirst": "Lefty",
+        "nameLast": "Gomez"
+      },
+      {
+        "nameFirst": "Will",
+        "nameLast": "Harridge"
+      },
+      {
+        "nameFirst": "Buck",
+        "nameLast": "Leonard"
+      },
+      {
+        "nameFirst": "Ross",
+        "nameLast": "Youngs"
+      },
+      {
+        "nameFirst": "Warren",
+        "nameLast": "Spahn"
+      },
+      {
+        "nameFirst": "Roberto",
+        "nameLast": "Clemente"
+      },
+      {
+        "nameFirst": "Billy",
+        "nameLast": "Evans"
+      },
+      {
+        "nameFirst": "Monte",
+        "nameLast": "Irvin"
+      },
+      {
+        "nameFirst": "George",
+        "nameLast": "Kelly"
+      },
+      {
+        "nameFirst": "Mickey",
+        "nameLast": "Welch"
+      },
+      {
+        "nameFirst": "Mickey",
+        "nameLast": "Mantle"
+      },
+      {
+        "nameFirst": "Whitey",
+        "nameLast": "Ford"
+      },
+      {
+        "nameFirst": "Cool Papa",
+        "nameLast": "Bell"
+      },
+      {
+        "nameFirst": "Jim",
+        "nameLast": "Bottomley"
+      },
+      {
+        "nameFirst": "Jocko",
+        "nameLast": "Conlan"
+      },
+      {
+        "nameFirst": "Sam",
+        "nameLast": "Thompson"
+      },
+      {
+        "nameFirst": "Ralph",
+        "nameLast": "Kiner"
+      },
+      {
+        "nameFirst": "Earl",
+        "nameLast": "Averill"
+      },
+      {
+        "nameFirst": "Bucky",
+        "nameLast": "Harris"
+      },
+      {
+        "nameFirst": "Billy",
+        "nameLast": "Herman"
+      },
+      {
+        "nameFirst": "Judy",
+        "nameLast": "Johnson"
+      },
+      {
+        "nameFirst": "Robin",
+        "nameLast": "Roberts"
+      },
+      {
+        "nameFirst": "Bob",
+        "nameLast": "Lemon"
+      },
+      {
+        "nameFirst": "Oscar",
+        "nameLast": "Charleston"
+      },
+      {
+        "nameFirst": "Roger",
+        "nameLast": "Connor"
+      },
+      {
+        "nameFirst": "Cal",
+        "nameLast": "Hubbard"
+      },
+      {
+        "nameFirst": "Freddie",
+        "nameLast": "Lindstrom"
+      },
+      {
+        "nameFirst": "Ernie",
+        "nameLast": "Banks"
+      },
+      {
+        "nameFirst": "Martin",
+        "nameLast": "Dihigo"
+      },
+      {
+        "nameFirst": "John Henry",
+        "nameLast": "Lloyd"
+      },
+      {
+        "nameFirst": "Al",
+        "nameLast": "Lopez"
+      },
+      {
+        "nameFirst": "Amos",
+        "nameLast": "Rusie"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Sewell"
+      },
+      {
+        "nameFirst": "Eddie",
+        "nameLast": "Mathews"
+      },
+      {
+        "nameFirst": "Addie",
+        "nameLast": "Joss"
+      },
+      {
+        "nameFirst": "Larry",
+        "nameLast": "MacPhail"
+      },
+      {
+        "nameFirst": "Willie",
+        "nameLast": "Mays"
+      },
+      {
+        "nameFirst": "Warren",
+        "nameLast": "Giles"
+      },
+      {
+        "nameFirst": "Hack",
+        "nameLast": "Wilson"
+      },
+      {
+        "nameFirst": "Al",
+        "nameLast": "Kaline"
+      },
+      {
+        "nameFirst": "Duke",
+        "nameLast": "Snider"
+      },
+      {
+        "nameFirst": "Chuck",
+        "nameLast": "Klein"
+      },
+      {
+        "nameFirst": "Tom",
+        "nameLast": "Yawkey"
+      },
+      {
+        "nameFirst": "Bob",
+        "nameLast": "Gibson"
+      },
+      {
+        "nameFirst": "Rube",
+        "nameLast": "Foster"
+      },
+      {
+        "nameFirst": "Johnny",
+        "nameLast": "Mize"
+      },
+      {
+        "nameFirst": "Hank",
+        "nameLast": "Aaron"
+      },
+      {
+        "nameFirst": "Frank",
+        "nameLast": "Robinson"
+      },
+      {
+        "nameFirst": "Happy",
+        "nameLast": "Chandler"
+      },
+      {
+        "nameFirst": "Travis",
+        "nameLast": "Jackson"
+      },
+      {
+        "nameFirst": "Brooks",
+        "nameLast": "Robinson"
+      },
+      {
+        "nameFirst": "Juan",
+        "nameLast": "Marichal"
+      },
+      {
+        "nameFirst": "Walter",
+        "nameLast": "Alston"
+      },
+      {
+        "nameFirst": "George",
+        "nameLast": "Kell"
+      },
+      {
+        "nameFirst": "Luis",
+        "nameLast": "Aparicio"
+      },
+      {
+        "nameFirst": "Harmon",
+        "nameLast": "Killebrew"
+      },
+      {
+        "nameFirst": "Don",
+        "nameLast": "Drysdale"
+      },
+      {
+        "nameFirst": "Rick",
+        "nameLast": "Ferrell"
+      },
+      {
+        "nameFirst": "Pee Wee",
+        "nameLast": "Reese"
+      },
+      {
+        "nameFirst": "Hoyt",
+        "nameLast": "Wilhelm"
+      },
+      {
+        "nameFirst": "Lou",
+        "nameLast": "Brock"
+      },
+      {
+        "nameFirst": "Enos",
+        "nameLast": "Slaughter"
+      },
+      {
+        "nameFirst": "Arky",
+        "nameLast": "Vaughan"
+      },
+      {
+        "nameFirst": "Willie",
+        "nameLast": "McCovey"
+      },
+      {
+        "nameFirst": "Bobby",
+        "nameLast": "Doerr"
+      },
+      {
+        "nameFirst": "Ernie",
+        "nameLast": "Lombardi"
+      },
+      {
+        "nameFirst": "Billy",
+        "nameLast": "Williams"
+      },
+      {
+        "nameFirst": "Catfish",
+        "nameLast": "Hunter"
+      },
+      {
+        "nameFirst": "Ray",
+        "nameLast": "Dandridge"
+      },
+      {
+        "nameFirst": "Willie",
+        "nameLast": "Stargell"
+      },
+      {
+        "nameFirst": "Johnny",
+        "nameLast": "Bench"
+      },
+      {
+        "nameFirst": "Carl",
+        "nameLast": "Yastrzemski"
+      },
+      {
+        "nameFirst": "Al",
+        "nameLast": "Barlick"
+      },
+      {
+        "nameFirst": "Red",
+        "nameLast": "Schoendienst"
+      },
+      {
+        "nameFirst": "Jim",
+        "nameLast": "Palmer"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Morgan"
+      },
+      {
+        "nameFirst": "Rod",
+        "nameLast": "Carew"
+      },
+      {
+        "nameFirst": "Gaylord",
+        "nameLast": "Perry"
+      },
+      {
+        "nameFirst": "Fergie",
+        "nameLast": "Jenkins"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Lazzeri"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "Veeck"
+      },
+      {
+        "nameFirst": "Tom",
+        "nameLast": "Seaver"
+      },
+      {
+        "nameFirst": "Rollie",
+        "nameLast": "Fingers"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "McGowan"
+      },
+      {
+        "nameFirst": "Hal",
+        "nameLast": "Newhouser"
+      },
+      {
+        "nameFirst": "Reggie",
+        "nameLast": "Jackson"
+      },
+      {
+        "nameFirst": "Steve",
+        "nameLast": "Carlton"
+      },
+      {
+        "nameFirst": "Leo",
+        "nameLast": "Durocher"
+      },
+      {
+        "nameFirst": "Phil",
+        "nameLast": "Rizzuto"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Schmidt"
+      },
+      {
+        "nameFirst": "Richie",
+        "nameLast": "Ashburn"
+      },
+      {
+        "nameFirst": "Leon",
+        "nameLast": "Day"
+      },
+      {
+        "nameFirst": "William",
+        "nameLast": "Hulbert"
+      },
+      {
+        "nameFirst": "Vic",
+        "nameLast": "Willis"
+      },
+      {
+        "nameFirst": "Jim",
+        "nameLast": "Bunning"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "Foster"
+      },
+      {
+        "nameFirst": "Ned",
+        "nameLast": "Hanlon"
+      },
+      {
+        "nameFirst": "Earl",
+        "nameLast": "Weaver"
+      },
+      {
+        "nameFirst": "Phil",
+        "nameLast": "Niekro"
+      },
+      {
+        "nameFirst": "Nellie",
+        "nameLast": "Fox"
+      },
+      {
+        "nameFirst": "Tom",
+        "nameLast": "Lasorda"
+      },
+      {
+        "nameFirst": "Willie",
+        "nameLast": "Wells"
+      },
+      {
+        "nameFirst": "Don",
+        "nameLast": "Sutton"
+      },
+      {
+        "nameFirst": "George",
+        "nameLast": "Davis"
+      },
+      {
+        "nameFirst": "Larry",
+        "nameLast": "Doby"
+      },
+      {
+        "nameFirst": "Lee",
+        "nameLast": "MacPhail"
+      },
+      {
+        "nameFirst": "Bullet",
+        "nameLast": "Rogan"
+      },
+      {
+        "nameFirst": "Nolan",
+        "nameLast": "Ryan"
+      },
+      {
+        "nameFirst": "George",
+        "nameLast": "Brett"
+      },
+      {
+        "nameFirst": "Robin",
+        "nameLast": "Yount"
+      },
+      {
+        "nameFirst": "Orlando",
+        "nameLast": "Cepeda"
+      },
+      {
+        "nameFirst": "Nestor",
+        "nameLast": "Chylak"
+      },
+      {
+        "nameFirst": "Frank",
+        "nameLast": "Selee"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Williams"
+      },
+      {
+        "nameFirst": "Carlton",
+        "nameLast": "Fisk"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Perez"
+      },
+      {
+        "nameFirst": "Sparky",
+        "nameLast": "Anderson"
+      },
+      {
+        "nameFirst": "Bid",
+        "nameLast": "McPhee"
+      },
+      {
+        "nameFirst": "Turkey",
+        "nameLast": "Stearnes"
+      },
+      {
+        "nameFirst": "Dave",
+        "nameLast": "Winfield"
+      },
+      {
+        "nameFirst": "Kirby",
+        "nameLast": "Puckett"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "Mazeroski"
+      },
+      {
+        "nameFirst": "Hilton",
+        "nameLast": "Smith"
+      },
+      {
+        "nameFirst": "Ozzie",
+        "nameLast": "Smith"
+      },
+      {
+        "nameFirst": "Eddie",
+        "nameLast": "Murray"
+      },
+      {
+        "nameFirst": "Gary",
+        "nameLast": "Carter"
+      },
+      {
+        "nameFirst": "Paul",
+        "nameLast": "Molitor"
+      },
+      {
+        "nameFirst": "Dennis",
+        "nameLast": "Eckersley"
+      },
+      {
+        "nameFirst": "Wade",
+        "nameLast": "Boggs"
+      },
+      {
+        "nameFirst": "Ryne",
+        "nameLast": "Sandberg"
+      },
+      {
+        "nameFirst": "Bruce",
+        "nameLast": "Sutter"
+      },
+      {
+        "nameFirst": "Ray",
+        "nameLast": "Brown"
+      },
+      {
+        "nameFirst": "Willard",
+        "nameLast": "Brown"
+      },
+      {
+        "nameFirst": "Andy",
+        "nameLast": "Cooper"
+      },
+      {
+        "nameFirst": "Frank",
+        "nameLast": "Grant"
+      },
+      {
+        "nameFirst": "Pete",
+        "nameLast": "Hill"
+      },
+      {
+        "nameFirst": "Biz",
+        "nameLast": "Mackey"
+      },
+      {
+        "nameFirst": "Effa",
+        "nameLast": "Manley"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Mendez"
+      },
+      {
+        "nameFirst": "Alex",
+        "nameLast": "Pompez"
+      },
+      {
+        "nameFirst": "Cum",
+        "nameLast": "Posey"
+      },
+      {
+        "nameFirst": "Louis",
+        "nameLast": "Santop"
+      },
+      {
+        "nameFirst": "Mule",
+        "nameLast": "Suttles"
+      },
+      {
+        "nameFirst": "Ben",
+        "nameLast": "Taylor"
+      },
+      {
+        "nameFirst": "Cristobal",
+        "nameLast": "Torriente"
+      },
+      {
+        "nameFirst": "Sol",
+        "nameLast": "White"
+      },
+      {
+        "nameFirst": "J. L.",
+        "nameLast": "Wilkinson"
+      },
+      {
+        "nameFirst": "Jud",
+        "nameLast": "Wilson"
+      },
+      {
+        "nameFirst": "Cal",
+        "nameLast": "Ripken"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Gwynn"
+      },
+      {
+        "nameFirst": "Rich",
+        "nameLast": "Gossage"
+      },
+      {
+        "nameFirst": "Barney",
+        "nameLast": "Dreyfuss"
+      },
+      {
+        "nameFirst": "Bowie",
+        "nameLast": "Kuhn"
+      },
+      {
+        "nameFirst": "Walter",
+        "nameLast": "O'Malley"
+      },
+      {
+        "nameFirst": "Billy",
+        "nameLast": "Southworth"
+      },
+      {
+        "nameFirst": "Dick",
+        "nameLast": "Williams"
+      },
+      {
+        "nameFirst": "Rickey",
+        "nameLast": "Henderson"
+      },
+      {
+        "nameFirst": "Jim",
+        "nameLast": "Rice"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Gordon"
+      },
+      {
+        "nameFirst": "Andre",
+        "nameLast": "Dawson"
+      },
+      {
+        "nameFirst": "Whitey",
+        "nameLast": "Herzog"
+      },
+      {
+        "nameFirst": "Doug",
+        "nameLast": "Harvey"
+      },
+      {
+        "nameFirst": "Roberto",
+        "nameLast": "Alomar"
+      },
+      {
+        "nameFirst": "Bert",
+        "nameLast": "Blyleven"
+      },
+      {
+        "nameFirst": "Pat",
+        "nameLast": "Gillick"
+      },
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Larkin"
+      },
+      {
+        "nameFirst": "Ron",
+        "nameLast": "Santo"
+      },
+      {
+        "nameFirst": "Jacob",
+        "nameLast": "Ruppert"
+      },
+      {
+        "nameFirst": "Hank",
+        "nameLast": "O'Day"
+      },
+      {
+        "nameFirst": "Deacon",
+        "nameLast": "White"
+      },
+      {
+        "nameFirst": "Bobby",
+        "nameLast": "Cox"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "LaRussa"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Torre"
+      },
+      {
+        "nameFirst": "Greg",
+        "nameLast": "Maddux"
+      },
+      {
+        "nameFirst": "Tom",
+        "nameLast": "Glavine"
+      },
+      {
+        "nameFirst": "Frank",
+        "nameLast": "Thomas"
+      },
+      {
+        "nameFirst": "Randy",
+        "nameLast": "Johnson"
+      },
+      {
+        "nameFirst": "Pedro",
+        "nameLast": "Martinez"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Smoltz"
+      },
+      {
+        "nameFirst": "Craig",
+        "nameLast": "Biggio"
+      },
+      {
+        "nameFirst": "Ken",
+        "nameLast": "Griffey"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Piazza"
+      },
+      {
+        "nameFirst": "Jeff",
+        "nameLast": "Bagwell"
+      },
+      {
+        "nameFirst": "Tim",
+        "nameLast": "Raines"
+      },
+      {
+        "nameFirst": "Ivan",
+        "nameLast": "Rodriguez"
+      },
+      {
+        "nameFirst": "Bud",
+        "nameLast": "Selig"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Schuerholz"
+      },
+      {
+        "nameFirst": "Chipper",
+        "nameLast": "Jones"
+      },
+      {
+        "nameFirst": "Vladimir",
+        "nameLast": "Guerrero"
+      },
+      {
+        "nameFirst": "Jim",
+        "nameLast": "Thome"
+      },
+      {
+        "nameFirst": "Trevor",
+        "nameLast": "Hoffman"
+      },
+      {
+        "nameFirst": "Jack",
+        "nameLast": "Morris"
+      },
+      {
+        "nameFirst": "Alan",
+        "nameLast": "Trammell"
+      },
+      {
+        "nameFirst": "Mariano",
+        "nameLast": "Rivera"
+      },
+      {
+        "nameFirst": "Roy",
+        "nameLast": "Halladay"
+      },
+      {
+        "nameFirst": "Edgar",
+        "nameLast": "Martinez"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Mussina"
+      },
+      {
+        "nameFirst": "Harold",
+        "nameLast": "Baines"
+      },
+      {
+        "nameFirst": "Lee",
+        "nameLast": "Smith"
+      },
+      {
+        "nameFirst": "Derek",
+        "nameLast": "Jeter"
+      },
+      {
+        "nameFirst": "Larry",
+        "nameLast": "Walker"
+      },
+      {
+        "nameFirst": "Marvin",
+        "nameLast": "Miller"
+      },
+      {
+        "nameFirst": "Ted",
+        "nameLast": "Simmons"
+      },
+      {
+        "nameFirst": "David",
+        "nameLast": "Ortiz"
+      },
+      {
+        "nameFirst": "Bud",
+        "nameLast": "Fowler"
+      },
+      {
+        "nameFirst": "Gil",
+        "nameLast": "Hodges"
+      },
+      {
+        "nameFirst": "Jim",
+        "nameLast": "Kaat"
+      },
+      {
+        "nameFirst": "Minnie",
+        "nameLast": "Minoso"
+      },
+      {
+        "nameFirst": "Buck",
+        "nameLast": "O'Neil"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Oliva"
+      },
+      {
+        "nameFirst": "Adrian",
+        "nameLast": "Beltre"
+      },
+      {
+        "nameFirst": "Ken",
+        "nameLast": "Boyer"
+      },
+      {
+        "nameFirst": "Bert",
+        "nameLast": "Campaneris"
+      },
+      {
+        "nameFirst": "Rocky",
+        "nameLast": "Colavito"
+      },
+      {
+        "nameFirst": "Tom",
+        "nameLast": "Connolly"
+      },
+      {
+        "nameFirst": "Mike",
+        "nameLast": "Cuellar"
+      },
+      {
+        "nameFirst": "Steve",
+        "nameLast": "Garvey"
+      },
+      {
+        "nameFirst": "Todd",
+        "nameLast": "Helton"
+      },
+      {
+        "nameFirst": "Roger",
+        "nameLast": "Maris"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Mauer"
+      },
+      {
+        "nameFirst": "Lee",
+        "nameLast": "May"
+      },
+      {
+        "nameFirst": "Ted",
+        "nameLast": "Kluszewski"
+      },
+      {
+        "nameFirst": "Jim",
+        "nameLast": "Leyland"
+      },
+      {
+        "nameFirst": "Mickey",
+        "nameLast": "Lolich"
+      },
+      {
+        "nameFirst": "Fred",
+        "nameLast": "McGriff"
+      },
+      {
+        "nameFirst": "Thurman",
+        "nameLast": "Munson"
+      },
+      {
+        "nameFirst": "Scott",
+        "nameLast": "Rolen"
+      }
+    ]
+  },
+  "Who won the World Series in 2020?": {
+    "question": "Who won the World Series in 2020?",
+    "result": [
+      {
+        "team_name": "Los Angeles Dodgers"
+      }
+    ]
+  },
+  "Which team won the first-ever World Series in Major League Baseball?": {
+    "question": "Which team won the first-ever World Series in Major League Baseball?",
+    "result": [
+      {
+        "team_name": "Providence Grays"
+      }
+    ]
+  },
+  "Which team won the first World Series in MLB history?": {
+    "question": "Which team won the first World Series in MLB history?",
+    "result": [
+      {
+        "team_name": "Providence Grays"
+      }
+    ]
+  },
+  "What team won the first World Series in Major League Baseball history?": {
+    "question": "What team won the first World Series in Major League Baseball history?",
+    "result": [
+      {
+        "team_name": "Altoona Mountain City"
+      },
+      {
+        "team_name": "Buffalo Bisons"
+      },
+      {
+        "team_name": "Baltimore Orioles"
+      },
+      {
+        "team_name": "Baltimore Monumentals"
+      },
+      {
+        "team_name": "Brooklyn Atlantics"
+      },
+      {
+        "team_name": "Boston Beaneaters"
+      },
+      {
+        "team_name": "Boston Reds"
+      },
+      {
+        "team_name": "Chicago White Stockings"
+      },
+      {
+        "team_name": "Chicago/Pittsburgh (Union League)"
+      },
+      {
+        "team_name": "Cleveland Blues"
+      },
+      {
+        "team_name": "Columbus Buckeyes"
+      },
+      {
+        "team_name": "Cincinnati Red Stockings"
+      },
+      {
+        "team_name": "Cincinnati Outlaw Reds"
+      },
+      {
+        "team_name": "Detroit Wolverines"
+      },
+      {
+        "team_name": "Indianapolis Hoosiers"
+      },
+      {
+        "team_name": "Kansas City Cowboys"
+      },
+      {
+        "team_name": "Louisville Eclipse"
+      },
+      {
+        "team_name": "Milwaukee Brewers"
+      },
+      {
+        "team_name": "New York Gothams"
+      },
+      {
+        "team_name": "New York Metropolitans"
+      },
+      {
+        "team_name": "Philadelphia Athletics"
+      },
+      {
+        "team_name": "Philadelphia Quakers"
+      },
+      {
+        "team_name": "Philadelphia Keystones"
+      },
+      {
+        "team_name": "Providence Grays"
+      },
+      {
+        "team_name": "Pittsburg Alleghenys"
+      },
+      {
+        "team_name": "Richmond Virginians"
+      },
+      {
+        "team_name": "St. Louis Browns"
+      },
+      {
+        "team_name": "St. Louis Maroons"
+      },
+      {
+        "team_name": "St. Paul White Caps"
+      },
+      {
+        "team_name": "Toledo Blue Stockings"
+      },
+      {
+        "team_name": "Wilmington Quicksteps"
+      },
+      {
+        "team_name": "Washington Nationals"
+      },
+      {
+        "team_name": "Washington Nationals"
+      }
+    ]
+  },
+  "Which player was the first to hit 60 home runs in a single season?": {
+    "question": "Which player was the first to hit 60 home runs in a single season?",
+    "result": [
+      {
+        "nameFirst": "Babe",
+        "nameLast": "Ruth"
+      }
+    ]
+  },
+  "Which team won the first-ever World Series in 1903?": {
+    "question": "Which team won the first-ever World Series in 1903?",
+    "result": [
+      {
+        "team_name": "Boston Americans"
+      }
+    ]
+  },
+  "What is the name of the player who hit the most home runs in a single MLB season?": {
+    "question": "What is the name of the player who hit the most home runs in a single MLB season?",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      }
+    ]
+  },
+  "Who was the first player to win the Cy Young Award in both the American League and National League?": {
+    "question": "Who was the first player to win the Cy Young Award in both the American League and National League?",
+    "result": [
+      {
+        "nameFirst": "Gaylord",
+        "nameLast": "Perry"
+      }
+    ]
+  },
+  "Who was the first player to hit 500 home runs in their career?": {
+    "question": "Who was the first player to hit 500 home runs in their career?",
+    "result": [
+      {
+        "nameFirst": "Babe",
+        "nameLast": "Ruth"
+      }
+    ]
+  },
+  "Who was the first player to hit 50 home runs in a single season in Major League Baseball history?": {
+    "question": "Who was the first player to hit 50 home runs in a single season in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Babe",
+        "nameLast": "Ruth"
+      }
+    ]
+  },
+  "Who was the first player to hit over 70 home runs in a single season?": {
+    "question": "Who was the first player to hit over 70 home runs in a single season?",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      }
+    ]
+  },
+  "Which player won the most MVP awards in Major League Baseball history?": {
+    "question": "Which player won the most MVP awards in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      }
+    ]
+  },
+  "In what year was the Baseball Hall of Fame established?": {
+    "question": "In what year was the Baseball Hall of Fame established?",
+    "result": [
+      {
+        "team_name": "Boston Red Sox"
+      },
+      {
+        "team_name": "Brooklyn Dodgers"
+      },
+      {
+        "team_name": "Boston Bees"
+      },
+      {
+        "team_name": "Chicago White Sox"
+      },
+      {
+        "team_name": "Chicago Cubs"
+      },
+      {
+        "team_name": "Cincinnati Reds"
+      },
+      {
+        "team_name": "Cleveland Indians"
+      },
+      {
+        "team_name": "Detroit Tigers"
+      },
+      {
+        "team_name": "New York Giants"
+      },
+      {
+        "team_name": "New York Yankees"
+      },
+      {
+        "team_name": "Philadelphia Athletics"
+      },
+      {
+        "team_name": "Philadelphia Phillies"
+      },
+      {
+        "team_name": "Pittsburgh Pirates"
+      },
+      {
+        "team_name": "St. Louis Browns"
+      },
+      {
+        "team_name": "St. Louis Cardinals"
+      },
+      {
+        "team_name": "Washington Senators"
+      }
+    ]
+  },
+  "Who won the World Series in 2021?": {
+    "question": "Who won the World Series in 2021?",
+    "result": [
+      {
+        "team_name": "Atlanta Braves"
+      }
+    ]
+  },
+  "Who was the first player to hit four home runs in one game in Major League Baseball history?": {
+    "question": "Who was the first player to hit four home runs in one game in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Fred",
+        "nameLast": "Treacey"
+      }
+    ]
+  },
+  "What player holds the record for most career home runs in Major League Baseball history?": {
+    "question": "What player holds the record for most career home runs in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      }
+    ]
+  },
+  "Who won the 2018 World Series?": {
+    "question": "Who won the 2018 World Series?",
+    "result": [
+      {
+        "team_name": "Boston Red Sox"
+      }
+    ]
+  },
+  "What is the name of the player who holds the record for most career home runs in Major League Baseball history?": {
+    "question": "What is the name of the player who holds the record for most career home runs in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      }
+    ]
+  },
+  "Which team won the most World Series championships?": {
+    "question": "Which team won the most World Series championships?",
+    "result": [
+      {
+        "team_name": "New York Yankees"
+      }
+    ]
   }
 }
