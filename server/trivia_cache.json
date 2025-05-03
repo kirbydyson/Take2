@@ -1,0 +1,355 @@
+{
+  "Who was the first player inducted into the Major League Baseball Hall of Fame in 1936?": {
+    "question": "Who was the first player inducted into the Major League Baseball Hall of Fame in 1936?",
+    "sql": "SELECT nameFirst, nameLast\nFROM halloffame\nJOIN people on halloffame.playerID = people.playerID\nWHERE yearID = 1936 AND inducted = 'Y'\nORDER BY yearID\nLIMIT 1;",
+    "result": [
+      {
+        "nameFirst": "Ty",
+        "nameLast": "Cobb"
+      }
+    ]
+  },
+  "Who was the first player to be unanimously inducted into the Baseball Hall of Fame?": {
+    "question": "Who was the first player to be unanimously inducted into the Baseball Hall of Fame?",
+    "sql": "SELECT nameFirst, nameLast\nFROM halloffame\nJOIN people ON halloffame.playerID = people.playerID\nWHERE ballots = votes AND inducted = 'Y'\nORDER BY yearID\nLIMIT 1;",
+    "result": [
+      {
+        "nameFirst": "Branch",
+        "nameLast": "Rickey"
+      }
+    ]
+  },
+  "Who was the first unanimous selection for the Baseball Hall of Fame in 2019?": {
+    "question": "Who was the first unanimous selection for the Baseball Hall of Fame in 2019?",
+    "sql": "SELECT playerID \nFROM halloffame \nWHERE yearID=2019 AND votes=ballots AND inducted='Y'\nLIMIT 1;",
+    "result": [
+      {
+        "playerID": "riverma01"
+      }
+    ]
+  },
+  "Who was the first player inducted into the National Baseball Hall of Fame?": {
+    "question": "Who was the first player inducted into the National Baseball Hall of Fame?",
+    "sql": "SELECT nameFirst, nameLast\nFROM halloffame \nJOIN people ON halloffame.playerID = people.playerID\nWHERE inducted = 'Y'\nORDER BY yearID ASC\nLIMIT 1;",
+    "result": [
+      {
+        "nameFirst": "Ty",
+        "nameLast": "Cobb"
+      }
+    ]
+  },
+  "Who was the first unanimous selection to the Baseball Hall of Fame in 2019?": {
+    "question": "Who was the first unanimous selection to the Baseball Hall of Fame in 2019?",
+    "sql": "SELECT nameFirst, nameLast\nFROM halloffame\nJOIN people ON halloffame.playerID = people.playerID\nWHERE yearID = 2019 AND votes = ballots\nORDER BY votes DESC\nLIMIT 1;",
+    "result": [
+      {
+        "nameFirst": "Mariano",
+        "nameLast": "Rivera"
+      }
+    ]
+  },
+  "Who was the first unanimous inductee into the Baseball Hall of Fame in 2019?": {
+    "question": "Who was the first unanimous inductee into the Baseball Hall of Fame in 2019?",
+    "sql": "SELECT nameFirst, nameLast\nFROM halloffame\nJOIN people ON halloffame.playerID = people.playerID\nWHERE yearID = 2019 AND inducted = 'Y' AND votes = ballots\nLIMIT 1;",
+    "result": [
+      {
+        "nameFirst": "Mariano",
+        "nameLast": "Rivera"
+      }
+    ]
+  },
+  "Which team won the 2020 World Series?": {
+    "question": "Which team won the 2020 World Series?",
+    "sql": "SELECT team_name\nFROM teams\nWHERE yearID = 2020 AND WSWin = 'Y';",
+    "result": [
+      {
+        "team_name": "Los Angeles Dodgers"
+      }
+    ]
+  },
+  "What is the name of the player who hit the most career home runs in Major League Baseball history?": {
+    "question": "What is the name of the player who hit the most career home runs in Major League Baseball history?",
+    "sql": "SELECT\n    CONCAT(p.nameFirst, ' ', p.nameLast) AS player_name\nFROM\n    people p\nJOIN\n    batting b ON p.playerID = b.playerID\nWHERE\n    b.b_HR = (\n        SELECT\n            MAX(b_HR)\n        FROM\n            batting\n    )",
+    "result": [
+      {
+        "player_name": "Barry Bonds"
+      }
+    ]
+  },
+  "Who was the first player to hit 200 home runs for the New York Yankees?": {
+    "question": "Who was the first player to hit 200 home runs for the New York Yankees?",
+    "sql": "SELECT p.nameFirst, p.nameLast\nFROM batting b\nJOIN people p ON b.playerID = p.playerID\nWHERE b.teamID = 'NYA'\nGROUP BY b.playerID\nHAVING SUM(b.b_HR) >= 200\nORDER BY MIN(b.yearID)\nLIMIT 1;",
+    "result": [
+      {
+        "nameFirst": "Babe",
+        "nameLast": "Ruth"
+      }
+    ]
+  },
+  "Which team won the World Series in 2020?": {
+    "question": "Which team won the World Series in 2020?",
+    "sql": "SELECT team_name \nFROM teams \nWHERE yearID = 2020 \nAND WSWin = 'Y';",
+    "result": [
+      {
+        "team_name": "Los Angeles Dodgers"
+      }
+    ]
+  },
+  "Which team won the World Series in 2019?": {
+    "question": "Which team won the World Series in 2019?",
+    "sql": "SELECT team_name\nFROM teams\nWHERE yearID = 2019 AND WSWin = 'Y';",
+    "result": [
+      {
+        "team_name": "Washington Nationals"
+      }
+    ]
+  },
+  "Which player holds the record for the most career home runs in Major League Baseball history?": {
+    "question": "Which player holds the record for the most career home runs in Major League Baseball history?",
+    "sql": "SELECT p.nameFirst, p.nameLast, MAX(b.b_HR) AS most_home_runs\nFROM batting b\nJOIN people p ON b.playerID = p.playerID;",
+    "result": [
+      {
+        "nameFirst": "David",
+        "nameLast": "Aardsma",
+        "most_home_runs": 73
+      }
+    ]
+  },
+  "Which team won the first ever World Series in Major League Baseball history?": {
+    "question": "Which team won the first ever World Series in Major League Baseball history?",
+    "sql": "SELECT team_name\nFROM teams\nWHERE yearID = (SELECT MIN(yearID) FROM teams WHERE WSWin = 'Y');",
+    "result": [
+      {
+        "team_name": "Altoona Mountain City"
+      },
+      {
+        "team_name": "Buffalo Bisons"
+      },
+      {
+        "team_name": "Baltimore Orioles"
+      },
+      {
+        "team_name": "Baltimore Monumentals"
+      },
+      {
+        "team_name": "Brooklyn Atlantics"
+      },
+      {
+        "team_name": "Boston Beaneaters"
+      },
+      {
+        "team_name": "Boston Reds"
+      },
+      {
+        "team_name": "Chicago White Stockings"
+      },
+      {
+        "team_name": "Chicago/Pittsburgh (Union League)"
+      },
+      {
+        "team_name": "Cleveland Blues"
+      },
+      {
+        "team_name": "Columbus Buckeyes"
+      },
+      {
+        "team_name": "Cincinnati Red Stockings"
+      },
+      {
+        "team_name": "Cincinnati Outlaw Reds"
+      },
+      {
+        "team_name": "Detroit Wolverines"
+      },
+      {
+        "team_name": "Indianapolis Hoosiers"
+      },
+      {
+        "team_name": "Kansas City Cowboys"
+      },
+      {
+        "team_name": "Louisville Eclipse"
+      },
+      {
+        "team_name": "Milwaukee Brewers"
+      },
+      {
+        "team_name": "New York Gothams"
+      },
+      {
+        "team_name": "New York Metropolitans"
+      },
+      {
+        "team_name": "Philadelphia Athletics"
+      },
+      {
+        "team_name": "Philadelphia Quakers"
+      },
+      {
+        "team_name": "Philadelphia Keystones"
+      },
+      {
+        "team_name": "Providence Grays"
+      },
+      {
+        "team_name": "Pittsburg Alleghenys"
+      },
+      {
+        "team_name": "Richmond Virginians"
+      },
+      {
+        "team_name": "St. Louis Browns"
+      },
+      {
+        "team_name": "St. Louis Maroons"
+      },
+      {
+        "team_name": "St. Paul White Caps"
+      },
+      {
+        "team_name": "Toledo Blue Stockings"
+      },
+      {
+        "team_name": "Wilmington Quicksteps"
+      },
+      {
+        "team_name": "Washington Nationals"
+      },
+      {
+        "team_name": "Washington Nationals"
+      }
+    ]
+  },
+  "Which player has the most career home runs in Major League Baseball history?": {
+    "question": "Which player has the most career home runs in Major League Baseball history?",
+    "sql": "SELECT\n    p.nameFirst,\n    p.nameLast,\n    b.b_HR\nFROM\n    batting b\nJOIN\n    people p ON b.playerID = p.playerID\nWHERE\n    b.b_HR = (SELECT \n                MAX(b_HR) \n              FROM \n                batting);",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds",
+        "b_HR": 73
+      }
+    ]
+  },
+  "Who holds the record for the most career home runs in Major League Baseball history?": {
+    "question": "Who holds the record for the most career home runs in Major League Baseball history?",
+    "sql": "SELECT people.nameFirst, people.nameLast\nFROM people\nJOIN batting ON people.playerID = batting.playerID\nGROUP BY people.playerID\nORDER BY SUM(batting.b_HR) DESC\nLIMIT 1;",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      }
+    ]
+  },
+  "Who was the first player to hit 500 career home runs in Major League Baseball?": {
+    "question": "Who was the first player to hit 500 career home runs in Major League Baseball?",
+    "sql": "SELECT DISTINCT p.nameFirst, p.nameLast\nFROM people p\nJOIN halloffame h ON p.playerID = h.playerID\nWHERE h.category = 'Player' AND h.inducted = 'Y'\nORDER BY h.yearID\nLIMIT 1;",
+    "result": [
+      {
+        "nameFirst": "Babe",
+        "nameLast": "Ruth"
+      }
+    ]
+  },
+  "Who was the first player to hit 60 home runs in a single MLB season?": {
+    "question": "Who was the first player to hit 60 home runs in a single MLB season?",
+    "sql": "SELECT p.nameFirst, p.nameLast\nFROM batting AS b\nJOIN people AS p ON b.playerID = p.playerID\nWHERE b.b_HR = 60\nORDER BY b.yearID\nLIMIT 1;",
+    "result": [
+      {
+        "nameFirst": "Babe",
+        "nameLast": "Ruth"
+      }
+    ]
+  },
+  "Which player hit the most home runs in the history of Major League Baseball?": {
+    "question": "Which player hit the most home runs in the history of Major League Baseball?",
+    "sql": "SELECT people.nameFirst, people.nameLast\nFROM people\nJOIN batting ON people.playerID = batting.playerID\nWHERE batting.b_HR = (SELECT MAX(b_HR) FROM batting)",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      }
+    ]
+  },
+  "Who was the first player to hit four home runs in a single game in Major League Baseball history?": {
+    "question": "Who was the first player to hit four home runs in a single game in Major League Baseball history?",
+    "sql": "SELECT nameFirst, nameLast\nFROM people\nJOIN batting ON people.playerID = batting.playerID\nWHERE b_HR = 4\nORDER BY yearId\nLIMIT 1;",
+    "result": [
+      {
+        "nameFirst": "Fred",
+        "nameLast": "Treacey"
+      }
+    ]
+  },
+  "Who was the first player to pitch a perfect game in the World Series?": {
+    "question": "Who was the first player to pitch a perfect game in the World Series?",
+    "sql": "SELECT nameFirst, nameLast \nFROM people \nWHERE playerID = (\n    SELECT playerID \n    FROM pitching \n    WHERE p_SHO = 1 \n    ORDER BY yearID \n    LIMIT 1\n)",
+    "result": [
+      {
+        "nameFirst": "Bobby",
+        "nameLast": "Mathews"
+      }
+    ]
+  },
+  "Which team won the first World Series in 1903?": {
+    "question": "Which team won the first World Series in 1903?",
+    "sql": "SELECT teams.team_name\nFROM teams\nWHERE teams.yearID = 1903 AND teams.WSWin = 'Y'",
+    "result": [
+      {
+        "team_name": "Boston Americans"
+      }
+    ]
+  },
+  "In which year did the New York Yankees win the World Series for the first time?": {
+    "question": "In which year did the New York Yankees win the World Series for the first time?",
+    "result": [
+      {
+        "team_name": "New York Yankees"
+      }
+    ]
+  },
+  "Which player holds the record for the most career home runs in Major League Baseball?": {
+    "question": "Which player holds the record for the most career home runs in Major League Baseball?",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      }
+    ]
+  },
+  "Which team won the most World Series titles in Major League Baseball history?": {
+    "question": "Which team won the most World Series titles in Major League Baseball history?",
+    "result": [
+      {
+        "team_name": "New York Yankees"
+      }
+    ]
+  },
+  "Who was the first player to be inducted into the MLB Hall of Fame?": {
+    "question": "Who was the first player to be inducted into the MLB Hall of Fame?",
+    "result": [
+      {
+        "nameFirst": "Babe",
+        "nameLast": "Ruth"
+      }
+    ]
+  },
+  "Who was the first player to win the Cy Young Award?": {
+    "question": "Who was the first player to win the Cy Young Award?",
+    "result": [
+      {
+        "nameFirst": "Don",
+        "nameLast": "Newcombe"
+      }
+    ]
+  },
+  "Who was the first player to hit 60 home runs in a single season?": {
+    "question": "Who was the first player to hit 60 home runs in a single season?",
+    "result": [
+      {
+        "nameFirst": "Babe",
+        "nameLast": "Ruth"
+      }
+    ]
+  }
+}
