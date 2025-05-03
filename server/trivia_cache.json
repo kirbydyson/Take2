@@ -2312,5 +2312,23 @@
         "team_name": "New York Yankees"
       }
     ]
+  },
+  "What player hit the most home runs in a single season in Major League Baseball history?": {
+    "question": "What player hit the most home runs in a single season in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Barry",
+        "nameLast": "Bonds"
+      }
+    ]
+  },
+  "Which player holds the record for most career hits in Major League Baseball history?": {
+    "question": "Which player holds the record for most career hits in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Pete",
+        "nameLast": "Rose"
+      }
+    ]
   }
 }

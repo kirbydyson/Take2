@@ -35,12 +35,9 @@ def get_wordseries_groups():
     seen_players = set()  # To track already returned player names
 
     for category in selected_categories:
-        print(f"Selected category: {category.name}")
         category_name = category.value
-        print(f"Category name for query: {category_name}")
         cursor.execute("SELECT query FROM queries WHERE name = %s", (category_name,))
         result = cursor.fetchone()
-        print(f"Query result: {result}")
 
         if result:
             dynamic_query = result[0]

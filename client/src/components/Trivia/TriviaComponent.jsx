@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 import TriviaLoader from './TriviaLoader';
 import { useRouter } from 'next/navigation';
 
-const USE_MOCK_DATA = false;
+const USE_MOCK_DATA = true;
 
 const mockQuestions = [
     {
