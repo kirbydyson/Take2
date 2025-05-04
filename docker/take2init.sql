@@ -114,3 +114,10 @@ INSERT INTO queries (name, query) VALUES
 ('WordSeriesBravesPlayers', 'SELECT CONCAT(p.nameFirst, '' '', p.nameLast) FROM appearances a NATURAL JOIN people p WHERE a.teamID = ''ATL'' GROUP BY p.playerID ORDER BY RAND() LIMIT 4'),
 ('WordSeriesHallOfFamePlayers', 'SELECT CONCAT(p.nameFirst, '' '', p.nameLast) FROM people p NATURAL JOIN halloffame h WHERE h.inducted = ''Y'' GROUP BY p.playerID ORDER BY RAND() LIMIT 4'),
 ('WordSeriesAllStarPlayers', 'SELECT CONCAT(p.nameFirst, '' '', p.nameLast) FROM people p NATURAL JOIN allstarfull a WHERE a.yearID = 2023 GROUP BY p.playerID ORDER BY RAND() LIMIT 4');
+
+CREATE TABLE TeamDivisionHistory (
+    yearID INT NOT NULL,
+    teamID VARCHAR(10) NOT NULL,
+    divisionID VARCHAR(10) NOT NULL,
+    PRIMARY KEY (yearID, teamID)
+);
