@@ -225,8 +225,6 @@ export default function ScoredleGame() {
                 <HelpOutlineIcon />
             </IconButton>
 
-            <h1>Scoredle</h1>
-
             {targetWord && (
                 <Grid
                     guesses={guesses}
