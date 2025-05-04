@@ -49,6 +49,70 @@ export default function WordSeriesGame() {
         }
     };
 
+    // shuffles the cards similar to the game
+    const shufflePlayers = (array) => {
+
+    };
+
+    // VALIDATES GROUPS AUTOMATICALLY
+    const validate_groupings = (selectedPlayers) => {
+        const playerNames = selectedPlayers.map(player => player.name);
+
+        let discoveredGroups = null;
+        for (const group of allGroups) {
+            const matchCount = playerNames.filter(name => group.players.includes(name)).length;
+
+            if (matchCount === 4) {
+                discoveredGroups = group;
+                break;
+            }
+        }
+
+        if (discoveredGroups) {
+            setDiscoveredGroups([...discoveredGroups, {
+                type: foundGroup.category.toLowerCase().includes('players') ? 'team' :
+                       foundGroup.category.toLowerCase().includes('basemen') ||
+                       foundGroup.category.toLowerCase().includes('shortstops') ||
+                       foundGroup.category.toLowerCase().includes('outfielders') ||
+                       foundGroup.category.toLowerCase().includes('pitchers') ||
+                       foundGroup.category.toLowerCase().includes('catchers') ? 'position' :
+                       foundGroup.category.toLowerCase().includes('mvp') ||
+                       foundGroup.category.toLowerCase().includes('star') ||
+                       foundGroup.category.toLowerCase().includes('fame') ? 'award' : 'era',
+                category: foundGroup.category,
+                players: selectedPlayers
+            }]);
+            setSelectedPlayers([]);
+
+            if (discoveredGroups.length + 1 >= 4) {
+                setTimeout(() => {
+                    setShowGameOver(true);
+                }, 1000);
+            }
+        } else {
+            setShowError(true);
+            setAttempts(attempts - 1);
+
+            if (attempts <= 1) {
+                setTimeout(() => {
+                    setShowGameOver(true);
+                }, 1500);
+            }
+
+            setTimeout(() => {
+                window.location.reload();
+            }, 2000);
+        }
+    };
+
+    const resetGame = () => {
+        window.location.reload();
+    };
+
+    const gameOverDialog = () => {
+
+    };
+
     return (
         <div className='wordseries-container'>
             <div className='wordseries-header'>
