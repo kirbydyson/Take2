@@ -1,3 +1,8 @@
+html, body {
+    overflow: hidden;
+    height: 100%;
+}
+
 body {
     background-color: white;
     color: black;
@@ -8,7 +13,6 @@ body {
 
 .scoredle-container {
     margin-top: 80px;
-    overflow: hidden;
 }
 
 .grid {
