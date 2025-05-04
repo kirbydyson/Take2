@@ -24,6 +24,7 @@ export default function ScoredleGame() {
     const [strikeoutOpen, setStrikeoutOpen] = useState(false);
     const [homerunOpen, setHomerunOpen] = useState(false);
     const [showAnswer, setShowAnswer] = useState(false);
+    const [flipIndex, setFlipIndex] = useState(null);
     const maxGuesses = 6;
     const router = useRouter();
 
@@ -52,23 +53,28 @@ export default function ScoredleGame() {
     };
 
     const fetchNewWord = async () => {
-        try {
-            const res = await fetch(
-                'http://localhost:8080/api/scoredle/get-word',
-                { credentials: 'include' },
-            );
-            const data = await res.json();
-            if (res.ok) {
-                setTargetWord(data.randomName.toLowerCase());
-                setGuesses([]);
-                setCurrentGuess('');
-                setGameOver(false);
-            } else {
-                console.error(data.error || 'Failed to fetch new word.');
+        setTargetWord('');
+        setGuesses([]);
+        setCurrentGuess('');
+        setGameOver(false);
+        setFlipIndex(null);
+
+        setTimeout(async () => {
+            try {
+                const res = await fetch(
+                    'http://localhost:8080/api/scoredle/get-word',
+                    { credentials: 'include' },
+                );
+                const data = await res.json();
+                if (res.ok) {
+                    setTargetWord(data.randomName.toLowerCase());
+                } else {
+                    console.error(data.error || 'Failed to fetch new word.');
+                }
+            } catch (err) {
+                console.error('Error fetching new word:', err);
             }
-        } catch (err) {
-            console.error('Error fetching new word:', err);
-        }
+        }, 0);
     };
 
     useEffect(() => {
@@ -76,10 +82,10 @@ export default function ScoredleGame() {
     }, []);
 
     useEffect(() => {
-        if (!targetWord) {
+        if (!targetWord && user) {
             fetchNewWord();
         }
-    }, user);
+    }, [user]);
 
     useEffect(() => {
         if (gameOver && user) {
@@ -150,6 +156,7 @@ export default function ScoredleGame() {
             const newGuesses = [...guesses, currentGuess];
             setGuesses(newGuesses);
             setCurrentGuess('');
+            setFlipIndex(newGuesses.length - 1);
 
             if (currentGuess.toLowerCase() === targetWord.toLowerCase()) {
                 setGameOver(true);
@@ -218,16 +225,18 @@ export default function ScoredleGame() {
                 <HelpOutlineIcon />
             </IconButton>
 
-            <h1>Scoredle</h1>
-
-            <Grid
-                guesses={guesses}
-                currentGuess={currentGuess}
-                targetWord={targetWord}
-                shake={shake}
-                gameOver={gameOver}
-                didWin={homerunOpen}
-            />
+            {targetWord && (
+                <Grid
+                    guesses={guesses}
+                    currentGuess={currentGuess}
+                    targetWord={targetWord}
+                    shake={shake}
+                    gameOver={gameOver}
+                    didWin={homerunOpen}
+                    flipIndex={flipIndex}
+                    onFlipComplete={() => setFlipIndex(null)}
+                />
+            )}
 
             <Keyboard onKeyPress={handleKeyPress} keyStatuses={keyStatuses} />
 

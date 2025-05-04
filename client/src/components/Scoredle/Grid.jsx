@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function Grid({
     guesses,
@@ -10,38 +10,52 @@ export default function Grid({
 }) {
     const totalRows = 6;
     const wordLength = targetWord.length;
+    const [revealedLetters, setRevealedLetters] = useState({});
 
-    const buildRow = (
-        letters,
-        evaluated = false,
-        isCurrent = false,
-        shouldShake = false,
-    ) => {
+    useEffect(() => {
+        if (guesses.length === 0) return;
+
+        const rowIndex = guesses.length - 1;
+        const timeouts = [];
+
+        for (let i = 0; i < wordLength; i++) {
+            const timeout = setTimeout(() => {
+                setRevealedLetters((prev) => ({
+                    ...prev,
+                    [`${rowIndex}-${i}`]: true,
+                }));
+            }, i * 300);
+            timeouts.push(timeout);
+        }
+
+        return () => timeouts.forEach(clearTimeout);
+    }, [guesses]);
+
+    const buildRow = (letters, evaluated = false, isCurrent = false, shouldShake = false, rowIndex = null) => {
         return (
-            <div className={`grid-row ${isCurrent && shake ? 'shake' : ''}`}>
+            <div key={rowIndex} className={`grid-row ${isCurrent && shouldShake ? 'shake' : ''}`}>
                 {Array.from({ length: wordLength }).map((_, i) => {
-                    let value = letters[i] || '';
-                    let classNames = 'grid-cell';
+                    const value = letters[i] || '';
+                    const flipKey = `${rowIndex}-${i}`;
+                    const flipped = revealedLetters[flipKey];
+                    let statusClass = '';
 
-                    if (evaluated && value) {
-                        if (
-                            value.toLowerCase() === targetWord[i].toLowerCase()
-                        ) {
-                            classNames += ' correct';
-                        } else if (
-                            targetWord
-                                .toLowerCase()
-                                .includes(value.toLowerCase())
-                        ) {
-                            classNames += ' present';
+                    if (evaluated && flipped) {
+                        if (value.toLowerCase() === targetWord[i].toLowerCase()) {
+                            statusClass = 'correct';
+                        } else if (targetWord.includes(value.toLowerCase())) {
+                            statusClass = 'present';
                         } else {
-                            classNames += ' absent';
+                            statusClass = 'absent';
                         }
                     }
 
                     return (
-                        <div key={i} className={classNames}>
-                            {value.toUpperCase()}
+                        <div key={i} className="grid-cell">
+                            <div className={`tile-inner ${flipped ? 'flip' : ''}`}>
+                                <div className="tile-front">{value}</div>
+                                <div className={`tile-back ${statusClass}`}>{value}</div>
+                            </div>
                         </div>
                     );
                 })}
@@ -50,24 +64,24 @@ export default function Grid({
     };
 
     const rows = [];
-
-    let displayGuesses = [...guesses];
+    const displayGuesses = [...guesses];
 
     if (gameOver && !didWin && guesses.length === totalRows) {
         displayGuesses[totalRows - 1] = targetWord;
     }
 
-    displayGuesses.forEach((guess) => {
-        rows.push(buildRow(guess.split(''), true));
+    displayGuesses.forEach((guess, index) => {
+        rows.push(buildRow(guess.split(''), true, false, false, index));
     });
 
     if (currentGuess && guesses.length < totalRows) {
-        rows.push(buildRow(currentGuess.split(''), false, true, shake));
+        rows.push(buildRow(currentGuess.split(''), false, true, shake, guesses.length));
     }
 
     while (rows.length < totalRows) {
-        rows.push(buildRow([], false));
+        const emptyRowIndex = rows.length;
+        rows.push(buildRow([], false, false, false, emptyRowIndex));
     }
 
-    return <div className='grid'>{rows}</div>;
+    return <div className="grid">{rows}</div>;
 }
