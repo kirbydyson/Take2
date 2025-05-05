@@ -2,6 +2,7 @@
 from flask import Blueprint, request, session, jsonify
 from werkzeug.security import generate_password_hash, check_password_hash
 from db import get_connection
+import os
 
 admin_bp = Blueprint('admin', __name__)
 
@@ -96,3 +97,31 @@ def unban_user():
 
     except Exception as e:
         return jsonify({"error": f"Internal server error: {str(e)}"}), 500
+
+@admin_bp.route('/api/admin/verify', methods=['POST'])
+def verify_admin_answer():
+    try:
+        data = request.get_json()
+        answer = data.get('answer', '').strip()
+
+        # Get the correct answer from env variable
+        correct_answer = os.getenv('ADMIN_SECRET_ANSWER')
+
+        if not correct_answer:
+            return jsonify({"error": "Server misconfiguration: No secret answer set"}), 500
+
+        if answer == correct_answer:
+            session['admin_verified'] = True
+            return jsonify({"message": "Verification successful"}), 200
+        else:
+            return jsonify({"error": "Incorrect answer"}), 401
+
+    except Exception as e:
+        return jsonify({"error": f"Internal server error: {str(e)}"}), 500
+    
+@admin_bp.route('/api/admin/verify-status', methods=['GET'])
+def check_admin_verified():
+    if session.get('admin_verified'):
+        return jsonify({"verified": True}), 200
+    else:
+        return jsonify({"verified": False}), 403

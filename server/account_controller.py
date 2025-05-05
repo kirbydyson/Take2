@@ -20,6 +20,7 @@ def register():
     conn = get_connection()
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM users WHERE email = %s", (email,))
+    session.clear()
     if cursor.fetchone():
         conn.close()
         return jsonify({"error": "Email already exists"}), 400
@@ -52,7 +53,7 @@ def login():
 
 @account_bp.route('/auth/logout', methods=['POST'])
 def logout():
-    session.pop('email', None)
+    session.clear()
     return jsonify({"message": "Logged out successfully"})
 
 @account_bp.route('/auth/session', methods=['GET'])
