@@ -65,10 +65,10 @@ def run_query(cursor, sql):
         print(f"Query execution failed: {e}")
         return None
 
-# Generates and returns 5 unique trivia questions related to Major League Baseball.
-# If a question has been asked before, it's fetched from a local JSON cache;
-# otherwise, a new one is generated using OpenAI and answered with a SQL query.
-# Requires the user to be logged in via session.
+# GET /api/trivia/get-questions
+# Generates and returns 5 unique MLB-related trivia questions.
+# Uses OpenAI to generate questions and corresponding SQL queries, with caching for reuse.
+# Requires user session for access.
 @trivia_bp.route('/api/trivia/get-questions', methods=['GET'])
 def get_trivia_questions():
     if session.get('email') is None:
@@ -112,9 +112,9 @@ def get_trivia_questions():
 
     return jsonify({"questions": qa_pairs})
 
-# Returns 3 random player names from the database, excluding the name passed
-# in the 'exclude' query parameter. This is used to generate multiple-choice
-# options for trivia questions involving player names.
+# GET /api/trivia/random-players
+# Returns 3 random player names excluding the one specified in the 'exclude' query parameter.
+# Used to generate incorrect multiple-choice answers for player-related trivia questions.
 @trivia_bp.route('/api/trivia/random-players', methods=['GET'])
 def get_random_players():
     exclude_name = request.args.get('exclude', '').strip()
@@ -139,8 +139,9 @@ def get_random_players():
 
     return jsonify({"players": [row["fullName"] for row in rows]})
 
-# Returns 3 random team names from the database, excluding the one specified
-# in the 'exclude' query parameter. Supports multiple-choice questions involving team names.
+# GET /api/trivia/random-teams
+# Returns 3 random team names excluding the one provided via the 'exclude' query parameter.
+# Supports team-based multiple-choice trivia generation.
 @trivia_bp.route('/api/trivia/random-teams', methods=['GET'])
 def get_random_teams():
     exclude = request.args.get('exclude', '').strip()
@@ -163,9 +164,10 @@ def get_random_teams():
 
     return jsonify({"teams": [row["teamName"] for row in rows]})
 
-# Saves the result of a completed trivia game for the logged-in user.
-# Expects a JSON payload with the number of correct answers (`number_correct`).
-# Retrieves the user by email from the session, validates input, and stores the result in the database.
+
+# POST /api/trivia/save-game
+# Saves the user's trivia game result (number of correct answers) to the database.
+# Requires user to be authenticated via session and validates payload before storing.
 @trivia_bp.route('/api/trivia/save-game', methods=['POST'])
 def save_trivia_game():
     if session.get('email') is None:
