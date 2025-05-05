@@ -4,6 +4,12 @@ import random
 
 scoredle_bp = Blueprint('scoredle', __name__)
 
+"""
+@api {GET} /api/scoredle/get-word
+@description Returns a random 5-character word selected from first names, last names, and baseball terms.
+@access Private (requires user to be logged in)
+@returns {JSON} { "randomName": "<selected_word>" }
+"""
 @scoredle_bp.route('/api/scoredle/get-word', methods=['GET'])
 def get_random_5char_name():
     if session.get('email') is None:
@@ -42,7 +48,15 @@ def get_random_5char_name():
     selected_name = random.choice(word_pool)
     return jsonify({"randomName": selected_name})
 
-
+"""
+@api {POST} /api/scoredle/save-game
+@description Saves the results of a completed Scoredle game to the database.
+@access Private (requires user to be logged in)
+@param {String} correctWord - The target word for the game
+@param {Number} attemptCount - Number of attempts the player used
+@param {Boolean} guessedWord - Whether the word was successfully guessed
+@returns {JSON} { "message": "Game saved successfully" }
+"""
 @scoredle_bp.route('/api/scoredle/save-game', methods=['POST'])
 def save_scoredle_game():
     if session.get('email') is None:

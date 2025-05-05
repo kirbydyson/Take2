@@ -9,6 +9,12 @@ import os
 FERNET_KEY = os.getenv('FERNET_SECRET_KEY')
 fernet = Fernet(FERNET_KEY)
 
+"""
+@api {GET} /api/users
+@description Retrieves a list of all users. Only accessible by admin users.
+@access Admin
+@returns {JSON[]} Array of user objects including id, name, email, role, and ban status
+"""
 admin_bp = Blueprint('admin', __name__)
 
 @admin_bp.route('/api/users', methods=['GET'])
@@ -44,6 +50,13 @@ def get_all_users():
     except Exception as e:
         return jsonify({"error": f"Internal server error: {str(e)}"}), 500
 
+"""
+@api {POST} /api/users/ban
+@description Bans a user by setting isBanned to TRUE in the database.
+@access Admin
+@param {String} email - The email address of the user to ban
+@returns {JSON} Confirmation message or error
+"""
 @admin_bp.route('/api/users/ban', methods=['POST'])
 def ban_user():
     try:
@@ -74,6 +87,13 @@ def ban_user():
     except Exception as e:
         return jsonify({"error": f"Internal server error: {str(e)}"}), 500
 
+"""
+@api {POST} /api/users/unban
+@description Unbans a user by setting isBanned to FALSE in the database.
+@access Admin
+@param {String} email - The email address of the user to unban
+@returns {JSON} Confirmation message or error
+"""
 @admin_bp.route('/api/users/unban', methods=['POST'])
 def unban_user():
     try:
@@ -104,6 +124,13 @@ def unban_user():
     except Exception as e:
         return jsonify({"error": f"Internal server error: {str(e)}"}), 500
 
+"""
+@api {POST} /api/admin/verify
+@description Verifies the admin user by checking a shared secret answer.
+@access Admin (implicit)
+@param {String} answer - The secret answer to verify admin status
+@returns {JSON} Success or error message
+"""
 @admin_bp.route('/api/admin/verify', methods=['POST'])
 def verify_admin_answer():
     try:
@@ -124,7 +151,13 @@ def verify_admin_answer():
 
     except Exception as e:
         return jsonify({"error": f"Internal server error: {str(e)}"}), 500
-    
+
+"""
+@api {GET} /api/admin/verify-status
+@description Returns whether the current session is admin-verified.
+@access Admin
+@returns {JSON} { verified: Boolean }
+"""
 @admin_bp.route('/api/admin/verify-status', methods=['GET'])
 def check_admin_verified():
     if session.get('admin_verified'):
@@ -132,6 +165,13 @@ def check_admin_verified():
     else:
         return jsonify({"verified": False}), 403
 
+"""
+@api {GET} /api/users/:user_id/token
+@description Generates and returns a secure token for the given user ID.
+@access Admin
+@param {Int} user_id - The user ID to generate the token for
+@returns {JSON} { token: String }
+"""
 @admin_bp.route('/api/users/<int:user_id>/token', methods=['GET'])
 def get_user_token(user_id):
     try:
@@ -147,6 +187,13 @@ def get_user_token(user_id):
         return jsonify({"error": str(e)}), 500
 
 
+"""
+@api {GET} /api/admin/user/:token
+@description Decrypts a token to retrieve user information by ID.
+@access Admin
+@param {String} token - Encrypted user ID token
+@returns {JSON} User data or error message
+"""
 @admin_bp.route('/api/admin/user/<token>', methods=['GET'])
 def get_user_from_token(token):
     try:
@@ -179,7 +226,13 @@ def get_user_from_token(token):
     except Exception as e:
         return jsonify({"error": f"Invalid token or server error: {str(e)}"}), 403
 
-
+"""
+@api {GET} /api/admin/my-games
+@description Retrieves all game history for a user identified by email.
+@access Admin
+@param {String} email - The email of the user whose games should be retrieved
+@returns {JSON} Object containing arrays of triviaGames, scoredleGames, and wordseriesGames
+"""
 @admin_bp.route('/api/admin/my-games', methods=['GET'])
 def get_user_games_by_email():
     user_role = session.get('role')
