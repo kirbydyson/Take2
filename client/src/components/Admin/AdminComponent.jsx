@@ -153,7 +153,37 @@ export default function AdminPage() {
                         </TableHead>
                         <TableBody>
                             {users.map((user) => (
-                                <TableRow key={user.email}>
+                                <TableRow
+                                    key={user.email}
+                                    hover
+                                    sx={{ cursor: 'pointer' }}
+                                    onClick={async () => {
+                                        try {
+                                            const res = await fetch(
+                                                `http://localhost:8080/api/users/${user.id}/token`,
+                                                {
+                                                    credentials: 'include',
+                                                },
+                                            );
+                                            const data = await res.json();
+                                            if (res.ok && data.token) {
+                                                router.push(
+                                                    `/admin/view-user/${data.token}`,
+                                                );
+                                            } else {
+                                                console.error(
+                                                    'Failed to retrieve token:',
+                                                    data.error,
+                                                );
+                                            }
+                                        } catch (err) {
+                                            console.error(
+                                                'Error fetching token:',
+                                                err,
+                                            );
+                                        }
+                                    }}
+                                >
                                     <TableCell>{user.firstName}</TableCell>
                                     <TableCell>{user.lastName}</TableCell>
                                     <TableCell>{user.email}</TableCell>
@@ -163,9 +193,10 @@ export default function AdminPage() {
                                     </TableCell>
                                     <TableCell align='right'>
                                         <IconButton
-                                            onClick={(e) =>
-                                                handleMenuOpen(e, user)
-                                            }
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                handleMenuOpen(e, user);
+                                            }}
                                         >
                                             <MoreVertIcon />
                                         </IconButton>
@@ -183,16 +214,49 @@ export default function AdminPage() {
                 onClose={handleMenuClose}
             >
                 {menuUser && (
-                    <MenuItem
-                        onClick={() =>
-                            handleBanToggle(
-                                menuUser.email,
-                                menuUser.isBanned ? 'unban' : 'ban',
-                            )
-                        }
-                    >
-                        {menuUser.isBanned ? 'Unban User' : 'Ban User'}
-                    </MenuItem>
+                    <>
+                        <MenuItem
+                            onClick={async (e) => {
+                                e.stopPropagation();
+                                try {
+                                    const res = await fetch(
+                                        `http://localhost:8080/api/users/${menuUser.id}/token`,
+                                        {
+                                            credentials: 'include',
+                                        },
+                                    );
+                                    const data = await res.json();
+                                    if (res.ok && data.token) {
+                                        router.push(
+                                            `/admin/view-user/${data.token}`,
+                                        );
+                                    } else {
+                                        console.error(
+                                            'Failed to retrieve token:',
+                                            data.error,
+                                        );
+                                    }
+                                } catch (err) {
+                                    console.error('Error fetching token:', err);
+                                } finally {
+                                    handleMenuClose();
+                                }
+                            }}
+                        >
+                            View Data
+                        </MenuItem>
+                        <MenuItem
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                handleBanToggle(
+                                    menuUser.email,
+                                    menuUser.isBanned ? 'unban' : 'ban',
+                                );
+                            }}
+                        >
+                            {menuUser.isBanned ? 'Unban User' : 'Ban User'}
+                        </MenuItem>
+                    </>
                 )}
             </Menu>
         </Box>
