@@ -189,6 +189,10 @@
     margin-top: 40px;
     font-size: 18px;
 }
+.wordseries-invalid {
+  border: 2px solid red !important;
+  animation: shake 0.3s ease;
+}
 
 .wordseries-modal-message {
     font-size: 16px;
@@ -247,6 +251,50 @@
     transform: scale(1.03);
 }
 
+/* Game Over Screen */
+.wordseries-gameover-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.wordseries-gameover-box {
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.wordseries-gameover-box h2 {
+  margin-bottom: 1rem;
+}
+
+.wordseries-gameover-box button {
+  margin-top: 1rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.wordseries-gameover-box button:hover {
+  background-color: #005ec2;
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
@@ -259,4 +307,12 @@
         height: 70px;
         font-size: 12px;
     }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-4px); }
+  100% { transform: translateX(0); }
 }
