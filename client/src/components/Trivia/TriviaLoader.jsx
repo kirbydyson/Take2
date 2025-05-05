@@ -1,3 +1,19 @@
+/**
+ * TriviaLoader Component
+ *
+ * This file defines a React component that serves as a loading screen
+ * while the main TriviaGame component fetches user session data and questions.
+ *
+ * Key Features:
+ * - Displays a rotating set of humorous, baseball-themed loading messages.
+ * - Shows an animated GIF to enhance user experience during data loading.
+ * - Uses a timed interval to cycle through messages every 4 seconds.
+ *
+ * Dependencies:
+ * - Material UI (`Box`, `Typography`)
+ * - Next.js Image component
+ */
+
 'use client';
 
 import { useEffect, useState } from 'react';

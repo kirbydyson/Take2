@@ -1,3 +1,19 @@
+/**
+ * BannedPage Component
+ *
+ * This file defines a simple React component that displays a full-screen message
+ * indicating the user has been banned or restricted from using the platform.
+ *
+ * Key Features:
+ * - Uses Material-UI's `Box` and `Typography` for layout and styling.
+ * - Displays a bold "BANNED" heading and a supporting message.
+ * - Styled with a red background and centered white text to clearly convey restriction.
+ *
+ * Dependencies:
+ * - React
+ * - Material UI (`Box`, `Typography`)
+ */
+
 'use client';
 
 import React from 'react';
