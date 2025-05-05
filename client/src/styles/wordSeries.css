@@ -348,39 +348,27 @@
 }
 
 .wordseries-attempts-container {
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0;
-    gap: 0.75rem;
-    font-size: 1.2rem;
+    gap: 10px;
 }
 
 .wordseries-attempts-label {
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .wordseries-attempts-indicator {
     display: flex;
-    gap: 0.5rem;
+    gap: 8px;
 }
 
-.attempt-circle {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 2px solid #ccc;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-.attempt-remaining {
-    background-color: #4caf50;
-    /* green */
-    border-color: #4caf50;
-}
-
-.attempt-used {
-    background-color: transparent;
+.attempt-image-wrapper {
+    width: 30px;
+    height: 30px;
+    position: relative;
 }
 
 .wordseries-overlay {

@@ -1,3 +1,20 @@
+/**
+ * MyGamesComponent
+ *
+ * This component displays a personalized dashboard for the user,
+ * summarizing their performance across all game types: Trivia, Scoredle,
+ * and WordSeries. It includes statistics, bar charts, and recent game history.
+ *
+ * Main Features:
+ *  - Session validation with redirection for unauthenticated or banned users
+ *  - Fetches user's game data from the backend API
+ *  - Displays total games played and average performance metrics
+ *  - Visualizes game result distributions using MUI BarChart
+ *  - Shows summaries of the most recent games for each game type
+ *  - Fully responsive layout using MUI's Grid and Paper components
+ *  - Loading state with CircularProgress spinner
+ */
+
 'use client';
 
 import React, { useEffect, useState } from 'react';

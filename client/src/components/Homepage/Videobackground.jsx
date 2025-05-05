@@ -1,3 +1,18 @@
+/**
+ * VideoBackground
+ *
+ * This component displays a fullscreen autoplaying video background
+ * with an overlay that includes branding and a call-to-action button.
+ *
+ * Main Features:
+ *  - Validates user session on mount; redirects to /banned if necessary
+ *  - Displays background video with overlay text and a "PLAY BALL!" button
+ *  - Button dynamically routes the user to the catalogue if logged in,
+ *    or to the login page if not authenticated
+ *  - Styled using a CSS module and Material UI for responsive design
+ *  - Designed as the central interactive element for the homepage
+ */
+
 'use client';
 
 import styles from '@/app/page.module.css';

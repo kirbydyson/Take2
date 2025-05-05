@@ -1,3 +1,21 @@
+/**
+ * AdminPage.jsx
+ *
+ * This React component renders the admin dashboard for managing user accounts.
+ * Admins can view user details and perform actions such as banning or unbanning users.
+ *
+ * Features:
+ * - Validates session and restricts access to admin users.
+ * - Fetches and displays all users in a table format.
+ * - Provides contextual menu actions for banning or unbanning users.
+ * - Shows a loading indicator while fetching data.
+ *
+ * Dependencies:
+ * - React (useState, useEffect)
+ * - Next.js router (useRouter from 'next/navigation')
+ * - Material UI components: Box, Typography, Paper, Table, Menu, IconButton, CircularProgress
+ */
+
 'use client';
 
 import React, { useEffect, useState } from 'react';

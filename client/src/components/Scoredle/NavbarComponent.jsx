@@ -1,3 +1,21 @@
+/**
+ * Navbar Component
+ *
+ * This component renders the top navigation bar for the No-Hitter Tracker web app.
+ * It includes links to various games (Scoredle, Word Series, Trivia) and handles
+ * user session validation, login/logout functionality, and admin access.
+ *
+ * Behavior:
+ * - On mount, it validates the user's session via an API call.
+ * - If the user is banned, it redirects them to a banned page.
+ * - If logged in, shows an avatar with a gradient background derived from their email.
+ * - Clicking the avatar toggles a dropdown menu with:
+ *    - Admin Page (if user is an admin)
+ *    - My Games
+ *    - Logout
+ * - If not logged in, shows a "Login" button.
+ */
+
 'use client';
 
 import Link from 'next/link';
