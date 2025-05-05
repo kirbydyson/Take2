@@ -1,11 +1,11 @@
 from sqlalchemy import create_engine
 import pandas as pd
-import csi3335f2024 as cfg
+import csi3335s2025 as cfg
 
 engine = create_engine(f'mysql+pymysql://{cfg.mysql["user"]}:{cfg.mysql["password"]}@'
                                              f'{cfg.mysql["host"]}/{cfg.mysql["database"]}')
 
-csv_file_path = 'additional_data/no_hitters/no_hitters.csv'
+csv_file_path = 'no_hitters/no_hitters.csv'
 df = pd.read_csv(csv_file_path)
 
 df.insert(0, 'no_hitters_ID', range(1, len(df) + 1))

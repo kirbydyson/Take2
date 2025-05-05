@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify
+from flask import Blueprint, jsonify, session, request
 from enum import Enum
 import random
 from db import get_connection
@@ -55,3 +55,37 @@ def get_wordseries_groups():
                 })
 
     return jsonify({"groups": groups})
+
+@wordseries_bp.route('/api/wordseries/save-game', methods=['POST'])
+def save_wordseries_game():
+    if session.get('email') is None:
+        return jsonify({"error": "Unauthorized"}), 401
+
+    data = request.get_json()
+    attempts_left = data.get('attemptsLeft')
+    game_completed = data.get('gameCompleted')
+
+    if attempts_left is None or game_completed is None:
+        return jsonify({"error": "Missing attemptsLeft or gameCompleted"}), 400
+
+    conn = get_connection()
+    cursor = conn.cursor(dictionary=True)
+
+    # Get user ID from email
+    cursor.execute("SELECT id FROM users WHERE email = %s", (session['email'],))
+    user = cursor.fetchone()
+    if not user:
+        conn.close()
+        return jsonify({"error": "User not found"}), 404
+
+    userId = user['id']
+
+    cursor.execute(
+        "INSERT INTO wordseries_games (userId, attemptsLeft, gameCompleted) VALUES (%s, %s, %s)",
+        (userId, attempts_left, game_completed)
+    )
+    conn.commit()
+    cursor.close()
+    conn.close()
+
+    return jsonify({"message": "WordSeries game saved successfully"})

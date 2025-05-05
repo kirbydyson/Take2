@@ -38,11 +38,20 @@ def get_my_games():
         ORDER BY timestamp DESC
     """, (userId,))
     scoredle_games = cursor.fetchall()
+    
+    cursor.execute("""
+        SELECT id, attemptsLeft, gameCompleted, playedAt
+        FROM wordseries_games
+        WHERE userId = %s
+        ORDER BY playedAt DESC
+    """, (userId,))
+    wordseries_games = cursor.fetchall()
 
     cursor.close()
     conn.close()
 
     return jsonify({
         "triviaGames": trivia_games,
-        "scoredleGames": scoredle_games
+        "scoredleGames": scoredle_games,
+        "wordseriesGames": wordseries_games
     })

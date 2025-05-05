@@ -85,8 +85,17 @@ export default function MyGamesComponent() {
         }
     });
 
+    const wordseriesDistribution = [0, 0, 0, 0, 0];
+    data.wordseriesGames?.forEach((game) => {
+        if (game.attemptsLeft >= 0 && game.attemptsLeft <= 4) {
+            wordseriesDistribution[game.attemptsLeft]++;
+        }
+    });
+
     const totalTrivia = data.triviaGames?.length || 0;
     const totalScoredle = data.scoredleGames?.length || 0;
+    const totalWordSeries = data.wordseriesGames?.length || 0;
+
     const avgCorrect =
         totalTrivia > 0
             ? (
@@ -105,6 +114,15 @@ export default function MyGamesComponent() {
                   ) / totalScoredle
               ).toFixed(1)
             : 0;
+        const avgAttemptsLeft =
+            totalWordSeries > 0
+                ? (
+                      data.wordseriesGames.reduce(
+                          (sum, g) => sum + g.attemptsLeft,
+                          0,
+                      ) / totalWordSeries
+                  ).toFixed(1)
+                : 0;
 
     return (
         <Box
@@ -152,6 +170,22 @@ export default function MyGamesComponent() {
                             Avg Attempts
                         </Typography>
                         <Typography variant='h6'>{avgAttempts}</Typography>
+                    </Paper>
+                </Grid>
+                <Grid item xs={6} md={2.4}>
+                    <Paper sx={{ p: 2, textAlign: 'center' }}>
+                        <Typography variant='subtitle1'>
+                            WordSeries Games
+                        </Typography>
+                        <Typography variant='h6'>{totalWordSeries}</Typography>
+                    </Paper>
+                </Grid>
+                <Grid item xs={6} md={2.4}>
+                    <Paper sx={{ p: 2, textAlign: 'center' }}>
+                        <Typography variant='subtitle1'>
+                            Avg Attempts Left
+                        </Typography>
+                        <Typography variant='h6'>{avgAttemptsLeft}</Typography>
                     </Paper>
                 </Grid>
             </Grid>
@@ -241,6 +275,54 @@ export default function MyGamesComponent() {
                     </Paper>
                 </Grid>
 
+                {/* WordSeries Attempts Left Distribution */}
+                <Grid item xs={12} md={6}>
+                    <Paper elevation={3} sx={{ p: 2 }}>
+                        <Typography variant='h6' mb={2}>
+                            WordSeries: Attempts Left Distribution
+                        </Typography>
+                        {data.wordseriesGames?.length > 0 ? (
+                            <BarChart
+                                layout='horizontal'
+                                yAxis={[
+                                    {
+                                        scaleType: 'band',
+                                        data: ['0', '1', '2', '3', '4'],
+                                        label: 'Attempts Left',
+                                    },
+                                ]}
+                                xAxis={[
+                                    {
+                                        label: 'Games',
+                                        valueFormatter: (v) =>
+                                            Number.isInteger(v)
+                                                ? v.toString()
+                                                : '',
+                                        tickMinStep: 1,
+                                    },
+                                ]}
+                                series={[
+                                    {
+                                        data: [0, 0, 0, 0, 0].map(
+                                            (_, i) =>
+                                                data.wordseriesGames.filter(
+                                                    (game) =>
+                                                        game.attemptsLeft === i,
+                                                ).length,
+                                        ),
+                                        label: 'Games',
+                                    },
+                                ]}
+                                height={180}
+                            />
+                        ) : (
+                            <Typography variant='body2'>
+                                No WordSeries game data found.
+                            </Typography>
+                        )}
+                    </Paper>
+                </Grid>
+
                 {/* Recent Games */}
                 <Grid item xs={12} md={6}>
                     <Paper sx={{ p: 2 }}>
@@ -277,6 +359,31 @@ export default function MyGamesComponent() {
                         ) : (
                             <Typography variant='body2'>
                                 No recent Scoredle games found.
+                            </Typography>
+                        )}
+                    </Paper>
+                </Grid>
+
+                {/* Recent WordSeries Games */}
+                <Grid item xs={12} md={6}>
+                    <Paper sx={{ p: 2 }}>
+                        <Typography variant='h6' gutterBottom>
+                            Recent WordSeries Games
+                        </Typography>
+                        {data.wordseriesGames?.length > 0 ? (
+                            data.wordseriesGames.slice(0, 3).map((game) => (
+                                <Typography key={game.id} variant='body2'>
+                                    #{game.id} -{' '}
+                                    {game.gameCompleted
+                                        ? 'Completed'
+                                        : 'Incomplete'}
+                                    ,{game.attemptsLeft} attempts left (
+                                    {new Date(game.playedAt).toLocaleString()})
+                                </Typography>
+                            ))
+                        ) : (
+                            <Typography variant='body2'>
+                                No recent WordSeries games found.
                             </Typography>
                         )}
                     </Paper>
