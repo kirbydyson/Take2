@@ -6,6 +6,7 @@ import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import Grid from './Grid';
 import AttemptsIndicator from './AttemptsIndicator';
 import DiscoveredGroups from './DiscoveredGroups';
+import InstructionsModal from './InstructionsModal';
 
 export default function WordSeriesGame() {
     const [players, setPlayers] = useState([]);
@@ -221,11 +222,11 @@ const handleSubmit = () => {
                 </IconButton>
             </div>
 
-            {showInstructions && (
+
                 <div className="wordseries-message-area">
                     <p className="wordseries-message">🎯 Select 4 players that belong to the same group!</p>
                 </div>
-            )}
+
 
             {discoveredGroups.length > 0 && (
                 <DiscoveredGroups groups={discoveredGroups} />
@@ -264,7 +265,7 @@ const handleSubmit = () => {
                     </div>
                 </div>
             )}
-
+            <InstructionsModal open={showInstructions} onClose={() => setShowInstructions(false)} />
         </div>
     );
 }
