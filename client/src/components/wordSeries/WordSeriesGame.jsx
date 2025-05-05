@@ -22,6 +22,7 @@ export default function WordSeriesGame() {
             try {
                 const res = await fetch('http://localhost:8080/api/wordseries/get-words');
                 const data = await res.json();
+                console.log('Fetched word series groups:', data);
 
                 if (data.groups) {
                     setGroups(data.groups);
