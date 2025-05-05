@@ -3,6 +3,15 @@ from db import get_connection
 
 my_games_bp = Blueprint('my_games', __name__)
 
+"""
+@api {GET} /api/my-games
+@description Retrieves the logged-in user's game history for Trivia, Scoredle, and WordSeries.
+@access Private (requires user to be logged in)
+@returns {JSON} An object containing three lists:
+    - triviaGames: [{ id, number_correct, played_at }]
+    - scoredleGames: [{ id, correctWord, attemptCount, guessedWord, timestamp }]
+    - wordseriesGames: [{ id, attemptsLeft, gameCompleted, playedAt }]
+"""
 @my_games_bp.route('/api/my-games', methods=['GET'])
 def get_my_games():
     if session.get('email') is None:
