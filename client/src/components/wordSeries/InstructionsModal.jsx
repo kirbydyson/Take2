@@ -56,7 +56,7 @@ export default function InstructionsModal({ open, onClose }) {
                         </li>
                         <li>
                             <Typography component="span">
-                                Find all the groups without making 4 mistakes!
+                                Find all the groups without making 3 mistakes!
                             </Typography>
                         </li>
                     </Typography>
