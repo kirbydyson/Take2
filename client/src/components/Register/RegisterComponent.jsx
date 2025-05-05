@@ -36,6 +36,7 @@ export default function RegisterComponent() {
             }
 
             const data = await response.json();
+          
             if (!data.email) {
                 console.log('Not logged in');
                 return;
