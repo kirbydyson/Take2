@@ -36,11 +36,12 @@ export default function RegisterComponent() {
             }
 
             const data = await response.json();
-            if (res.ok && data.isBanned === true) {
-                router.push('/banned');
-            } else if (!data.email) {
+          
+            if (!data.email) {
                 console.log('Not logged in');
                 return;
+            } else if (data.email && data.isBanned === 1) {
+                router.push('/banned');
             } else if (data.email) {
                 console.log('Logged in as:', data.email);
                 setUser(data.email);

@@ -22,6 +22,7 @@ export default function WordSeriesGame() {
             try {
                 const res = await fetch('http://localhost:8080/api/wordseries/get-words');
                 const data = await res.json();
+                console.log('Fetched word series groups:', data);
 
                 if (data.groups) {
                     setGroups(data.groups);
@@ -65,48 +66,74 @@ export default function WordSeriesGame() {
         return selectedPlayers.every(player => player.category === firstCategory);
     };
 
-    const handleSubmit = () => {
-        if (selectedPlayers.length !== 4) return;
+const handleSubmit = () => {
+    if (selectedPlayers.length !== 4) return;
 
-        const isValid = validate_groupings(selectedPlayers);
+    const isValid = validate_groupings(selectedPlayers);
 
-        if (isValid) {
-            const groupType = mapCategoryToType(selectedPlayers[0].category);
-            const categoryName = selectedPlayers[0].category;
+    if (isValid) {
+        const groupType = mapCategoryToType(selectedPlayers[0].category);
+        const categoryName = selectedPlayers[0].category;
 
-            const groupDescription = groups.find(g => g.category === categoryName)?.category || categoryName;
+        const groupDescription =
+            groups.find((g) => g.category === categoryName)?.category ||
+            categoryName;
 
-            setDiscoveredGroups(prev => [...prev, {
+        setDiscoveredGroups((prev) => [
+            ...prev,
+            {
                 players: selectedPlayers,
                 type: groupType,
-                description: categoryName
-            }]);
+                description: categoryName,
+            },
+        ]);
 
-            setPlayers(prev => prev.filter(player =>
-                !selectedPlayers.some(p => p.id === player.id)
-            ));
+        setPlayers((prev) =>
+            prev.filter(
+                (player) => !selectedPlayers.some((p) => p.id === player.id),
+            ),
+        );
 
-            setSelectedPlayers([]);
+        setSelectedPlayers([]);
 
-            if (discoveredGroups.length + 1 >= groups.length) {
-                setTimeout(() => {
-                    setShowCongrats(true);
-                }, 500);
-            }
-        } else {
-            setShowError(true);
-            setAttempts(prev => prev - 1);
-
+        if (discoveredGroups.length + 1 >= groups.length) {
             setTimeout(() => {
-                setShowError(false);
-                setSelectedPlayers([]);
-            }, 2000);
-
-            if (attempts - 1 === 0) {
+                setShowCongrats(true);
+                saveGame(attempts, true); // ✅ Save successful game
+            }, 500);
+        }
+    } else {
+        setShowError(true);
+        setAttempts((prev) => {
+            const newAttempts = prev - 1;
+            if (newAttempts === 0) {
                 setShowGameOver(true);
+                saveGame(0, false); // ✅ Save failed game
             }
+            return newAttempts;
+        });
+
+        setTimeout(() => {
+            setShowError(false);
+            setSelectedPlayers([]);
+        }, 2000);
+    }
+};
+
+
+    const saveGame = async (attemptsLeft, gameCompleted) => {
+        try {
+            await fetch('http://localhost:8080/api/wordseries/save-game', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                credentials: 'include',
+                body: JSON.stringify({ attemptsLeft, gameCompleted }),
+            });
+        } catch (err) {
+            console.error('Failed to save WordSeries game:', err);
         }
     };
+
 
     const mapCategoryToType = (category) => {
 

@@ -2,29 +2,19 @@ import React from 'react';
 
 export default function DiscoveredGroups({ groups }) {
     return (
-        <div className="wordseries-discovered-container">
+        <div className='wordseries-discovered-container'>
             {groups.map((group, index) => {
-                let groupColorClass = '';
-                switch (group.type) {
-                    case 'team': groupColorClass = 'wordseries-yellow'; break;
-                    case 'position': groupColorClass = 'wordseries-green'; break;
-                    case 'award': groupColorClass = 'wordseries-purple'; break;
-                    case 'era': groupColorClass = 'wordseries-blue'; break;
-                    default: groupColorClass = '';
-                }
+                const playerNames = group.players.map((p) => p.name).join(', ');
 
                 return (
-                    <div key={index} className={`wordseries-discovered-group ${groupColorClass}`}>
-                        <div className="wordseries-group-description">
-                            {group.description}
+                    <div
+                        key={index}
+                        className='wordseries-discovered-group neutral-style'
+                    >
+                        <div className='group-title'>
+                            {group.description.toUpperCase()}
                         </div>
-                        <div className="wordseries-group-players">
-                            {group.players.map(player => (
-                                <div key={player.id} className="wordseries-group-player">
-                                    {player.name}
-                                </div>
-                            ))}
-                        </div>
+                        <div className='group-players'>({playerNames})</div>
                     </div>
                 );
             })}

@@ -40,6 +40,22 @@ CREATE TABLE IF NOT EXISTS queries (
     query TEXT NOT NULL
 );
 
+CREATE TABLE TeamDivisionHistory (
+    yearID INT NOT NULL,
+    teamID VARCHAR(10) NOT NULL,
+    divisionID VARCHAR(10) NOT NULL,
+    PRIMARY KEY (yearID, teamID)
+);
+
+CREATE TABLE wordseries_games (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    userId INT NOT NULL,
+    attemptsLeft INT NOT NULL,
+    gameCompleted BOOLEAN NOT NULL,
+    playedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (userId) REFERENCES users(id)
+);
+
 INSERT INTO baseball_terms (term) VALUES
 ('bunt'),
 ('curveball'),
@@ -114,10 +130,3 @@ INSERT INTO queries (name, query) VALUES
 ('WordSeriesBravesPlayers', 'SELECT CONCAT(p.nameFirst, '' '', p.nameLast) FROM appearances a NATURAL JOIN people p WHERE a.teamID = ''ATL'' GROUP BY p.playerID ORDER BY RAND() LIMIT 4'),
 ('WordSeriesHallOfFamePlayers', 'SELECT CONCAT(p.nameFirst, '' '', p.nameLast) FROM people p NATURAL JOIN halloffame h WHERE h.inducted = ''Y'' GROUP BY p.playerID ORDER BY RAND() LIMIT 4'),
 ('WordSeriesAllStarPlayers', 'SELECT CONCAT(p.nameFirst, '' '', p.nameLast) FROM people p NATURAL JOIN allstarfull a WHERE a.yearID = 2023 GROUP BY p.playerID ORDER BY RAND() LIMIT 4');
-
-CREATE TABLE TeamDivisionHistory (
-    yearID INT NOT NULL,
-    teamID VARCHAR(10) NOT NULL,
-    divisionID VARCHAR(10) NOT NULL,
-    PRIMARY KEY (yearID, teamID)
-);

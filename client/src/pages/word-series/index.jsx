@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic";
-import NavbarComponent from "@/components/Homepage/NavbarComponent";
+import NavbarComponent from "@/components/Scoredle/NavbarComponent";
 
 const WordSeriesGame = dynamic(() => import('@/components/wordSeries/WordSeriesGame'), { ssr: false });
 
