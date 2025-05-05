@@ -1,3 +1,21 @@
+/**
+ * RegisterComponent
+ *
+ * This component renders a user registration form with client-side
+ * validation, password strength meter, and server-side integration.
+ *
+ * Main Features:
+ *  - Input fields for first name, last name, email, password, and confirm password
+ *  - Password strength indicator using react-password-strength-bar
+ *  - Real-time validation to ensure passwords match and meet minimum strength
+ *  - Form submission to backend API for registration
+ *  - Loading state with spinner on submission
+ *  - Error handling and alert display for registration issues
+ *  - Automatic session check on mount; redirects logged-in users
+ *  - Banned user redirect to a separate page
+ *  - Styled with custom CSS module and Material UI components
+ */
+
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { TextField, Button } from '@mui/material';

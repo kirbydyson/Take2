@@ -1,3 +1,15 @@
+/**
+ * RegisterSuccessComponent
+ *
+ * A simple confirmation component that displays a success message after
+ * a user successfully registers for an account.
+ *
+ * Behavior:
+ * - Retrieves the user's email from the URL query parameters.
+ * - Displays a success icon, welcome message, and the registered email.
+ * - Provides a button that redirects the user to the login page.
+ */
+
 import { Button } from '@mui/material';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import styles from '@/styles/RegisterSuccess.module.css';

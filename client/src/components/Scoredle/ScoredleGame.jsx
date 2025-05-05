@@ -1,3 +1,20 @@
+/**
+ * ScoredleGame Component
+ *
+ * This component implements the main gameplay logic and interface for Scoredle,
+ * a Wordle-style guessing game where users try to guess a 5-letter last name of
+ * a baseball player in 6 attempts.
+ *
+ * Key Features:
+ * - Fetches a new target word from the backend on game start or restart.
+ * - Validates the current user's session, redirects if banned, and saves gameplay results.
+ * - Displays an animated grid of guesses and an on-screen keyboard.
+ * - Accepts keyboard and on-screen input, with validation for guess format and correctness.
+ * - Provides feedback for correct letters (green), present letters (yellow), and wrong letters (gray).
+ * - Triggers modal instructions on first login and when the help icon is clicked.
+ * - Displays snackbars to show errors, STRIKEOUT (loss), and HOMERUN (win) alerts.
+ */
+
 import React, { useState, useEffect } from 'react';
 import Grid from './Grid';
 import Keyboard from './Keyboard';

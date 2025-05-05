@@ -1,3 +1,21 @@
+/**
+ * InstructionsModal Component
+ *
+ * A modal dialog that provides instructions for how to play the Scoredle game,
+ * which is a Wordle-style guessing game themed around baseball player last names.
+ *
+ * Functionality:
+ * - Displays usage instructions when the game is launched or the help icon is clicked.
+ * - Includes visual examples of letter tile feedback:
+ *   - Green for correct letter and position.
+ *   - Yellow for correct letter but wrong position.
+ *   - Gray for incorrect letter.
+ *
+ * Props:
+ * - open (boolean): Whether the modal is visible.
+ * - onClose (function): Callback to close the modal.
+ */
+
 import React from 'react';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
