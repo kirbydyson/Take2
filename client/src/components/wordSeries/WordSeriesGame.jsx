@@ -3,6 +3,8 @@ import '../../styles/wordSeries.css';
 import IconButton from "@mui/material/IconButton";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import Grid from './Grid';
+import AttemptsIndicator from './AttemptsIndicator';
+import DiscoveredGroups from './DiscoveredGroups';
 
 export default function WordSeriesGame() {
     const [players, setPlayers] = useState([]);
@@ -55,8 +57,9 @@ export default function WordSeriesGame() {
     const validate_groupings = (selectedPlayers) => {
         if (selectedPlayers.length !== 4) return false;
 
-        const category = selectedPlayers.map(player => player.category);
-        return categories.every(category => category === categories[0]);
+        const firstCategory = selectedPlayers[0].category;
+
+        return selectedPlayers.every(player => player.category === firstCategory);
     };
 
     const handleSubmit = () => {
@@ -151,15 +154,6 @@ export default function WordSeriesGame() {
                 </div>
             )}
 
-            <div className="wordseries-button-area">
-                <button className="wordseries-submit-button" onClick={() => {}}>Submit</button>
-                <button className="wordseries-shuffle-button" onClick={() => setPlayers(shuffle([...players]))}>Shuffle</button>
-            </div>
-
-            {discoveredGroups.length > 0 && (
-                <DiscoveredGroups groups={discoveredGroups} />
-            )}
-
             <Grid
                 players={players}
                 selectedPlayers={selectedPlayers}
@@ -167,12 +161,23 @@ export default function WordSeriesGame() {
                 showError={showError}
             />
 
+            <AttemptsIndicator attempts={attempts} />
+
+            <div className="wordseries-button-area">
+                <button className="wordseries-submit-button" onClick={handleSubmit} disabled={selectedPlayers.length !== 4}>Submit</button>
+                <button className="wordseries-shuffle-button" onClick={() => setPlayers(shuffle([...players]))}>Shuffle</button>
+            </div>
+
+            {discoveredGroups.length > 0 && (
+                <DiscoveredGroups groups={discoveredGroups} />
+            )}
+
             {showGameOver && (
                 <div className="wordseries-gameover-overlay">
                     <div className="wordseries-gameover-box">
                         <h2>Game Over</h2>
                         <p>No more attempts left!</p>
-                        <button onClick={() => window.location.reload()}>Play Again</button>
+                        <button onClick={handleReset}>Play Again</button>
                     </div>
                 </div>
             )}
