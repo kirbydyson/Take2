@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic';
-import NavbarComponent from "@/components/Homepage/NavbarComponent";
+import Navbar from '@/components/Scoredle/NavbarComponent';
 
 const ScoredleGame = dynamic(
     () => import('@/components/Scoredle/ScoredleGame'),
@@ -10,7 +10,7 @@ const ScoredleGame = dynamic(
 export default function ScoredlePage() {
     return (
         <div className='flex justify-center items-center min-h-screen bg-blue-50'>
-            <NavbarComponent />
+            <Navbar />
             <ScoredleGame />
         </div>
     );
