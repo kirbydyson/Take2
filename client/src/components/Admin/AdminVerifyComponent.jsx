@@ -52,9 +52,9 @@ export default function AdminVerifyComponent() {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                height: 'calc(100vh - 80px)', // assumes navbar height = 80px
-                mt: '80px', // creates spacing below fixed navbar
-                overflow: 'hidden', // disables scrolling inside this box
+                height: 'calc(100vh - 80px)',
+                mt: '80px',
+                overflow: 'hidden',
                 bgcolor: '#f0f4ff',
             }}
         >

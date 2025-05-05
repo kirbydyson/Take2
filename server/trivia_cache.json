@@ -7892,5 +7892,13 @@
         "nameLast": "Mathews"
       }
     ]
+  },
+  "What team won the World Series in 2019?": {
+    "question": "What team won the World Series in 2019?",
+    "result": [
+      {
+        "team_name": "Washington Nationals"
+      }
+    ]
   }
 }
