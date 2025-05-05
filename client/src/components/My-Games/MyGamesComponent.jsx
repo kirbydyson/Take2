@@ -24,7 +24,9 @@ export default function MyGamesComponent() {
                 credentials: 'include',
             });
             const data = await res.json();
-            if (res.ok && data.email) {
+            if (res.ok && data.isBanned === true) {
+                router.push('/banned');
+            } else if (res.ok && data.email) {
                 setUser(data.email);
             } else {
                 router.push('/login');

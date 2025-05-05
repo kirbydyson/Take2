@@ -12,7 +12,7 @@ def register():
     lastName = data.get('lastName')
     email = data.get('email')
     password = data.get('password')
-    role = data.get('role', 'user') 
+    role = data.get('role', 'user')
 
     if not email or not password:
         return jsonify({"error": "Email and password are required"}), 400
@@ -47,7 +47,8 @@ def login():
 
     session['email'] = user['email']
     session['role'] = user['role']
-    return jsonify({"message": "Login successful", "email": user['email']})
+    session['isBanned'] = user['isBanned']
+    return jsonify({"message": "Login successful", "email": user['email'], "role": user['role'], "isBanned": user['isBanned']})
 
 @account_bp.route('/auth/logout', methods=['POST'])
 def logout():
@@ -57,5 +58,22 @@ def logout():
 @account_bp.route('/auth/session', methods=['GET'])
 def get_session():
     if 'email' in session:
-        return jsonify({"loggedIn": True, "email": session['email'], "role": session['role']})
+        conn = get_connection()
+        cursor = conn.cursor(dictionary=True)
+        cursor.execute("SELECT role, isBanned FROM users WHERE email = %s", (session['email'],))
+        user = cursor.fetchone()
+        conn.close()
+
+        if user:
+            session['role'] = user['role']
+            session['isBanned'] = user['isBanned']
+
+            return jsonify({
+                "loggedIn": True,
+                "email": session['email'],
+                "role": user['role'],
+                "isBanned": user['isBanned']
+            })
+
     return jsonify({"loggedIn": False})
+
