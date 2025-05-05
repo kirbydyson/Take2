@@ -222,12 +222,6 @@ const handleSubmit = () => {
                 </IconButton>
             </div>
 
-
-                <div className="wordseries-message-area">
-                    <p className="wordseries-message">🎯 Select 4 players that belong to the same group!</p>
-                </div>
-
-
             {discoveredGroups.length > 0 && (
                 <DiscoveredGroups groups={discoveredGroups} />
             )}
