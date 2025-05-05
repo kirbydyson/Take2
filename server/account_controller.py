@@ -5,6 +5,11 @@ from db import get_connection
 
 account_bp = Blueprint('account', __name__)
 
+
+# POST /api/register
+# Registers a new user by collecting first name, last name, email, and password.
+# Checks for duplicate email and hashes the password before storing.
+# Returns 201 on success or 400 if email already exists or fields are missing.
 @account_bp.route('/api/register', methods=['POST'])
 def register():
     data = request.get_json()
@@ -31,6 +36,11 @@ def register():
     conn.close()
     return jsonify({"message": "User registered successfully"}), 201
 
+
+# POST /auth/login
+# Authenticates a user using their email and password.
+# Verifies the password hash and stores session information.
+# Returns user info on success, or 401 for invalid credentials.
 @account_bp.route('/auth/login', methods=['POST'])
 def login():
     data = request.get_json()
@@ -51,11 +61,20 @@ def login():
     session['isBanned'] = user['isBanned']
     return jsonify({"message": "Login successful", "email": user['email'], "role": user['role'], "isBanned": user['isBanned']})
 
+
+# POST /auth/logout
+# Logs out the currently authenticated user by clearing the session.
+# Returns a simple success message.
 @account_bp.route('/auth/logout', methods=['POST'])
 def logout():
     session.clear()
     return jsonify({"message": "Logged out successfully"})
 
+
+# GET /auth/session
+# Returns the current user's session information if logged in.
+# Includes email, role, and ban status.
+# Returns {"loggedIn": False} if no session is active.
 @account_bp.route('/auth/session', methods=['GET'])
 def get_session():
     if 'email' in session:

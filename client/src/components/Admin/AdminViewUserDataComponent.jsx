@@ -1,3 +1,26 @@
+/**
+ * AdminViewUserDataComponent.jsx
+ *
+ * This component provides an administrative view of a user's gameplay data across multiple games:
+ * Trivia, Scoredle, and WordSeries. It is intended for admin users to audit or analyze player behavior.
+ *
+ * Features:
+ * - Securely decrypts a user token to retrieve associated user profile data.
+ * - Fetches and displays user gameplay stats (number of games, averages, and distribution).
+ * - Shows bar chart visualizations using MUI X Charts for:
+ *   - Trivia correct answers distribution
+ *   - Scoredle attempts distribution
+ *   - WordSeries remaining attempts distribution
+ * - Provides recent game summaries for each game mode.
+ * - Displays session status and redirects on failure.
+ *
+ * Dependencies:
+ * - React (useEffect, useState)
+ * - Next.js router (`useParams` from `next/navigation`)
+ * - Material UI: Box, Typography, Paper, Grid, CircularProgress
+ * - MUI X Charts: BarChart
+ */
+
 'use client';
 
 import { useEffect, useState } from 'react';

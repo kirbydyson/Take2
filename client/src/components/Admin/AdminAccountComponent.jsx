@@ -1,3 +1,25 @@
+/**
+ * AdminRegisterComponent.jsx
+ *
+ * This React component provides a registration form for creating a new admin account.
+ * It includes password strength validation, password confirmation, session verification,
+ * and form validation logic, with redirects based on admin verification status.
+ *
+ * Features:
+ * - Collects and validates input for first name, last name, email, and password.
+ * - Displays password strength using `react-password-strength-bar`.
+ * - Validates if passwords match and meet strength requirements before submission.
+ * - Verifies current session and checks admin authorization before allowing registration.
+ * - Redirects to success page on successful registration or to /admin/verify if unauthorized.
+ *
+ * Dependencies:
+ * - React (useState, useEffect)
+ * - Next.js router (useRouter)
+ * - Material UI: TextField, Button, CircularProgress
+ * - Custom styles from AdminAccountComponent.module.css
+ * - PasswordStrengthBar from `react-password-strength-bar`
+ */
+
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { TextField, Button } from '@mui/material';

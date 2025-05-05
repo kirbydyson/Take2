@@ -27,6 +27,12 @@ app.register_blueprint(wordseries_bp)
 app.register_blueprint(my_games_bp)
 app.register_blueprint(admin_bp)
 
+
+# GET /health-check
+#
+# Simple endpoint to confirm the backend server is running correctly.
+# Returns a JSON message to indicate service health.
+# Can be used by monitoring tools or for frontend/backend integration tests.
 @app.route('/health-check', methods=['GET'])
 def test():
     return {'message': 'I am healthy!'}

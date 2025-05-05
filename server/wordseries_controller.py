@@ -1,3 +1,4 @@
+
 from flask import Blueprint, jsonify, session, request
 from enum import Enum
 import random
@@ -25,6 +26,21 @@ class WordSeriesCategory(Enum):
     HALL_OF_FAME = "WordSeriesHallOfFamePlayers"
     ALL_STAR_PLAYERS = "WordSeriesAllStarPlayers"
 
+
+# GET /api/wordseries/get-words
+#
+# Selects 4 random WordSeries categories from the Enum list.
+# Each category maps to a SQL query stored in the 'queries' table.
+# Executes each query to fetch a unique list of player names.
+# Ensures players are not repeated across categories.
+#
+# Returns:
+# {
+#   "groups": [
+#     { "category": "First Basemen", "players": ["Player A", "Player B", ...] },
+#     ...
+#   ]
+# }
 @wordseries_bp.route('/api/wordseries/get-words', methods=['GET'])
 def get_wordseries_groups():
     db = get_connection()
@@ -56,6 +72,20 @@ def get_wordseries_groups():
 
     return jsonify({"groups": groups})
 
+
+# POST /api/wordseries/save-game
+#
+# Saves a user's WordSeries game result to the database.
+# Requires an authenticated session (session['email'] must exist).
+# Retrieves the user's ID from their email.
+#
+# Request JSON Body:
+# {
+#   "attemptsLeft": int,      # Remaining attempts (0–3)
+#   "gameCompleted": bool     # True if user found all groups
+# }
+#
+# Response: success message or relevant error status.
 @wordseries_bp.route('/api/wordseries/save-game', methods=['POST'])
 def save_wordseries_game():
     if session.get('email') is None:
