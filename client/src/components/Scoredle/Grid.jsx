@@ -1,3 +1,25 @@
+/**
+ * Grid component
+ *
+ * Renders a 6-row grid for a Wordle-style game, showing current and past guesses.
+ * Applies animated flip effects and color-coded feedback (correct, present, absent)
+ * based on comparison to the target word.
+ *
+ * Props:
+ * - guesses: Array of submitted guesses.
+ * - currentGuess: The word currently being typed.
+ * - targetWord: The correct answer for the current game.
+ * - shake: Whether the current row should shake due to an invalid guess.
+ * - gameOver: Boolean indicating if the game has ended.
+ * - didWin: Boolean indicating if the user has correctly guessed the word.
+ *
+ * Behavior:
+ * - Reveals guessed letters one by one with animation.
+ * - Applies visual feedback to indicate correctness of each letter.
+ * - If the user loses, the correct word appears in the last row.
+ * - Displays empty rows to maintain a fixed grid of six.
+ */
+
 import React, { useState, useEffect } from 'react';
 
 export default function Grid({

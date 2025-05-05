@@ -1,3 +1,20 @@
+/**
+ * LoginComponent
+ *
+ * This component handles user authentication through a login form,
+ * manages session validation, and redirects based on user status.
+ *
+ * Main Features:
+ *  - Input fields for email and password
+ *  - Client-side form validation and loading indicator
+ *  - Handles login request to backend API with credentials
+ *  - Displays error alerts for failed login attempts
+ *  - Checks existing session on mount to redirect logged-in or banned users
+ *  - Redirects to homepage on successful login
+ *  - Styled using custom CSS module and Material UI components
+ *  - Includes a looping background video for visual appeal
+ */
+
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import TextField from '@mui/material/TextField';

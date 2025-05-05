@@ -1,3 +1,19 @@
+/**
+ * Navbar
+ *
+ * This component renders the top navigation bar for the application,
+ * including logo, navigation links, and user authentication controls.
+ *
+ * Main Features:
+ *  - Validates user session on mount; redirects if banned
+ *  - Displays links to game pages: Scoredle, Word Series, Trivia
+ *  - Shows login button for guests and a dynamic avatar for logged-in users
+ *  - Avatar opens a Popper menu with options like "My Games", "Logout", and "Admin Page" for admins
+ *  - Generates a unique gradient background for the avatar based on the user's email
+ *  - Uses Material UI components for avatar, popper, and menu styling
+ *  - Responsive to user session state and gracefully handles logout
+ */
+
 'use client';
 
 import Link from 'next/link';

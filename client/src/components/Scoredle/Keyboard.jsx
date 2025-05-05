@@ -1,3 +1,22 @@
+/**
+ * Keyboard Component
+ *
+ * Renders an on-screen keyboard for user input in a Wordle-style game.
+ * Divided into three rows of keys, including letter keys, "Enter", and "Backspace".
+ *
+ * Props:
+ * - onKeyPress (function): Callback function triggered when a key is clicked.
+ * - keyStatuses (object): Optional mapping of key labels to status classes
+ *   (e.g., 'correct', 'present', 'absent') for styling feedback based on game state.
+ *
+ * Behavior:
+ * - Applies status-based CSS classes to keys (e.g., green, yellow, gray).
+ * - Calls the onKeyPress handler with the key value when clicked.
+ * - Displays the backspace symbol (⌫) in place of the word "Backspace".
+ *
+ * Used for interactive gameplay input in a React-based word guessing game.
+ */
+
 import React from 'react';
 
 const keys = [
