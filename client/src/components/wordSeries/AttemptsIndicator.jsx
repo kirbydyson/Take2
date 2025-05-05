@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function AttemptIndicator({ attempts, maxAttempts = 4 }) {
+export default function AttemptIndicator({ attempts, maxAttempts = 3 }) {
     return (
         <div className="wordseries-attempts-container">
-            <div className="wordseries-attempts-label">Attempts:</div>
+            <div className="wordseries-attempts-label">Strikes:</div>
             <div className="wordseries-attempts-indicator">
                 {[...Array(maxAttempts)].map((_, index) => (
                     <div
