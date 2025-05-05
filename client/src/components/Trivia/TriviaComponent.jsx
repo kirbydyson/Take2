@@ -1,3 +1,20 @@
+/**
+ * TriviaGame Component
+ *
+ * This file defines a React component for an interactive baseball-themed trivia game.
+ * It handles loading trivia questions from a backend API or mock data, presenting each
+ * question with randomized multiple-choice answers, and tracking the user's progress.
+ *
+ * Key Features:
+ * - Fetches authenticated session data and trivia questions from the server.
+ * - Dynamically builds multiple-choice options including distractors.
+ * - Implements a countdown timer per question.
+ * - Tracks the number of correct answers and stores results on the backend.
+ * - Displays game over screen and allows replay.
+ *
+ * It assumes the user is authenticated via cookies and that `TriviaLoader` is
+ * a separate component for showing a loading spinner during data fetching.
+ */
 'use client';
 
 import React, { useEffect, useState } from 'react';
