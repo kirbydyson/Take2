@@ -15,6 +15,7 @@ export default function WordSeriesGame() {
     const [attempts, setAttempts] = useState(4);
     const [showError, setShowError] = useState(false);
     const [showGameOver, setShowGameOver] = useState(false);
+    const [showCongrats, setShowCongrats] = useState(false);
 
     useEffect(() => {
         const fetchWordSeriesGroups = async () => {
@@ -30,8 +31,10 @@ export default function WordSeriesGame() {
                             name,
                             category: group.category
                         })));
-                    setPlayers(combinedPlayers);
+                    setPlayers(shuffle(combinedPlayers));
                 }
+
+
             } catch (err) {
                 console.error('Error fetching word series groups:', err);
             }
@@ -76,7 +79,7 @@ export default function WordSeriesGame() {
             setDiscoveredGroups(prev => [...prev, {
                 players: selectedPlayers,
                 type: groupType,
-                description: groupDescription
+                description: categoryName
             }]);
 
             setPlayers(prev => prev.filter(player =>
@@ -87,7 +90,7 @@ export default function WordSeriesGame() {
 
             if (discoveredGroups.length + 1 >= groups.length) {
                 setTimeout(() => {
-                    alert("Congratulations! You've found all the groups!");
+                    setShowCongrats(true);
                 }, 500);
             }
         } else {
@@ -106,22 +109,31 @@ export default function WordSeriesGame() {
     };
 
     const mapCategoryToType = (category) => {
-        // Map category names to color types
-        if (category.includes('BASEMEN') || category.includes('SHORTSTOPS') ||
-            category.includes('OUTFIELDERS') || category.includes('PITCHERS') ||
-            category.includes('CATCHERS')) {
+
+        const categoryLower = category.toLowerCase();
+
+        if (categoryLower.includes('basemen') ||
+            categoryLower.includes('shortstop') ||
+            categoryLower.includes('outfielder') ||
+            categoryLower.includes('pitcher') ||
+            categoryLower.includes('catcher')) {
             return 'position';
         }
 
-        if (category.includes('YANKEES') || category.includes('RED_SOX') ||
-            category.includes('DODGERS') || category.includes('GIANTS') ||
-            category.includes('CARDINALS') || category.includes('CUBS') ||
-            category.includes('ATHLETICS') || category.includes('BRAVES')) {
+        if (categoryLower.includes('yankees') ||
+            categoryLower.includes('red sox') ||
+            categoryLower.includes('dodgers') ||
+            categoryLower.includes('giants') ||
+            categoryLower.includes('cardinals') ||
+            categoryLower.includes('cubs') ||
+            categoryLower.includes('athletics') ||
+            categoryLower.includes('braves')) {
             return 'team';
         }
 
-        if (category.includes('HALL_OF_FAME') || category.includes('MVP') ||
-            category.includes('ALL_STAR')) {
+        if (categoryLower.includes('hall of fame') ||
+            categoryLower.includes('mvp winners') ||
+            categoryLower.includes('all star players')) {
             return 'award';
         }
 
@@ -154,6 +166,10 @@ export default function WordSeriesGame() {
                 </div>
             )}
 
+            {discoveredGroups.length > 0 && (
+                <DiscoveredGroups groups={discoveredGroups} />
+            )}
+
             <Grid
                 players={players}
                 selectedPlayers={selectedPlayers}
@@ -168,10 +184,6 @@ export default function WordSeriesGame() {
                 <button className="wordseries-shuffle-button" onClick={() => setPlayers(shuffle([...players]))}>Shuffle</button>
             </div>
 
-            {discoveredGroups.length > 0 && (
-                <DiscoveredGroups groups={discoveredGroups} />
-            )}
-
             {showGameOver && (
                 <div className="wordseries-gameover-overlay">
                     <div className="wordseries-gameover-box">
@@ -181,6 +193,17 @@ export default function WordSeriesGame() {
                     </div>
                 </div>
             )}
+
+            {showCongrats && (
+                <div className="wordseries-overlay">
+                    <div className="wordseries-dialog-box">
+                        <h2>🎉 Congratulations!</h2>
+                        <p>You found all the groups!</p>
+                        <button className="wordseries-replay-button" onClick={handleReset}>Play Again</button>
+                    </div>
+                </div>
+            )}
+
         </div>
     );
 }

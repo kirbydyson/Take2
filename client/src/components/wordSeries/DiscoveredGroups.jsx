@@ -8,8 +8,8 @@ export default function DiscoveredGroups({ groups }) {
                 switch (group.type) {
                     case 'team': groupColorClass = 'wordseries-yellow'; break;
                     case 'position': groupColorClass = 'wordseries-green'; break;
-                    case 'era': groupColorClass = 'wordseries-blue'; break;
                     case 'award': groupColorClass = 'wordseries-purple'; break;
+                    case 'era': groupColorClass = 'wordseries-blue'; break;
                     default: groupColorClass = '';
                 }
 
