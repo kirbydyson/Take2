@@ -55,7 +55,9 @@ export default function LoginComponent() {
                 credentials: 'include',
             });
             const data = await res.json();
-            if (res.ok) {
+            if (res.ok && data.isBanned === true) {
+                router.push('/banned');
+            } else if (res.ok) {
                 if (!data.email) {
                     console.error('Session is invalid:', data);
                     setUser(null);

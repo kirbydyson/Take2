@@ -24,7 +24,9 @@ export default function MyGamesComponent() {
                 credentials: 'include',
             });
             const data = await res.json();
-            if (res.ok && data.email) {
+            if (res.ok && data.isBanned === true) {
+                router.push('/banned');
+            } else if (res.ok && data.email) {
                 setUser(data.email);
             } else {
                 router.push('/login');
@@ -83,20 +85,24 @@ export default function MyGamesComponent() {
         }
     });
 
-    const totalTrivia = data.triviaGames.length;
-    const totalScoredle = data.scoredleGames.length;
+    const totalTrivia = data.triviaGames?.length || 0;
+    const totalScoredle = data.scoredleGames?.length || 0;
     const avgCorrect =
         totalTrivia > 0
             ? (
-                  data.triviaGames.reduce((sum, g) => sum + g.number_correct, 0) /
-                  totalTrivia
+                  data.triviaGames.reduce(
+                      (sum, g) => sum + g.number_correct,
+                      0,
+                  ) / totalTrivia
               ).toFixed(1)
             : 0;
     const avgAttempts =
         totalScoredle > 0
             ? (
-                  data.scoredleGames.reduce((sum, g) => sum + g.attemptCount, 0) /
-                  totalScoredle
+                  data.scoredleGames.reduce(
+                      (sum, g) => sum + g.attemptCount,
+                      0,
+                  ) / totalScoredle
               ).toFixed(1)
             : 0;
 
@@ -120,7 +126,9 @@ export default function MyGamesComponent() {
             <Grid container spacing={2} sx={{ mb: 4 }}>
                 <Grid item xs={6} md={3}>
                     <Paper sx={{ p: 2, textAlign: 'center' }}>
-                        <Typography variant='subtitle1'>Trivia Games</Typography>
+                        <Typography variant='subtitle1'>
+                            Trivia Games
+                        </Typography>
                         <Typography variant='h6'>{totalTrivia}</Typography>
                     </Paper>
                 </Grid>
@@ -132,13 +140,17 @@ export default function MyGamesComponent() {
                 </Grid>
                 <Grid item xs={6} md={3}>
                     <Paper sx={{ p: 2, textAlign: 'center' }}>
-                        <Typography variant='subtitle1'>Scoredle Games</Typography>
+                        <Typography variant='subtitle1'>
+                            Scoredle Games
+                        </Typography>
                         <Typography variant='h6'>{totalScoredle}</Typography>
                     </Paper>
                 </Grid>
                 <Grid item xs={6} md={3}>
                     <Paper sx={{ p: 2, textAlign: 'center' }}>
-                        <Typography variant='subtitle1'>Avg Attempts</Typography>
+                        <Typography variant='subtitle1'>
+                            Avg Attempts
+                        </Typography>
                         <Typography variant='h6'>{avgAttempts}</Typography>
                     </Paper>
                 </Grid>
@@ -151,31 +163,39 @@ export default function MyGamesComponent() {
                         <Typography variant='h6' mb={2}>
                             Trivia: Correct Answer Distribution
                         </Typography>
-                        <BarChart
-                            layout='horizontal'
-                            yAxis={[
-                                {
-                                    scaleType: 'band',
-                                    data: ['1', '2', '3', '4', '5'],
-                                    label: 'Correct Answers',
-                                },
-                            ]}
-                            xAxis={[
-                                {
-                                    label: 'Games',
-                                    valueFormatter: (v) =>
-                                        Number.isInteger(v) ? v.toString() : '',
-                                    tickMinStep: 1,
-                                },
-                            ]}
-                            series={[
-                                {
-                                    data: triviaDistribution,
-                                    label: 'Games',
-                                },
-                            ]}
-                            height={180}
-                        />
+                        {data.triviaGames?.length > 0 ? (
+                            <BarChart
+                                layout='horizontal'
+                                yAxis={[
+                                    {
+                                        scaleType: 'band',
+                                        data: ['1', '2', '3', '4', '5'],
+                                        label: 'Correct Answers',
+                                    },
+                                ]}
+                                xAxis={[
+                                    {
+                                        label: 'Games',
+                                        valueFormatter: (v) =>
+                                            Number.isInteger(v)
+                                                ? v.toString()
+                                                : '',
+                                        tickMinStep: 1,
+                                    },
+                                ]}
+                                series={[
+                                    {
+                                        data: triviaDistribution,
+                                        label: 'Games',
+                                    },
+                                ]}
+                                height={180}
+                            />
+                        ) : (
+                            <Typography variant='body2'>
+                                No Trivia game data found.
+                            </Typography>
+                        )}
                     </Paper>
                 </Grid>
 
@@ -199,7 +219,9 @@ export default function MyGamesComponent() {
                                     {
                                         label: 'Games',
                                         valueFormatter: (v) =>
-                                            Number.isInteger(v) ? v.toString() : '',
+                                            Number.isInteger(v)
+                                                ? v.toString()
+                                                : '',
                                         tickMinStep: 1,
                                     },
                                 ]}
@@ -225,12 +247,18 @@ export default function MyGamesComponent() {
                         <Typography variant='h6' gutterBottom>
                             Recent Trivia Games
                         </Typography>
-                        {data.triviaGames.slice(0, 3).map((game) => (
-                            <Typography key={game.id} variant='body2'>
-                                #{game.id} - {game.number_correct} correct (
-                                {new Date(game.played_at).toLocaleString()})
+                        {data.triviaGames?.length > 0 ? (
+                            data.triviaGames.slice(0, 3).map((game) => (
+                                <Typography key={game.id} variant='body2'>
+                                    #{game.id} - {game.number_correct} correct (
+                                    {new Date(game.played_at).toLocaleString()})
+                                </Typography>
+                            ))
+                        ) : (
+                            <Typography variant='body2'>
+                                No recent Trivia games found.
                             </Typography>
-                        ))}
+                        )}
                     </Paper>
                 </Grid>
 
@@ -239,12 +267,18 @@ export default function MyGamesComponent() {
                         <Typography variant='h6' gutterBottom>
                             Recent Scoredle Games
                         </Typography>
-                        {data.scoredleGames.slice(0, 3).map((game) => (
-                            <Typography key={game.id} variant='body2'>
-                                #{game.id} - {game.attemptCount} attempts (
-                                {new Date(game.timestamp).toLocaleString()})
+                        {data.scoredleGames?.length > 0 ? (
+                            data.scoredleGames.slice(0, 3).map((game) => (
+                                <Typography key={game.id} variant='body2'>
+                                    #{game.id} - {game.attemptCount} attempts (
+                                    {new Date(game.timestamp).toLocaleString()})
+                                </Typography>
+                            ))
+                        ) : (
+                            <Typography variant='body2'>
+                                No recent Scoredle games found.
                             </Typography>
-                        ))}
+                        )}
                     </Paper>
                 </Grid>
             </Grid>

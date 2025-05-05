@@ -6,9 +6,9 @@ CREATE TABLE IF NOT EXISTS users (
     password VARCHAR(255) NOT NULL,
     nameFirst VARCHAR(100),
     nameLast VARCHAR(100),
-    role ENUM('user', 'admin') DEFAULT 'user'
+    role ENUM('user', 'admin') DEFAULT 'user',
+    isBanned BOOLEAN DEFAULT FALSE
 );
-
 
 CREATE TABLE IF NOT EXISTS scoredle_games (
     id INT AUTO_INCREMENT PRIMARY KEY,

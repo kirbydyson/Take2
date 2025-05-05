@@ -36,8 +36,9 @@ export default function RegisterComponent() {
             }
 
             const data = await response.json();
-            console.log('Session data:', data);
-            if (!data.email) {
+            if (res.ok && data.isBanned === true) {
+                router.push('/banned');
+            } else if (!data.email) {
                 console.log('Not logged in');
                 return;
             } else if (data.email) {
@@ -69,7 +70,7 @@ export default function RegisterComponent() {
             firstName,
             lastName,
             email,
-            password
+            password,
         };
 
         try {

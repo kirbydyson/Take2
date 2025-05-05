@@ -6,6 +6,7 @@ from scordle_controller import scoredle_bp
 from trivia_controller import trivia_bp
 from wordseries_controller import wordseries_bp
 from my_games_controller import my_games_bp
+from admin_controller import admin_bp
 from dotenv import load_dotenv
 import os
 
@@ -24,6 +25,7 @@ app.register_blueprint(scoredle_bp)
 app.register_blueprint(trivia_bp)
 app.register_blueprint(wordseries_bp)
 app.register_blueprint(my_games_bp)
+app.register_blueprint(admin_bp)
 
 @app.route('/health-check', methods=['GET'])
 def test():

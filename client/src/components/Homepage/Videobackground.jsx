@@ -5,7 +5,6 @@ import Button from '@mui/material/Button';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-
 export default function VideoBackground() {
     const [user, setUser] = useState(null);
     const router = useRouter();
@@ -16,7 +15,9 @@ export default function VideoBackground() {
                 credentials: 'include',
             });
             const data = await res.json();
-            if (res.ok) {
+            if (res.ok && data.isBanned === true) {
+                router.push('/banned');
+            } else if (res.ok) {
                 if (!data.email) {
                     setUser(null);
                     return;
@@ -66,7 +67,7 @@ export default function VideoBackground() {
                 <Button
                     variant='contained'
                     color='primary'
-                    size='large' 
+                    size='large'
                     onClick={handlePlayBallClick}
                     sx={{
                         backgroundColor: '#cd0001',

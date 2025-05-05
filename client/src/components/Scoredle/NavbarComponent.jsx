@@ -11,11 +11,13 @@ import Paper from '@mui/material/Paper';
 import Button from '@mui/material/Button';
 import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
+import { useRouter } from 'next/navigation';
 
 export default function Navbar() {
     const [user, setUser] = useState(null);
     const [open, setOpen] = useState(false);
     const anchorRef = useRef(null);
+    const router = useRouter();
 
     const validateSession = async () => {
         try {
@@ -23,13 +25,15 @@ export default function Navbar() {
                 credentials: 'include',
             });
             const data = await res.json();
-            if (res.ok) {
+            if (res.ok && data.isBanned === true) {
+                router.push('/banned');
+            } else if (res.ok) {
                 if (!data.email) {
                     setUser(null);
                     return;
                 } else {
                     console.log('Session data:', data);
-                    setUser(data.email);
+                    setUser(data);
                 }
             } else {
                 setUser(null);
@@ -94,7 +98,7 @@ export default function Navbar() {
                             onClick={() => setOpen((prev) => !prev)}
                             sx={{
                                 cursor: 'pointer',
-                                backgroundImage: generateGradient(user),
+                                backgroundImage: generateGradient(user.email),
                                 color: 'white',
                                 width: 40,
                                 height: 40,
@@ -102,7 +106,7 @@ export default function Navbar() {
                                 backgroundSize: 'cover',
                             }}
                         >
-                            {user?.[0]?.toUpperCase() || '?'}
+                            {user.email?.[0]?.toUpperCase() || '?'}
                         </Avatar>
                         <Popper
                             open={open}
@@ -115,6 +119,16 @@ export default function Navbar() {
                             >
                                 <Paper>
                                     <MenuList autoFocusItem={open}>
+                                        {user.role === 'admin' && (
+                                            <MenuItem
+                                                onClick={() => {
+                                                    setOpen(false);
+                                                    router.push('/admin');
+                                                }}
+                                            >
+                                                Admin Page
+                                            </MenuItem>
+                                        )}
                                         <MenuItem
                                             onClick={() => {
                                                 setOpen(false);
