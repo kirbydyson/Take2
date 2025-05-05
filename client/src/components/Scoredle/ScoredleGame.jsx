@@ -42,6 +42,7 @@ export default function ScoredleGame() {
                     return;
                 } else {
                     setUser(data.email);
+                    setShowModal(true);
                 }
             } else {
                 console.error('Session is invalid:', data);
