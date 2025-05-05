@@ -1,3 +1,22 @@
+/**
+ * AdminVerifyComponent.jsx
+ *
+ * This React component handles the admin verification process using a secret answer.
+ * It provides a secure entry point before allowing access to the admin account creation interface.
+ *
+ * Features:
+ * - Renders a verification form with a text input and submit button.
+ * - Displays validation errors and submission status.
+ * - Redirects to /admin/create-account upon successful verification.
+ * - Includes loading spinner and basic error handling.
+ *
+ * Dependencies:
+ * - React (useState)
+ * - Next.js router (useRouter)
+ * - Material UI components: Box, Paper, Typography, TextField, Button, Alert, CircularProgress
+ * - Custom styles from AdminVerifyComponent.module.css
+ */
+
 'use client';
 
 import { useState } from 'react';
