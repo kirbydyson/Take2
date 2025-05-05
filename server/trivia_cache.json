@@ -7892,5 +7892,571 @@
         "nameLast": "Mathews"
       }
     ]
+  },
+  "Which pitcher holds the record for the most career strikeouts in Major League Baseball history?": {
+    "question": "Which pitcher holds the record for the most career strikeouts in Major League Baseball history?",
+    "result": [
+      {
+        "nameFirst": "Matt",
+        "nameLast": "Kilroy"
+      }
+    ]
+  },
+  "Which team won the very first World Series in 1903?": {
+    "question": "Which team won the very first World Series in 1903?",
+    "result": [
+      {
+        "team_name": "Boston Americans"
+      }
+    ]
+  },
+  "Which player was inducted into the Hall of Fame in 1982?": {
+    "question": "Which player was inducted into the Hall of Fame in 1982?",
+    "result": [
+      {
+        "nameFirst": "Hank",
+        "nameLast": "Aaron"
+      },
+      {
+        "nameFirst": "Babe",
+        "nameLast": "Adams"
+      },
+      {
+        "nameFirst": "Walter",
+        "nameLast": "Alston"
+      },
+      {
+        "nameFirst": "Luis",
+        "nameLast": "Aparicio"
+      },
+      {
+        "nameFirst": "Richie",
+        "nameLast": "Ashburn"
+      },
+      {
+        "nameFirst": "Al",
+        "nameLast": "Barlick"
+      },
+      {
+        "nameFirst": "Ginger",
+        "nameLast": "Beaumont"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Beckwith"
+      },
+      {
+        "nameFirst": "Chet",
+        "nameLast": "Brewer"
+      },
+      {
+        "nameFirst": "Jim",
+        "nameLast": "Brewer"
+      },
+      {
+        "nameFirst": "Gates",
+        "nameLast": "Brown"
+      },
+      {
+        "nameFirst": "John T.",
+        "nameLast": "Brush"
+      },
+      {
+        "nameFirst": "Charlie",
+        "nameLast": "Buffinton"
+      },
+      {
+        "nameFirst": "Jim",
+        "nameLast": "Bunning"
+      },
+      {
+        "nameFirst": "Lew",
+        "nameLast": "Burdette"
+      },
+      {
+        "nameFirst": "George",
+        "nameLast": "Burns"
+      },
+      {
+        "nameFirst": "Leo",
+        "nameLast": "Cardenas"
+      },
+      {
+        "nameFirst": "Bob",
+        "nameLast": "Caruthers"
+      },
+      {
+        "nameFirst": "Orlando",
+        "nameLast": "Cepeda"
+      },
+      {
+        "nameFirst": "Happy",
+        "nameLast": "Chandler"
+      },
+      {
+        "nameFirst": "Lave",
+        "nameLast": "Cross"
+      },
+      {
+        "nameFirst": "Ray",
+        "nameLast": "Dandridge"
+      },
+      {
+        "nameFirst": "Jake",
+        "nameLast": "Daubert"
+      },
+      {
+        "nameFirst": "Tommy",
+        "nameLast": "Davis"
+      },
+      {
+        "nameFirst": "Bingo",
+        "nameLast": "DeMoss"
+      },
+      {
+        "nameFirst": "Rap",
+        "nameLast": "Dixon"
+      },
+      {
+        "nameFirst": "Patsy",
+        "nameLast": "Donovan"
+      },
+      {
+        "nameFirst": "Barney",
+        "nameLast": "Dreyfuss"
+      },
+      {
+        "nameFirst": "Don",
+        "nameLast": "Drysdale"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Dugan"
+      },
+      {
+        "nameFirst": "Jimmy",
+        "nameLast": "Dykes"
+      },
+      {
+        "nameFirst": "Roy",
+        "nameLast": "Face"
+      },
+      {
+        "nameFirst": "Wes",
+        "nameLast": "Ferrell"
+      },
+      {
+        "nameFirst": "Freddie",
+        "nameLast": "Fitzsimmons"
+      },
+      {
+        "nameFirst": "Lew",
+        "nameLast": "Fonseca"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "Foster"
+      },
+      {
+        "nameFirst": "Nellie",
+        "nameLast": "Fox"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "Freehan"
+      },
+      {
+        "nameFirst": "Jelly",
+        "nameLast": "Gardner"
+      },
+      {
+        "nameFirst": "Jack",
+        "nameLast": "Glasscock"
+      },
+      {
+        "nameFirst": "Charlie",
+        "nameLast": "Grimm"
+      },
+      {
+        "nameFirst": "Heinie",
+        "nameLast": "Groh"
+      },
+      {
+        "nameFirst": "Fred",
+        "nameLast": "Haney"
+      },
+      {
+        "nameFirst": "Tommy",
+        "nameLast": "Harper"
+      },
+      {
+        "nameFirst": "Vic",
+        "nameLast": "Harris"
+      },
+      {
+        "nameFirst": "Babe",
+        "nameLast": "Herman"
+      },
+      {
+        "nameFirst": "John",
+        "nameLast": "Heydler"
+      },
+      {
+        "nameFirst": "Gil",
+        "nameLast": "Hodges"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "Holland"
+      },
+      {
+        "nameFirst": "Elston",
+        "nameLast": "Howard"
+      },
+      {
+        "nameFirst": "Sammy",
+        "nameLast": "Hughes"
+      },
+      {
+        "nameFirst": "William",
+        "nameLast": "Hulbert"
+      },
+      {
+        "nameFirst": "Travis",
+        "nameLast": "Jackson"
+      },
+      {
+        "nameFirst": "Fats",
+        "nameLast": "Jenkins"
+      },
+      {
+        "nameFirst": "Alex",
+        "nameLast": "Johnson"
+      },
+      {
+        "nameFirst": "Deron",
+        "nameLast": "Johnson"
+      },
+      {
+        "nameFirst": "Cleon",
+        "nameLast": "Jones"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Judge"
+      },
+      {
+        "nameFirst": "Willie",
+        "nameLast": "Kamm"
+      },
+      {
+        "nameFirst": "Brickyard",
+        "nameLast": "Kennedy"
+      },
+      {
+        "nameFirst": "Harmon",
+        "nameLast": "Killebrew"
+      },
+      {
+        "nameFirst": "Harvey",
+        "nameLast": "Kuenn"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Kuhel"
+      },
+      {
+        "nameFirst": "Don",
+        "nameLast": "Larsen"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Lazzeri"
+      },
+      {
+        "nameFirst": "Sam",
+        "nameLast": "Leever"
+      },
+      {
+        "nameFirst": "Duffy",
+        "nameLast": "Lewis"
+      },
+      {
+        "nameFirst": "Dick",
+        "nameLast": "Lundy"
+      },
+      {
+        "nameFirst": "Biz",
+        "nameLast": "Mackey"
+      },
+      {
+        "nameFirst": "Dave",
+        "nameLast": "Malarcher"
+      },
+      {
+        "nameFirst": "Oliver",
+        "nameLast": "Marcell"
+      },
+      {
+        "nameFirst": "Juan",
+        "nameLast": "Marichal"
+      },
+      {
+        "nameFirst": "Marty",
+        "nameLast": "Marion"
+      },
+      {
+        "nameFirst": "Roger",
+        "nameLast": "Maris"
+      },
+      {
+        "nameFirst": "Carl",
+        "nameLast": "Mays"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "Mazeroski"
+      },
+      {
+        "nameFirst": "Lindy",
+        "nameLast": "McDaniel"
+      },
+      {
+        "nameFirst": "Webster",
+        "nameLast": "McDonald"
+      },
+      {
+        "nameFirst": "Bill",
+        "nameLast": "McGowan"
+      },
+      {
+        "nameFirst": "Stuffy",
+        "nameLast": "McInnis"
+      },
+      {
+        "nameFirst": "Dave",
+        "nameLast": "McNally"
+      },
+      {
+        "nameFirst": "Bid",
+        "nameLast": "McPhee"
+      },
+      {
+        "nameFirst": "Jose",
+        "nameLast": "Mendez"
+      },
+      {
+        "nameFirst": "Bob",
+        "nameLast": "Meusel"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Mullane"
+      },
+      {
+        "nameFirst": "Thurman",
+        "nameLast": "Munson"
+      },
+      {
+        "nameFirst": "Hal",
+        "nameLast": "Newhouser"
+      },
+      {
+        "nameFirst": "Jim",
+        "nameLast": "Northrup"
+      },
+      {
+        "nameFirst": "Hank",
+        "nameLast": "O'Day"
+      },
+      {
+        "nameFirst": "Lefty",
+        "nameLast": "O'Doul"
+      },
+      {
+        "nameFirst": "Bob",
+        "nameLast": "O'Farrell"
+      },
+      {
+        "nameFirst": "Walter",
+        "nameLast": "O'Malley"
+      },
+      {
+        "nameFirst": "Tip",
+        "nameLast": "O'Neill"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Oliva"
+      },
+      {
+        "nameFirst": "Claude",
+        "nameLast": "Osteen"
+      },
+      {
+        "nameFirst": "Ted",
+        "nameLast": "Page"
+      },
+      {
+        "nameFirst": "Lou",
+        "nameLast": "Perini"
+      },
+      {
+        "nameFirst": "Rico",
+        "nameLast": "Petrocelli"
+      },
+      {
+        "nameFirst": "Deacon",
+        "nameLast": "Phillippe"
+      },
+      {
+        "nameFirst": "Babe",
+        "nameLast": "Pinelli"
+      },
+      {
+        "nameFirst": "Vada",
+        "nameLast": "Pinson"
+      },
+      {
+        "nameFirst": "Spottswood",
+        "nameLast": "Poles"
+      },
+      {
+        "nameFirst": "Beans",
+        "nameLast": "Reardon"
+      },
+      {
+        "nameFirst": "Dick",
+        "nameLast": "Redding"
+      },
+      {
+        "nameFirst": "Phil",
+        "nameLast": "Rizzuto"
+      },
+      {
+        "nameFirst": "Frank",
+        "nameLast": "Robinson"
+      },
+      {
+        "nameFirst": "Bullet",
+        "nameLast": "Rogan"
+      },
+      {
+        "nameFirst": "Muddy",
+        "nameLast": "Ruel"
+      },
+      {
+        "nameFirst": "Jimmy",
+        "nameLast": "Ryan"
+      },
+      {
+        "nameFirst": "Johnny",
+        "nameLast": "Sain"
+      },
+      {
+        "nameFirst": "Louis",
+        "nameLast": "Santop"
+      },
+      {
+        "nameFirst": "Red",
+        "nameLast": "Schoendienst"
+      },
+      {
+        "nameFirst": "Urban",
+        "nameLast": "Shocker"
+      },
+      {
+        "nameFirst": "Sonny",
+        "nameLast": "Siebert"
+      },
+      {
+        "nameFirst": "Chino",
+        "nameLast": "Smith"
+      },
+      {
+        "nameFirst": "Hilton",
+        "nameLast": "Smith"
+      },
+      {
+        "nameFirst": "Turkey",
+        "nameLast": "Stearnes"
+      },
+      {
+        "nameFirst": "Harry",
+        "nameLast": "Stovey"
+      },
+      {
+        "nameFirst": "Mule",
+        "nameLast": "Suttles"
+      },
+      {
+        "nameFirst": "Tony",
+        "nameLast": "Taylor"
+      },
+      {
+        "nameFirst": "Fred",
+        "nameLast": "Tenney"
+      },
+      {
+        "nameFirst": "Clinton",
+        "nameLast": "Thomas"
+      },
+      {
+        "nameFirst": "Jack",
+        "nameLast": "Tobin"
+      },
+      {
+        "nameFirst": "Cristobal",
+        "nameLast": "Torriente"
+      },
+      {
+        "nameFirst": "Cesar",
+        "nameLast": "Tovar"
+      },
+      {
+        "nameFirst": "George",
+        "nameLast": "Van Haltren"
+      },
+      {
+        "nameFirst": "Willie",
+        "nameLast": "Wells"
+      },
+      {
+        "nameFirst": "Deacon",
+        "nameLast": "White"
+      },
+      {
+        "nameFirst": "Jim",
+        "nameLast": "Whitney"
+      },
+      {
+        "nameFirst": "Hoyt",
+        "nameLast": "Wilhelm"
+      },
+      {
+        "nameFirst": "Billy",
+        "nameLast": "Williams"
+      },
+      {
+        "nameFirst": "Joe",
+        "nameLast": "Williams"
+      },
+      {
+        "nameFirst": "Vic",
+        "nameLast": "Willis"
+      },
+      {
+        "nameFirst": "Maury",
+        "nameLast": "Wills"
+      },
+      {
+        "nameFirst": "Smoky Joe",
+        "nameLast": "Wood"
+      },
+      {
+        "nameFirst": "Glenn",
+        "nameLast": "Wright"
+      }
+    ]
   }
 }
