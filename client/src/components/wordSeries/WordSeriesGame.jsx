@@ -13,7 +13,7 @@ export default function WordSeriesGame() {
     const [discoveredGroups, setDiscoveredGroups] = useState([]);
     const [groups, setGroups] = useState([]);
     const [showInstructions, setShowInstructions] = useState(false);
-    const [attempts, setAttempts] = useState(4);
+    const [attempts, setAttempts] = useState(3);
     const [showError, setShowError] = useState(false);
     const [showGameOver, setShowGameOver] = useState(false);
     const [showCongrats, setShowCongrats] = useState(false);
@@ -248,7 +248,7 @@ const handleSubmit = () => {
             {showGameOver && (
                 <div className="wordseries-gameover-overlay">
                     <div className="wordseries-gameover-box">
-                        <h2>Game Over</h2>
+                        <h2>STRIKE OUT!</h2>
                         <p>No more attempts left!</p>
                         <button onClick={handleReset}>Play Again</button>
                     </div>
@@ -258,7 +258,7 @@ const handleSubmit = () => {
             {showCongrats && (
                 <div className="wordseries-overlay">
                     <div className="wordseries-dialog-box">
-                        <h2>🎉 Congratulations!</h2>
+                        <h2>HOME RUN!</h2>
                         <p>You found all the groups!</p>
                         <button className="wordseries-replay-button" onClick={handleReset}>Play Again</button>
                     </div>
