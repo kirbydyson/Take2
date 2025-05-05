@@ -1,4 +1,21 @@
-// components/WordSeriesInstructionsModal.jsx
+/**
+ * WordSeriesInstructionsModal.jsx
+ *
+ * This React component renders a modal dialog that explains how to play the MLB WordSeries game.
+ * It provides gameplay instructions and category examples for the player.
+ *
+ * Features:
+ * - Modal dialog with title and close button.
+ * - Step-by-step instructions for submitting guesses.
+ * - Example player group categories to guide the user.
+ * - Styled using Material UI components and layout.
+ *
+ * Dependencies:
+ * - React
+ * - Material UI (Dialog, DialogTitle, DialogContent, IconButton, CloseIcon, Typography, Box)
+ *
+ */
+
 import React from 'react';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';

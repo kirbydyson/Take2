@@ -1,3 +1,21 @@
+/**
+ * WordSeriesGame.jsx
+ *
+ * This React component implements the main logic for the MLB WordSeries game.
+ *
+ * Features:
+ * - Fetches player groups from the backend.
+ * - Lets users select players to form a group.
+ * - Tracks correct groupings and remaining attempts.
+ * - Displays success or failure dialogs.
+ * - Saves game state to the server.
+ *
+ * Dependencies:
+ * - React
+ * - Material UI (IconButton, HelpOutlineIcon)
+ * - Custom components: Grid, AttemptsIndicator, DiscoveredGroups, InstructionsModal
+ */
+
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import '../../styles/wordSeries.css';

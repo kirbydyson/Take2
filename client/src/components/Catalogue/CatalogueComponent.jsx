@@ -1,3 +1,21 @@
+/**
+ * CatalogueComponents.jsx
+ *
+ * This React component displays a catalog of available baseball-themed games
+ * for users to browse and launch. Each game is shown as a clickable card with
+ * a thumbnail image, title, and description.
+ *
+ * Features:
+ * - Dynamically maps over a list of games and displays them in a responsive grid layout.
+ * - Each game card navigates to its respective route when clicked.
+ * - Includes hover animation for interactivity and visual appeal.
+ *
+ * Dependencies:
+ * - React
+ * - Next.js router (useRouter from 'next/navigation')
+ * - Material UI components: Typography, Grid, Card, CardContent, CardActionArea, CardMedia
+ */
+
 'use client';
 
 import {
