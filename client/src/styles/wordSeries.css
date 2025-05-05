@@ -8,32 +8,30 @@
 
 .wordseries-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: relative;
     margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 80px 40px 20px 40px;
-    /* Matches Scoredle spacing */
 }
 
 .wordseries-title {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: bold;
-    color: black;
+    text-align: center;
     margin: 0;
-
+    flex-grow: 1;
 }
 
+.wordseries-help-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 .wordseries-header h1 {
     margin: 0;
     color: #333;
-}
-
-.wordseries-help-button {
-    color: #666;
 }
 
 .wordseries-message-area {
@@ -145,32 +143,60 @@
 
 .wordseries-shuffle-button,
 .wordseries-submit-button,
-.wordseries-deselect-button {
-    flex: 1;
+
+.wordseries-discovered-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
 }
 
-.wordseries-discovered-groups {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 20px;
+.wordseries-discovered-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #aaa;
+  border-radius: 10px;
+  padding: 10px;
+  min-height: 80px;
+  min-width: 540px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.wordseries-group-item {
-    padding: 10px;
-    border-radius: 5px;
-    text-align: left;
-}
-
-.wordseries-group-name {
-    font-weight: bold;
-    font-size: 16px;
-    margin-bottom: 5px;
+.wordseries-group-description {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: inherit;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .wordseries-group-players {
-    font-size: 14px;
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  justify-content: flex-start;
 }
+
+.wordseries-group-player {
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  min-width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .wordseries-missed-group,
 .wordseries-found-group {
@@ -189,6 +215,10 @@
     margin-top: 40px;
     font-size: 18px;
 }
+.wordseries-invalid {
+  border: 2px solid red !important;
+  animation: shake 0.3s ease;
+}
 
 .wordseries-modal-message {
     font-size: 16px;
@@ -205,7 +235,6 @@
 }
 
 .wordseries-submit-button,
-.wordseries-deselect-button,
 .wordseries-shuffle-button {
     padding: 10px 18px;
     font-size: 14px;
@@ -227,16 +256,6 @@
     transform: scale(1.03);
 }
 
-.wordseries-deselect-button {
-    background-color: #6c757d;
-    color: white;
-}
-
-.wordseries-deselect-button:hover {
-    background-color: #5a6268;
-    transform: scale(1.03);
-}
-
 .wordseries-shuffle-button {
     background-color: #28a745;
     color: white;
@@ -245,6 +264,50 @@
 .wordseries-shuffle-button:hover {
     background-color: #218838;
     transform: scale(1.03);
+}
+
+/* Game Over Screen */
+.wordseries-gameover-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.wordseries-gameover-box {
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.wordseries-gameover-box h2 {
+  margin-bottom: 1rem;
+}
+
+.wordseries-gameover-box button {
+  margin-top: 1rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.wordseries-gameover-box button:hover {
+  background-color: #005ec2;
 }
 
 
@@ -259,4 +322,90 @@
         height: 70px;
         font-size: 12px;
     }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-4px); }
+  100% { transform: translateX(0); }
+}
+
+.wordseries-attempts-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    gap: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.wordseries-attempts-label {
+    font-weight: bold;
+}
+
+.wordseries-attempts-indicator {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.attempt-circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.attempt-remaining {
+    background-color: #4caf50; /* green */
+    border-color: #4caf50;
+}
+
+.attempt-used {
+    background-color: transparent;
+}
+
+.wordseries-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wordseries-dialog-box {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    color: #222;
+}
+
+.wordseries-dialog-box h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.wordseries-replay-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #1976d2;
+    color: white;
+    cursor: pointer;
+}
+
+.wordseries-replay-button:hover {
+    background-color: #155aa7;
 }
