@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import '../../styles/wordSeries.css';
 import IconButton from "@mui/material/IconButton";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
@@ -16,6 +17,39 @@ export default function WordSeriesGame() {
     const [showError, setShowError] = useState(false);
     const [showGameOver, setShowGameOver] = useState(false);
     const [showCongrats, setShowCongrats] = useState(false);
+    const [user, setUser] = useState(null);
+    const router = useRouter();
+
+    const validateSession = async () => {
+        try {
+            const res = await fetch('http://localhost:8080/auth/session', {
+                credentials: 'include',
+            });
+            const data = await res.json();
+            if (res.ok && data.isBanned === true) {
+                router.push('/banned');
+            } else if (res.ok) {
+                if (!data.email) {
+                    console.error('Session is invalid:', data);
+                    setUser(null);
+                    router.push('/login');
+                    return;
+                } else {
+                    setUser(data.email);
+                    setShowInstructions(true);
+                }
+            } else {
+                console.error('Session is invalid:', data);
+                setUser(null);
+            }
+        } catch (err) {
+            console.error('Error validating session:', err);
+        }
+    };
+
+    useEffect(() => {
+        validateSession();
+    }, []);
 
     useEffect(() => {
         const fetchWordSeriesGroups = async () => {
