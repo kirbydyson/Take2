@@ -1,10 +1,8 @@
-// WordSeriesGame.jsx
 import React, { useState, useEffect } from 'react';
 import '../../styles/wordSeries.css';
 import IconButton from "@mui/material/IconButton";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import Grid from './Grid';
-import { validate_groupings } from "../../utils/validate";
 
 export default function WordSeriesGame() {
     const [players, setPlayers] = useState([]);
@@ -25,8 +23,11 @@ export default function WordSeriesGame() {
                 if (data.groups) {
                     setGroups(data.groups);
                     const combinedPlayers = data.groups
-                        .flatMap((group) => group.players)
-                        .map((name, idx) => ({ id: idx + 1, name }));
+                        .flatMap((group) => group.players.map(name => ({
+                            id: `${group.category}-${name}`,
+                            name,
+                            category: group.category
+                        })));
                     setPlayers(combinedPlayers);
                 }
             } catch (err) {
@@ -37,13 +38,11 @@ export default function WordSeriesGame() {
         fetchWordSeriesGroups();
     }, []);
 
-    useEffect(() => {
-        if (selectedPlayers.length === 4) {
-            handleGroupValidation();
-        }
-    }, [selectedPlayers]);
-
     const handlePlayerClick = (player) => {
+        if (discoveredGroups.some(group => group.players.some(p => p.id === player.id))) {
+            return;
+        }
+
         const isAlreadySelected = selectedPlayers.some(p => p.id === player.id);
 
         if (isAlreadySelected) {
@@ -53,12 +52,41 @@ export default function WordSeriesGame() {
         }
     };
 
-    const handleGroupValidation = () => {
-        const isValid = validate_groupings(selectedPlayers, groups);
+    const validate_groupings = (selectedPlayers) => {
+        if (selectedPlayers.length !== 4) return false;
+
+        const category = selectedPlayers.map(player => player.category);
+        return categories.every(category => category === categories[0]);
+    };
+
+    const handleSubmit = () => {
+        if (selectedPlayers.length !== 4) return;
+
+        const isValid = validate_groupings(selectedPlayers);
 
         if (isValid) {
-            setDiscoveredGroups(prev => [...prev, [...selectedPlayers]]);
+            const groupType = mapCategoryToType(selectedPlayers[0].category);
+            const categoryName = selectedPlayers[0].category;
+
+            const groupDescription = groups.find(g => g.category === categoryName)?.category || categoryName;
+
+            setDiscoveredGroups(prev => [...prev, {
+                players: selectedPlayers,
+                type: groupType,
+                description: groupDescription
+            }]);
+
+            setPlayers(prev => prev.filter(player =>
+                !selectedPlayers.some(p => p.id === player.id)
+            ));
+
             setSelectedPlayers([]);
+
+            if (discoveredGroups.length + 1 >= groups.length) {
+                setTimeout(() => {
+                    alert("Congratulations! You've found all the groups!");
+                }, 500);
+            }
         } else {
             setShowError(true);
             setAttempts(prev => prev - 1);
@@ -74,7 +102,35 @@ export default function WordSeriesGame() {
         }
     };
 
+    const mapCategoryToType = (category) => {
+        // Map category names to color types
+        if (category.includes('BASEMEN') || category.includes('SHORTSTOPS') ||
+            category.includes('OUTFIELDERS') || category.includes('PITCHERS') ||
+            category.includes('CATCHERS')) {
+            return 'position';
+        }
+
+        if (category.includes('YANKEES') || category.includes('RED_SOX') ||
+            category.includes('DODGERS') || category.includes('GIANTS') ||
+            category.includes('CARDINALS') || category.includes('CUBS') ||
+            category.includes('ATHLETICS') || category.includes('BRAVES')) {
+            return 'team';
+        }
+
+        if (category.includes('HALL_OF_FAME') || category.includes('MVP') ||
+            category.includes('ALL_STAR')) {
+            return 'award';
+        }
+
+        //Default return
+        return 'era';
+    };
+
     const shuffle = (array) => array.sort(() => Math.random() - 0.5);
+
+    const handleReset = () => {
+        window.location.reload();
+    }
 
     return (
         <div className="wordseries-container">
@@ -95,30 +151,21 @@ export default function WordSeriesGame() {
                 </div>
             )}
 
-            <Grid
-                players={players}
-                selectedPlayers={selectedPlayers}
-                discoveredGroups={discoveredGroups}
-                onPlayerClick={handlePlayerClick}
-                showError={showError}
-            />
-
             <div className="wordseries-button-area">
                 <button className="wordseries-submit-button" onClick={() => {}}>Submit</button>
-                <button className="wordseries-deselect-button" onClick={() => setSelectedPlayers([])}>Deselect</button>
                 <button className="wordseries-shuffle-button" onClick={() => setPlayers(shuffle([...players]))}>Shuffle</button>
             </div>
 
             {discoveredGroups.length > 0 && (
-                <div className="wordseries-found-section">
-                    <h3>✔️ Discovered Groups:</h3>
-                    {discoveredGroups.map((group, index) => (
-                        <div key={index} className="wordseries-found-group">
-                            {group.map(p => p.name).join(', ')}
-                        </div>
-                    ))}
-                </div>
+                <DiscoveredGroups groups={discoveredGroups} />
             )}
+
+            <Grid
+                players={players}
+                selectedPlayers={selectedPlayers}
+                onPlayerClick={handlePlayerClick}
+                showError={showError}
+            />
 
             {showGameOver && (
                 <div className="wordseries-gameover-overlay">
