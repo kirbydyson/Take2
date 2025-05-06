@@ -8458,5 +8458,13 @@
         "nameLast": "Wright"
       }
     ]
+  },
+  "What team won the first ever World Series in 1903?": {
+    "question": "What team won the first ever World Series in 1903?",
+    "result": [
+      {
+        "team_name": "Boston Americans"
+      }
+    ]
   }
 }

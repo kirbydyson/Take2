@@ -27,6 +27,8 @@ import Paper from '@mui/material/Paper';
 import Button from '@mui/material/Button';
 import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
+import Autocomplete from '@mui/material/Autocomplete';
+import TextField from '@mui/material/TextField';
 import { useRouter } from 'next/navigation';
 
 export default function Navbar() {
@@ -84,6 +86,67 @@ export default function Navbar() {
         setOpen(false);
     };
 
+    const teamIdToName = {
+        SFN: 'San Francisco Giants',
+        SDN: 'San Diego Padres',
+        HOU: 'Houston Astros',
+        PHI: 'Philadelphia Phillies',
+        NYA: 'New York Yankees',
+        LAA: 'Los Angeles Angels',
+        ARI: 'Arizona Diamondbacks',
+        DET: 'Detroit Tigers',
+        CIN: 'Cincinnati Reds',
+        BAL: 'Baltimore Orioles',
+        CHA: 'Chicago White Sox',
+        CHN: 'Chicago Cubs',
+        OAK: 'Oakland Athletics',
+        SEA: 'Seattle Mariners',
+        MIA: 'Miami Marlins',
+        WAS: 'Washington Nationals',
+        LAN: 'Los Angeles Dodgers',
+        NYN: 'New York Mets',
+        MIN: 'Minnesota Twins',
+        TBA: 'Tampa Bay Rays',
+        COL: 'Colorado Rockies',
+        BOS: 'Boston Red Sox',
+        FLO: 'Florida Marlins',
+        SLN: 'St. Louis Cardinals',
+        TEX: 'Texas Rangers',
+        ATL: 'Atlanta Braves',
+        KCA: 'Kansas City Royals',
+        TOR: 'Toronto Blue Jays',
+        MIL: 'Milwaukee Brewers',
+        CLE: 'Cleveland Guardians',
+        PIT: 'Pittsburgh Pirates',
+        MON: 'Montreal Expos',
+        CAL: 'California Angels',
+        ML1: 'Milwaukee Braves',
+        BRO: 'Brooklyn Dodgers',
+        SLA: 'St. Louis Browns',
+        BSN: 'Boston Braves',
+        PHA: 'Philadelphia Athletics',
+        NY1: 'New York Giants',
+        SLF: 'St. Louis Browns (Federal League)',
+        KCF: 'Kansas City Packers (Federal League)',
+        CHF: 'Chicago Whales (Federal League)',
+        PTF: 'Pittsburgh Rebels (Federal League)',
+        BRF: 'Brooklyn Tip-Tops (Federal League)',
+        LS2: 'Louisville Colonels',
+        BLN: 'Baltimore Orioles (19th century)',
+        CL4: 'Cleveland Spiders',
+        RC2: 'Rochester Broncos',
+        KC2: 'Kansas City Cowboys',
+        CNU: "Cincinnati Kelly's Killers",
+        BUF: 'Buffalo Bisons',
+        PRO: 'Providence Grays',
+        WOR: 'Worcester Ruby Legs',
+    };
+
+    const teamOptions = Object.entries(teamIdToName).map(([id, name]) => ({
+        id,
+        name,
+    }));
+
     return (
         <nav className={styles.navbar}>
             <div className={styles.logo}>
@@ -106,6 +169,77 @@ export default function Navbar() {
                 <li>
                     <Link href='/trivia'>Trivia</Link>
                 </li>
+                {user && (
+                    <li style={{ minWidth: 220 }}>
+                        {user.team ? (
+                            <Link href='/team-info'>
+                                {teamIdToName[user.team] || user.team}
+                            </Link>
+                        ) : (
+                            <Autocomplete
+                                disablePortal
+                                options={teamOptions}
+                                getOptionLabel={(option) => option.name}
+                                renderInput={(params) => (
+                                    <TextField
+                                        {...params}
+                                        label='Select Team'
+                                        size='small'
+                                        InputLabelProps={{
+                                            sx: {
+                                                color: 'white',
+                                                fontFamily: 'inherit',
+                                                fontWeight: 'inherit',
+                                            },
+                                        }}
+                                        sx={{
+                                            '& .MuiInputBase-root': {
+                                                color: 'white',
+                                                backgroundColor: 'transparent',
+                                                border: 'none',
+                                            },
+                                            '& .MuiOutlinedInput-notchedOutline':
+                                                {
+                                                    border: 'none',
+                                                },
+                                            '&:hover .MuiOutlinedInput-notchedOutline':
+                                                {
+                                                    border: 'none',
+                                                },
+                                            '&.Mui-focused .MuiOutlinedInput-notchedOutline':
+                                                {
+                                                    border: 'none',
+                                                },
+                                            '& .MuiSvgIcon-root': {
+                                                display: 'none',
+                                            },
+                                        }}
+                                    />
+                                )}
+                                onChange={async (e, newVal) => {
+                                    if (!newVal) return;
+                                    await fetch(
+                                        'http://localhost:8080/api/users/select-team',
+                                        {
+                                            method: 'POST',
+                                            headers: {
+                                                'Content-Type':
+                                                    'application/json',
+                                            },
+                                            credentials: 'include',
+                                            body: JSON.stringify({
+                                                team: newVal.id,
+                                            }),
+                                        },
+                                    );
+                                    validateSession(); // Refresh user data after setting team
+                                }}
+                                size='small'
+                                sx={{ minWidth: 200, marginTop: '-8px' }}
+                            />
+                        )}
+                    </li>
+                )}
             </ul>
             <div>
                 {user ? (
