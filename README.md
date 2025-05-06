@@ -25,6 +25,9 @@
   - This can be done by using the `/admin` route.
   - Admins can view all users and their details (game history).
   - Admins can ban and unban users by clicking on the `Ban` and `Unban` buttons.
+  - A default admin account is:
+    - Email: test@example.com
+    - Password: password123
 
 ### Games (Uses OpenAI API)
 - Users can play games like Scoredle, Word Series, and Trivia

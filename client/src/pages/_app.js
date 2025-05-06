@@ -1,7 +1,6 @@
-// pages/_app.js
 import { ThemeProvider, CssBaseline, GlobalStyles } from '@mui/material';
-import theme from '../../theme.js'; // import your theme
-import '../app/globals.css'; // still needed for things like @font-face or component-level styles
+import theme from '../../theme.js';
+import '../app/globals.css';
 
 export default function App({ Component, pageProps }) {
     return (

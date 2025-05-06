@@ -20,7 +20,6 @@ def get_my_games():
     conn = get_connection()
     cursor = conn.cursor(dictionary=True)
 
-    # Get user ID
     cursor.execute("SELECT id FROM users WHERE email = %s", (session['email'],))
     user = cursor.fetchone()
     if not user:
@@ -30,7 +29,6 @@ def get_my_games():
 
     userId = user['id']
 
-    # Get trivia game results
     cursor.execute("""
         SELECT id, number_correct, played_at
         FROM trivia_game_results
@@ -39,7 +37,6 @@ def get_my_games():
     """, (userId,))
     trivia_games = cursor.fetchall()
 
-    # Get scoredle game results
     cursor.execute("""
         SELECT id, correctWord, attemptCount, guessedWord, timestamp
         FROM scoredle_games

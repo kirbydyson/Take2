@@ -253,7 +253,6 @@ export default function TriviaGame() {
                         setCorrectAnswer(null);
                         setTimer(10);
 
-                        // Re-fetch questions
                         if (USE_MOCK_DATA) {
                             setQuestions(mockQuestions);
                             setLoading(false);

@@ -1,4 +1,3 @@
-
 from flask import Blueprint, jsonify, session, request
 from enum import Enum
 import random
@@ -48,7 +47,7 @@ def get_wordseries_groups():
 
     selected_categories = random.sample(list(WordSeriesCategory), 4)
     groups = []
-    seen_players = set()  # To track already returned player names
+    seen_players = set()
 
     for category in selected_categories:
         category_name = category.value
@@ -101,7 +100,6 @@ def save_wordseries_game():
     conn = get_connection()
     cursor = conn.cursor(dictionary=True)
 
-    # Get user ID from email
     cursor.execute("SELECT id FROM users WHERE email = %s", (session['email'],))
     user = cursor.fetchone()
     if not user:

@@ -30,6 +30,8 @@ import Button from '@mui/material/Button';
 import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 import { useRouter } from 'next/navigation';
+import Autocomplete from '@mui/material/Autocomplete';
+import TextField from '@mui/material/TextField';
 
 export default function Navbar() {
     const [user, setUser] = useState(null);
@@ -234,7 +236,7 @@ export default function Navbar() {
                                             }),
                                         },
                                     );
-                                    validateSession(); // Refresh user data after setting team
+                                    validateSession();
                                 }}
                                 size='small'
                                 sx={{ minWidth: 200, marginTop: '-8px' }}

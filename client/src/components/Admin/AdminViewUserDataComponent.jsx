@@ -38,7 +38,6 @@ export default function AdminViewUserDataComponent() {
     useEffect(() => {
         const fetchUserAndGames = async () => {
             try {
-                // Step 1: Decrypt token to get user info
                 const res1 = await fetch(
                     `http://localhost:8080/api/admin/user/${token}`,
                     { credentials: 'include' },
@@ -47,7 +46,6 @@ export default function AdminViewUserDataComponent() {
                 if (!res1.ok) throw new Error(data1.error);
                 setUserInfo(data1);
 
-                // Step 2: Use session (assumes session is set) to get game data
                 const res2 = await fetch(
                     `http://localhost:8080/api/admin/my-games?email=${encodeURIComponent(
                         data1.email,
@@ -59,7 +57,7 @@ export default function AdminViewUserDataComponent() {
 
                 const data2 = await res2.json();
                 if (!res2.ok) throw new Error(data2.error);
-                setUserData(data2); // this will include triviaGames, scoredleGames, wordseriesGames
+                setUserData(data2);
             } catch (err) {
                 console.error(err);
                 setError(err.message);
