@@ -37,9 +37,9 @@ const games = [
             'https://storage.googleapis.com/temp_bucket_for_db/squaredle_image.png',
     },
     {
-        title: 'Connections',
+        title: 'Word Series',
         description: 'Find four groups of related words.',
-        href: '/connections',
+        href: '/word-series',
         thumbnail:
             'https://storage.googleapis.com/temp_bucket_for_db/connections%20(1).webp',
     },

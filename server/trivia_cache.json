@@ -8466,5 +8466,14 @@
         "team_name": "Boston Americans"
       }
     ]
+  },
+  "Who was the first player to hit 50 or more home runs in a season?": {
+    "question": "Who was the first player to hit 50 or more home runs in a season?",
+    "result": [
+      {
+        "nameFirst": "Babe",
+        "nameLast": "Ruth"
+      }
+    ]
   }
 }
