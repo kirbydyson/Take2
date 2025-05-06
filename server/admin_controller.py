@@ -1,4 +1,3 @@
-# account_controller.py
 from flask import Blueprint, request, session, jsonify
 from werkzeug.security import generate_password_hash, check_password_hash
 from cryptography.fernet import Fernet
@@ -137,7 +136,6 @@ def verify_admin_answer():
         data = request.get_json()
         answer = data.get('answer', '').strip()
 
-        # Get the correct answer from env variable
         correct_answer = os.getenv('ADMIN_SECRET_ANSWER')
 
         if not correct_answer:

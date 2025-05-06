@@ -19,7 +19,6 @@ app.config.update({
     'SESSION_COOKIE_SECURE': False
 })
 
-# Register blueprint
 app.register_blueprint(account_bp)
 app.register_blueprint(scoredle_bp)
 app.register_blueprint(trivia_bp)

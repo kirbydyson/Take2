@@ -3,7 +3,6 @@ import pymysql
 import os
 import sys
 
-# Setup project root and config
 current_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.abspath(os.path.join(current_dir, '..', '..'))
 sys.path.append(project_root)
@@ -13,7 +12,6 @@ import nls_teams as nls
 
 file_path = os.path.abspath(os.path.join(project_root, 'docker', 'load_new_divisions'))
 
-# Division mapping
 division_map = {
     ('AL', 'east'): 'AL_E',
     ('AL', 'west'): 'AL_W',
@@ -23,7 +21,6 @@ division_map = {
     ('NL', 'central'): 'NL_C'
 }
 
-# Replacement for old franchise codes
 replacements = {
     'BRG': 'BGI', 'CLS': 'CST', 'HAR': 'SOH', 'SNS': 'SOH', 'SL3': 'SOH', 'AB3': 'SOH',
     'CC': 'IC', 'CCB': 'CBE', 'CBR': 'JRC', 'BCA': 'IAB', 'PC': 'TC', 'WEG': 'BEG',
@@ -67,7 +64,6 @@ def insert_division_history(con, csv_path):
     finally:
         con.close()
 
-# Entry point
 if __name__ == '__main__':
     arg = sys.argv[1] if len(sys.argv) > 1 else 'none'
 

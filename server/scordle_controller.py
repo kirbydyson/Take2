@@ -18,7 +18,6 @@ def get_random_5char_name():
     conn = get_connection()
     cursor = conn.cursor(dictionary=True)
 
-    # Fetch queries
     query_names = [
         'DistinctFirstNames5CharLimit',
         'DistinctLastNames5CharLimit',
@@ -73,7 +72,6 @@ def save_scoredle_game():
     conn = get_connection()
     cursor = conn.cursor(dictionary=True)
 
-    # Get user ID from email
     cursor.execute("SELECT id FROM users WHERE email = %s", (session['email'],))
     user = cursor.fetchone()
     if not user:

@@ -82,13 +82,13 @@ def get_trivia_questions():
     qa_pairs = []
     seen_questions = set()
     attempts = 0
-    max_attempts = 25  # Allow retries
+    max_attempts = 25
 
     while len(qa_pairs) < 5 and attempts < max_attempts:
         question = generate_question()
         if question in seen_questions:
             attempts += 1
-            continue  # Avoid duplicate question in same response
+            continue
 
         seen_questions.add(question)
 
@@ -182,7 +182,6 @@ def save_trivia_game():
     conn = get_connection()
     cursor = conn.cursor()
 
-    # Get user_id based on session email
     cursor.execute("SELECT id FROM users WHERE email = %s", (session['email'],))
     user = cursor.fetchone()
 
@@ -193,7 +192,6 @@ def save_trivia_game():
 
     user_id = user[0]
 
-    # Insert game result
     cursor.execute(
         """
         INSERT INTO trivia_game_results (userId, number_correct)

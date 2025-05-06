@@ -1,4 +1,3 @@
-# account_controller.py
 from flask import Blueprint, request, session, jsonify
 from werkzeug.security import generate_password_hash, check_password_hash
 from db import get_connection
@@ -109,7 +108,6 @@ def select_team():
     if not selected_team:
         return jsonify({"error": "Team ID is required"}), 400
 
-    # Check if the team exists in no_hitters
     conn = get_connection()
     cursor = conn.cursor()
     cursor.execute("SELECT DISTINCT teamID FROM no_hitters WHERE teamID = %s", (selected_team,))
@@ -117,7 +115,6 @@ def select_team():
         conn.close()
         return jsonify({"error": "Invalid team ID"}), 400
 
-    # Update user's selected team
     cursor.execute("UPDATE users SET team = %s WHERE email = %s", (selected_team, session['email']))
     conn.commit()
     conn.close()
@@ -132,7 +129,6 @@ def get_team_no_hitters():
     conn = get_connection()
     cursor = conn.cursor(dictionary=True)
 
-    # Get user's selected team
     cursor.execute("SELECT team FROM users WHERE email = %s", (session['email'],))
     user = cursor.fetchone()
 
@@ -142,14 +138,12 @@ def get_team_no_hitters():
 
     selected_team = user['team']
 
-    # No-hitters thrown by the user's team
     cursor.execute(
         "SELECT *, 'by_team' as type FROM no_hitters WHERE teamID = %s",
         (selected_team,)
     )
     thrown = cursor.fetchall()
 
-    # No-hitters thrown against the user's team (by checking teams table)
     cursor.execute("""
         SELECT nh.*, 'against_team' as type
         FROM no_hitters nh
