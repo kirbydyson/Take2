@@ -15,6 +15,7 @@ import {
     TableContainer,
     Button,
     Box,
+    Divider
 } from '@mui/material';
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
@@ -128,6 +129,42 @@ export default function TeamInfoComponent() {
         }
     };
 
+    const renderTable = (title, entries) => (
+        <Box sx={{ mb: 4 }}>
+            <Typography variant='h5' gutterBottom>
+                {title}
+            </Typography>
+            <TableContainer component={Paper}>
+                <Table>
+                    <TableHead>
+                        <TableRow>
+                            <TableCell>Name</TableCell>
+                            <TableCell>Date</TableCell>
+                            <TableCell>Year</TableCell>
+                            <TableCell>Perfect?</TableCell>
+                            <TableCell>Game #</TableCell>
+                            <TableCell>Team Game #</TableCell>
+                        </TableRow>
+                    </TableHead>
+                    <TableBody>
+                        {entries.map((entry) => (
+                            <TableRow key={entry.no_hitters_ID}>
+                                <TableCell>{entry.Name}</TableCell>
+                                <TableCell>{entry.Date}</TableCell>
+                                <TableCell>{entry.yearID}</TableCell>
+                                <TableCell>
+                                    {entry.Prfct === 'Y' ? 'Yes' : 'No'}
+                                </TableCell>
+                                <TableCell>{entry.Gcar ?? '-'}</TableCell>
+                                <TableCell>{entry.Gtm ?? '-'}</TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </TableContainer>
+        </Box>
+    );
+
     if (loading) {
         return (
             <Container sx={{ mt: 8 }}>
@@ -147,7 +184,7 @@ export default function TeamInfoComponent() {
     const fullTeamName = teamIdToName[teamData.team] || teamData.team;
 
     return (
-        <Container sx={{ mt: 13 }}>
+        <Container sx={{ mt: 13, pb: 8 }}>
             <Box
                 display='flex'
                 justifyContent='space-between'
@@ -171,7 +208,6 @@ export default function TeamInfoComponent() {
                     >
                         {showSelect ? 'Cancel' : 'Change Team'}
                     </Button>
-
                     {showSelect && (
                         <Autocomplete
                             disablePortal
@@ -191,34 +227,9 @@ export default function TeamInfoComponent() {
                 </Box>
             </Box>
 
-            <TableContainer component={Paper}>
-                <Table>
-                    <TableHead>
-                        <TableRow>
-                            <TableCell>Name</TableCell>
-                            <TableCell>Date</TableCell>
-                            <TableCell>Year</TableCell>
-                            <TableCell>Perfect?</TableCell>
-                            <TableCell>Game #</TableCell>
-                            <TableCell>Team Game #</TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {teamData.no_hitters.map((entry) => (
-                            <TableRow key={entry.no_hitters_ID}>
-                                <TableCell>{entry.Name}</TableCell>
-                                <TableCell>{entry.Date}</TableCell>
-                                <TableCell>{entry.yearID}</TableCell>
-                                <TableCell>
-                                    {entry.Prfct === 'Y' ? 'Yes' : 'No'}
-                                </TableCell>
-                                <TableCell>{entry.Gcar ?? '-'}</TableCell>
-                                <TableCell>{entry.Gtm ?? '-'}</TableCell>
-                            </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>
-            </TableContainer>
+            {renderTable('No-Hitters Thrown By the Team', teamData.thrown)}
+            <Divider sx={{ my: 4 }} />
+            {renderTable('No-Hitters Against the Team', teamData.against)}
         </Container>
     );
 }

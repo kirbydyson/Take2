@@ -142,12 +142,27 @@ def get_team_no_hitters():
 
     selected_team = user['team']
 
-    # Fetch all no-hitters for that team
-    cursor.execute("SELECT * FROM no_hitters WHERE teamID = %s", (selected_team,))
-    no_hitters_data = cursor.fetchall()
+    # No-hitters thrown by the user's team
+    cursor.execute(
+        "SELECT *, 'by_team' as type FROM no_hitters WHERE teamID = %s",
+        (selected_team,)
+    )
+    thrown = cursor.fetchall()
+
+    # No-hitters thrown against the user's team (by checking teams table)
+    cursor.execute("""
+        SELECT nh.*, 'against_team' as type
+        FROM no_hitters nh
+        JOIN teams t ON nh.yearID = t.yearID AND nh.Gtm = t.team_G
+        WHERE t.teamID = %s
+    """, (selected_team,))
+
+    against = cursor.fetchall()
+
     conn.close()
 
     return jsonify({
         "team": selected_team,
-        "no_hitters": no_hitters_data
+        "thrown": thrown,
+        "against": against
     })
