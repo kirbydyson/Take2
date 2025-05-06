@@ -17,7 +17,7 @@ VALUES (
     'pbkdf2:sha256:600000$RaAStFfGByd7RPY4$d2b77ecfb8b0639a63215d5ec1e7096568f8e944358a9bc296ffecfaa01502df',
     'Test',
     'Account',
-    'user',
+    'admin',
     false
 );
 
