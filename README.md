@@ -40,6 +40,80 @@
 
 # Running Locally
 
+## Run App Locally with Local Database
+
+### Requirements
+
+- MariaDB
+
+### Step 1: Load the .env file
+
+```bash
+# 1. Copy the .env.example file to .env
+cd server
+cp .env.example .env
+```
+
+Then load the .env values. If you are the person testing the project, these values should be already loaded. If not, an email was sent to you with the values.
+
+> [!IMPORTANT]  
+> The server WILL NOT RUN if these values are not loaded.
+
+### Step 2: Setup Database
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/kirbydyson/Take2.git
+cd take2/docker
+
+# 2. Start the database
+mysql
+
+# 3. Initialize the database with baseball.sql
+mysql < ./baseball.sql
+
+# 4. Initialize the database with take2init.sql
+mysql baseball < ./take2init.sql
+```
+
+### Step 3: Setup Backend
+
+> [!IMPORTANT]  
+> Ensure that you have loaded the .env values correctly.
+
+```bash
+# 1. Move to the backend directory
+cd ../service
+
+# 2. Build and run
+python -m venv venv
+. venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+python app.py
+```
+
+### Step 4: Setup Frontend
+
+```bash
+# 1. Move to the frontend directory
+cd ../client
+
+# 2. Install dependencies
+yarn install
+
+# 3. Start the client
+yarn dev
+```
+
+- **Frontend**: `http://localhost:3000`
+- **Backend API**: `http://localhost:8080`
+- **DB Connection**: `http://localhost:3306`
+  - Location: `localhost`
+  - Username: `root`
+  - Password: `password`
+  - Database: `baseball`
+
 ## Run App Locally with Dockerized Database
 
 ### Requirements
