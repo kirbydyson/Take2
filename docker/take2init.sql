@@ -109,9 +109,9 @@ INSERT INTO baseball_terms (term) VALUES
 ('throws');
 
 INSERT INTO queries (name, query) VALUES
-('DistinctFirstNames5CharLimit', 'SELECT DISTINCT nameFirst FROM people WHERE CHAR_LENGTH(REPLACE(nameFirst, '''', '''')) = 5'),
-('DistinctLastNames5CharLimit', 'SELECT DISTINCT nameLast FROM people WHERE CHAR_LENGTH(REPLACE(nameLast, '''', '''')) = 5'),
-('DistinctBaseballTerms5CharLimit', 'SELECT term FROM baseball_terms WHERE CHAR_LENGTH(term) = 5'),
+('DistinctFirstNames5CharLimit','SELECT DISTINCT nameFirst FROM people WHERE CHAR_LENGTH(nameFirst) = 5 AND nameFirst REGEXP "^[a-zA-Z]{5}$"'),
+('DistinctLastNames5CharLimit','SELECT DISTINCT nameLast FROM people WHERE CHAR_LENGTH(nameLast) = 5 AND nameLast REGEXP "^[a-zA-Z]{5}$"'),
+('DistinctBaseballTerms5CharLimit','SELECT term FROM baseball_terms WHERE CHAR_LENGTH(term) = 5 AND term REGEXP "^[a-zA-Z]{5}$"'),
 ('WordSeriesFirstBasemen', 'SELECT CONCAT(p.nameFirst, '' '', p.nameLast) FROM fielding f NATURAL JOIN people p WHERE f.position = ''1B'' GROUP BY p.playerID ORDER BY RAND() LIMIT 4'),
 ('WordSeriesSecondBasemen', 'SELECT CONCAT(p.nameFirst, '' '', p.nameLast) FROM fielding f NATURAL JOIN people p WHERE f.position = ''2B'' GROUP BY p.playerID ORDER BY RAND() LIMIT 4'),
 ('WordSeriesThirdBasemen', 'SELECT CONCAT(p.nameFirst, '' '', p.nameLast) FROM fielding f NATURAL JOIN people p WHERE f.position = ''3B'' GROUP BY p.playerID ORDER BY RAND() LIMIT 4'),
