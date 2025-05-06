@@ -160,6 +160,9 @@ export default function Navbar() {
             </div>
             <ul className={styles.navLinks}>
                 <li>
+                    <Link href='/catalogue'>Catalogue</Link>
+                </li>
+                <li>
                     <Link href='/scoredle'>Scoredle</Link>
                 </li>
                 <li>

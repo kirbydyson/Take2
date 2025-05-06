@@ -11,6 +11,17 @@ CREATE TABLE IF NOT EXISTS users (
     team CHAR(3) DEFAULT NULL
 );
 
+INSERT INTO users (email, password, nameFirst, nameLast, role, isBanned)
+VALUES (
+    'test@example.com',
+    'pbkdf2:sha256:600000$RaAStFfGByd7RPY4$d2b77ecfb8b0639a63215d5ec1e7096568f8e944358a9bc296ffecfaa01502df',
+    'Test',
+    'Account',
+    'user',
+    false
+);
+
+
 CREATE TABLE IF NOT EXISTS scoredle_games (
     id INT AUTO_INCREMENT PRIMARY KEY,
     userId INT NOT NULL,
