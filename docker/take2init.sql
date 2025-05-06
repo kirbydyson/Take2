@@ -7,7 +7,8 @@ CREATE TABLE IF NOT EXISTS users (
     nameFirst VARCHAR(100),
     nameLast VARCHAR(100),
     role ENUM('user', 'admin') DEFAULT 'user',
-    isBanned BOOLEAN DEFAULT FALSE
+    isBanned BOOLEAN DEFAULT FALSE,
+    team CHAR(3) DEFAULT NULL
 );
 
 CREATE TABLE IF NOT EXISTS scoredle_games (
