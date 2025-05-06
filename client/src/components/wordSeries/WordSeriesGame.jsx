@@ -152,7 +152,7 @@ const handleSubmit = () => {
         if (discoveredGroups.length + 1 >= groups.length) {
             setTimeout(() => {
                 setShowCongrats(true);
-                saveGame(attempts, true); // ✅ Save successful game
+                saveGame(attempts, true);
             }, 500);
         }
     } else {
@@ -161,7 +161,7 @@ const handleSubmit = () => {
             const newAttempts = prev - 1;
             if (newAttempts === 0) {
                 setShowGameOver(true);
-                saveGame(0, false); // ✅ Save failed game
+                saveGame(0, false);
             }
             return newAttempts;
         });
@@ -217,7 +217,6 @@ const handleSubmit = () => {
             return 'award';
         }
 
-        //Default return
         return 'era';
     };
 

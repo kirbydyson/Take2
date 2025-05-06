@@ -236,7 +236,7 @@ export default function Navbar() {
                                             }),
                                         },
                                     );
-                                    validateSession(); // Refresh user data after setting team
+                                    validateSession();
                                 }}
                                 size='small'
                                 sx={{ minWidth: 200, marginTop: '-8px' }}
