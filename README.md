@@ -46,7 +46,7 @@
 
 - MariaDB
 
-### Step 1: Load the .env file THIS IS NOT NEEDED IF RUNNING THE CANVAS SUBMISSION
+### Step 1: Load the .env file THIS IS NOT NEEDED IF USING THE CANVAS SUBMISSION
 
 ```bash
 # 1. Copy the .env.example file to .env
@@ -61,6 +61,7 @@ Then load the .env values. If you are the person testing the project, these valu
 
 ### Step 2: Setup Database
 
+#### Universal Steps
 ```bash
 # 1. Clone the repository
 git clone https://github.com/kirbydyson/Take2.git
@@ -76,11 +77,13 @@ mysql < ./baseball.sql
 mysql baseball < ./take2init.sql
 ```
 
+
 ### Step 3: Setup Backend
 
 > [!IMPORTANT]  
 > Ensure that you have loaded the .env values correctly.
 
+#### Mac/Linux
 ```bash
 # 1. Move to the backend directory
 cd ../service
@@ -93,8 +96,22 @@ pip install -r requirements.txt
 python app.py
 ```
 
+#### Windows
+```bash
+# 1. Move to the backend directory
+cd ../service
+
+# 2. Build and run
+python -m venv venv
+. venv\Scripts\activate
+pip install --upgrade pip
+pip install -r requirements.txt
+python app.py
+```
+
 ### Step 4: Setup Frontend
 
+#### Universal Steps
 ```bash
 # 1. Move to the frontend directory
 cd ../client
@@ -122,10 +139,18 @@ yarn dev
 
 ### Step 1: Load the .env file
 
+#### Mac/Linux
 ```bash
 # 1. Copy the .env.example file to .env
 cd server
 cp .env.example .env
+```
+
+#### Windows
+```bash
+# 1. Copy the .env.example file to .env
+cd server
+copy .env.example .env
 ```
 
 Then load the .env values. If you are the person testing the project, these values should be already loaded. If not, an email was sent to you with the values.
@@ -135,6 +160,7 @@ Then load the .env values. If you are the person testing the project, these valu
 
 ### Step 2: Setup Database
 
+#### Universal Steps
 ```bash
 # 1. Clone the repository
 git clone https://github.com/kirbydyson/Take2.git
@@ -149,6 +175,7 @@ docker compose -f local.docker-compose.yml up
 > [!IMPORTANT]  
 > Ensure that you have loaded the .env values correctly.
 
+#### Mac/Linux
 ```bash
 # 1. Move to the backend directory
 cd ../service
@@ -161,8 +188,23 @@ pip install -r requirements.txt
 python app.py
 ```
 
+#### Windows
+```bash
+# 1. Move to the backend directory
+cd ../service
+
+# 2. Build and run
+python -m venv venv
+. venv\Scripts\activate
+pip install --upgrade pip
+pip install -r requirements.txt
+python app.py
+```
+
+
 ### Step 4: Setup Frontend
 
+#### Universal Steps
 ```bash
 # 1. Move to the frontend directory
 cd ../client
