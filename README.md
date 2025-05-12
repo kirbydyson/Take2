@@ -46,7 +46,7 @@
 
 - MariaDB
 
-### Step 1: Load the .env file
+### Step 1: Load the .env file THIS IS NOT NEEDED IF RUNNING THE CANVAS SUBMISSION
 
 ```bash
 # 1. Copy the .env.example file to .env
