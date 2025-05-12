@@ -137,7 +137,7 @@ yarn dev
 
 - Docker + Docker Compose
 
-### Step 1: Load the .env file
+### Step 1: Load the .env file THIS IS NOT NEEDED IF USING THE CANVAS SUBMISSION
 
 #### Mac/Linux
 ```bash
