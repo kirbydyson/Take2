@@ -45,6 +45,9 @@
 ### Requirements
 
 - MariaDB
+- CMD prompt if using Windows
+- Node.js (v22+)
+- Yarn (v1.22+)
 
 ### Step 1: Load the .env file THIS IS NOT NEEDED IF USING THE CANVAS SUBMISSION
 
@@ -61,10 +64,9 @@ Then load the .env values. If you are the person testing the project, these valu
 
 ### Step 2: Setup Database
 
-#### Universal Steps
+#### Mac/Linux
 ```bash
-# 1. Clone the repository
-git clone https://github.com/kirbydyson/Take2.git
+# 1. Navigate to the docker directory
 cd take2/docker
 
 # 2. Start the database
@@ -77,6 +79,18 @@ mysql < ./baseball.sql
 mysql baseball < ./take2init.sql
 ```
 
+#### Windows
+```bash
+# 1. Navigate to the docker directory
+cd take2\docker
+
+# 2. Initialize the database with baseball.sql
+mysql -u root -p < ./baseball.sql
+
+# 3. Initialize the database with take2init.sql
+mysql -u root -p baseball < ./take2init.sql
+```
+
 
 ### Step 3: Setup Backend
 
@@ -86,7 +100,7 @@ mysql baseball < ./take2init.sql
 #### Mac/Linux
 ```bash
 # 1. Move to the backend directory
-cd ../service
+cd ../server
 
 # 2. Build and run
 python -m venv venv
@@ -99,12 +113,12 @@ python app.py
 #### Windows
 ```bash
 # 1. Move to the backend directory
-cd ../service
+cd ../server
 
 # 2. Build and run
 python -m venv venv
-. venv\Scripts\activate
-pip install --upgrade pip
+venv\Scripts\activate.bat
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 python app.py
 ```
@@ -112,6 +126,8 @@ python app.py
 ### Step 4: Setup Frontend
 
 #### Universal Steps
+> [!NOTE]  
+> You must have Node.js and Yarn installed to run the frontend.
 ```bash
 # 1. Move to the frontend directory
 cd ../client
@@ -136,6 +152,7 @@ yarn dev
 ### Requirements
 
 - Docker + Docker Compose
+- CMD prompt if using Windows
 
 ### Step 1: Load the .env file THIS IS NOT NEEDED IF USING THE CANVAS SUBMISSION
 
@@ -155,15 +172,14 @@ copy .env.example .env
 
 Then load the .env values. If you are the person testing the project, these values should be already loaded. If not, an email was sent to you with the values.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > The server WILL NOT RUN if these values are not loaded.
 
 ### Step 2: Setup Database
 
 #### Universal Steps
 ```bash
-# 1. Clone the repository
-git clone https://github.com/kirbydyson/Take2.git
+# 1. Navigate to the docker directory
 cd take2/docker
 
 # 2. Build and run
@@ -172,13 +188,13 @@ docker compose -f local.docker-compose.yml up
 
 ### Step 3: Setup Backend
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > Ensure that you have loaded the .env values correctly.
 
 #### Mac/Linux
 ```bash
 # 1. Move to the backend directory
-cd ../service
+cd ../server
 
 # 2. Build and run
 python -m venv venv
@@ -191,19 +207,20 @@ python app.py
 #### Windows
 ```bash
 # 1. Move to the backend directory
-cd ../service
+cd ../server
 
 # 2. Build and run
 python -m venv venv
-. venv\Scripts\activate
-pip install --upgrade pip
+venv\Scripts\activate.bat
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 python app.py
 ```
 
 
 ### Step 4: Setup Frontend
-
+> [!NOTE]  
+> You must have Node.js and Yarn installed to run the frontend.
 #### Universal Steps
 ```bash
 # 1. Move to the frontend directory
@@ -219,10 +236,10 @@ yarn dev
 - **Frontend**: `http://localhost:3000`
 - **Backend API**: `http://localhost:8080`
 - **DB Connection**: `http://localhost:3306`
-    - Location: `localhost`
-    - Username: `root`
-    - Password: `password`
-    - Database: `baseball`
+  - Location: `localhost`
+  - Username: `root`
+  - Password: `password`
+  - Database: `baseball`
 
 ---
 
